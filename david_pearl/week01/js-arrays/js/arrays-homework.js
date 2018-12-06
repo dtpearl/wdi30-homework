@@ -6,7 +6,7 @@ console.log('Alright, alright, alright!');
  //_\\| '__| '__/ _` | | | / __|
 /  _  \ |  | | | (_| | |_| \__ \
 \_/ \_/_|  |_|  \__,_|\__, |___/
-                   |___/
+                    |___/
 
 Array and Functions Bonus Material
 
