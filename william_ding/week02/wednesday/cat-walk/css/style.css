@@ -1,0 +1,50 @@
+body {
+  
+}
+
+video {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  opacity: 0.5;
+}
+
+#cat {
+  position: absolute;
+  top: 300px;
+}
+
+.hidden-cat {
+  display: none;
+  position: absolute;
+}
+
+#hidden-cat1 {
+  top: 50px;
+  left: 50px;
+}
+
+#hidden-cat2 {
+  top: 50px;
+  left: 45%;
+}
+
+#hidden-cat3 {
+  top: 50px;
+  right: 50px;
+}
+
+#hidden-cat4 {
+  bottom: 50px;
+  left: 50px;
+}
+
+#hidden-cat5 {
+  bottom: 50px;
+  left: 45%;
+}
+
+#hidden-cat6 {
+  bottom: 50px;
+  right: 50px;
+}

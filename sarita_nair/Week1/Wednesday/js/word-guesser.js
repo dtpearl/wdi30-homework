@@ -63,11 +63,11 @@ const guessLetter = function(arrguessLtr)
 const callFunctionsguessLetter =  function()
 {
 
-let guess = ['','','','','o','','e','r'];
+//let guess = ['','','','','o','','e','r'];
 //let guess = ['','y','','t','','g','t','r'];
 //let guess = ['h','r','','d','o','','e','r'];
-//let guess = ['h','a','n','g','o','v','e','r'];
-//console.log(`${guessLetter(guess)}`);
+let guess = ['h','a','n','g','o','v','e','r'];
+console.log(`${guessLetter(guess)}`);
 };
 
 callFunctionsguessLetter();

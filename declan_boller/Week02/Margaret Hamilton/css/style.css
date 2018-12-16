@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300|Poppins:100');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  /*  font-family: 'Poppins', sans-serif;*/
+}
+
+header {
+  background: #000;
+  color: white;
+  border-bottom: 1px solid #CE4257;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+nav i {
+  color: white;
+  font-size: 2em;
+  padding-left: 40px;
+}
+
+nav {
+  font-size: 1.2em;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #CE4257;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.buttons-group {
+  padding: 20px;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header h1 {
+  padding-left: 40px;
+  font-size: 1.2em;
+  display: flex;
+  height: 50px;
+  align-items: center;
+/*  justify-content: center;*/
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 2px solid #FF9B54;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation: typing 5.5s steps(70, end),
+  blink-caret .6s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent
+  }
+  30% {
+    border-color: orange;
+  }
+}
+
+.bgimg-1 {
+  background-image: linear-gradient(110deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/MH-Code.jpg);
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: linear-gradient(110deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero-bg.jpg);
+  min-height: 100%;
+}
+
+.bgimg-3 {
+  background-image: linear-gradient(110deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/books.jpg);
+  min-height: 100%;
+}
+
+main {
+  color: white;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #CE4257;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9B54;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #FF9B54;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #FF9B54;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #FF9B54;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #FF9B54 transparent transparent;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.81);
+  position: relative;
+  border-radius: 6px;
+  border: 2px solid #FF9B54;
+}
+
+.content h2 {
+  color: #CE4257;
+  padding-bottom: 10px;
+}
+
+.content p {
+  /*  text-align: justify;*/
+  text-transform: uppercase;
+}
+
+.ff-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-top: 2px solid #CE4257;
+  border-bottom: 2px solid #CE4257;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.ff-wrapper h2,
+.ff-awards h2 {
+  padding: 15px 0;
+  font-size: 2em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.fast-facts {
+  display: flex;
+  color: black;
+  justify-content: space-around;
+}
+
+.ff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ff p {
+  width: 300px;
+  height: 200px;
+  text-align: justify;
+  text-align-last: center;
+  font-size: 1.1em;
+  color: #eee;
+}
+
+.ff i {
+  padding: 0 0 20px 0;
+  font-size: 3em;
+  color: #720026;
+}
+
+.trivia {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.bgimg-2 h1,
+.bgimg-3 h1 {
+  text-align: center;
+  padding: 20px 0 0 0;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.bgimg-2 h1::after,
+.bgimg-3 h1::after {
+  position: absolute;
+  content: '';
+  height: 5px;
+  margin: 0 auto;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  width: 50%;
+  background: #CE4257;
+  border-radius: 5px;
+}
+
+span {
+  color: #FF9B54;
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid white;
+  padding: 20px;
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  background: #4F000B;
+
+}
+
+.fact h2 {
+  padding: 10px;
+}
+
+.fact-2,
+.fact-4 {
+  position: relative;
+  top: 100px;
+}
+
+.fact p {
+  font-size: 0.8em;
+}
+
+.ff-awards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border-top: 2px solid #CE4257;
+  border-bottom: 2px solid #CE4257;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.9)
+}
+
+.awards-line-1,
+.awards-line-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+.award {
+  width: 300px;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.ff-awards i {
+  padding: 0 0 20px 0;
+  font-size: 3em;
+  color: #CE4257;
+}
+
+.video-lib {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  padding: 40px;
+}

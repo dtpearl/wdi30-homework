@@ -1,0 +1,45 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	width: 950px;
+	margin: 0 auto; /*centers our container on the page */
+}
+
+.logo {
+  margin: 10px 0px;
+}
+
+.home {
+  margin: 0px 0px 5px 0px;
+}
+
+h1 {
+  font-size: 100%;
+}
+
+h2 {
+  color: blue;
+  font-size: 85%;
+}
+
+p {
+  color: grey;
+  line-height: 1.7;
+  font-size: 75%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.press {
+  display: flex;
+  justify-content: space-between;
+}
+
+.press img {
+  border: lightgrey solid 4px;
+}

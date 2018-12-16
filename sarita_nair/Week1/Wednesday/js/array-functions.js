@@ -30,9 +30,11 @@ const maxOfTwoNumbers = function(number1, number2)
     return result;
 };
 
-function myFunction(number1, number2, number3) {
-    //return points.sort(function(a, b){return a-b});
-    const arr = [number1, number2, number3];
+function myArraySort(arr,arg) {
+	if(arg === 'asc')
+    return arr.sort(function(a, b){return a-b});
+    //const arr = [number1, number2, number3];
+    else
     return arr.sort(function(a, b){return b-a});
     //document.getElementById("demo").innerHTML = points;
 };
@@ -65,8 +67,8 @@ const multiplyArray = function(arr)
 
 const callFunctions =  function()
 {
-    //console.log(maxOfTwoNumbers(15,25));
-    //console.log(maxOfThree(55,27,15));
+    //console.log(maxOfTwoNumbers(15,2));
+    console.log(maxOfThree(55,27,15));
     //console.log(vowelCheck('A'));
     //console.log(sumArray([1,2,4,4]));
     //console.log(multiplyArray([1,4,3,4]));

@@ -1,0 +1,87 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#background {
+    width: 1500px;
+    height: 800px;
+    display: inline-block;
+}
+
+
+#cloud1 {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    top: 70px;
+}
+
+#cloud2 {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    top: 150px;
+}
+
+#house {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 233px;
+    left: 950px;
+}
+
+#heart {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    left: 960px;
+}
+
+#happy-dog {
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    top: 500px;
+}
+
+.img-hor {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#reverse-dog {
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    top: 500px;
+}
+
+#crazy, #left-right{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    top: 600px;
+}
+
+#dancing-dog {
+    display: inline-block;
+    top: 600px;
+    width: 150px;
+    height: 150px;
+}
+
+#boom {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 500px;
+    right: 740;
+}

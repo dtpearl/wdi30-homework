@@ -1,0 +1,147 @@
+/* * {
+  border: 1px solid yellow;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Mono');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+nav {
+  height: 60px;
+  text-align: right;
+  background-color: #0C1821;
+  padding-right: 12em;
+  padding-bottom: 0;
+}
+
+nav a {
+  color: white;
+  line-height: 60px;
+  margin: 0.8em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  background-color: #D64550;
+  height: 90px;
+  line-height: 90px;
+  margin-top: 0;
+  color: white;
+  margin-bottom: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  height: 50px;
+  line-height: 50px;
+}
+
+article {
+  text-align: left;
+}
+
+article h3 {
+  color: white;
+}
+
+.container img {
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 620px;
+  padding-top: 2em;
+}
+
+.fa-bars {
+  color: white;
+}
+
+.early-life h3 {
+  background-image: url(../images/milwaukee01.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 30px;
+}
+
+.education h3 {
+  background-image: url(../images/university01.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 30px;
+}
+
+.basics h3 {
+  background-image: url(../images/code.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 30px;
+}
+
+.map h3 {
+  color: black;
+  padding-left: 0;
+  line-height: 50px;
+}
+
+footer {
+  bottom: 0;
+  width: auto;
+  background-color: #D64550;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.fas {
+  padding-right: 0.5em;
+}
+
+.publications {
+  text-align: center;
+}
+
+.publications img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-height: 200px;
+  margin: 1em;
+}

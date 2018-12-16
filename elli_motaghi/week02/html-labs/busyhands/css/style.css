@@ -1,0 +1,203 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #292928;
+	font-size: 12px;
+	line-height: 1.2;
+}
+
+#wrapper {
+    background: white;
+    background-size: 400px;
+
+}
+
+#container {
+   width: 950px;
+   margin: 0 auto;
+}
+
+
+/*----------------------------------------------------------------------------- 
+ logo  
+-----------------------------------------------------------------------------*/
+#header {
+    padding: 20px 0px;
+}
+    #logo {
+        background: url(../images/logo.png) no-repeat;
+        width: 320px;
+        height: 76px;
+        float: left;
+    }
+      
+    #logo h1 {
+        text-indent: -99999em;	/* hides the H1 tag from the page, while semantically keeping it present in your HTML */
+    }
+
+/*----------------------------------------------------------------------------- 
+ SOCIAL MEDIA  
+-----------------------------------------------------------------------------*/
+
+#socialMedia nav li {
+	 float: right;
+	 width:60px;
+	 height:60px;
+	 background:blue;	
+	 text-indent:-9999em;
+}
+
+#socialMedia nav li.linkedIn {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+#socialMedia nav li.twitter {
+	background:url(../images/socialNav.png) -60px 64px; 
+}
+
+#socialMedia nav li.facebook {
+	background:url(../images/socialNav.png) -120px 64px; 
+}
+
+#socialMedia nav li.rss {
+	background:url(../images/socialNav.png) -180px 64px; 
+}
+
+ 
+#socialMedia nav li.linkedIn:hover {
+	background:url(../images/socialNav.png) 0px 0px; 
+}
+
+#socialMedia nav li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px; 
+}
+
+#socialMedia nav li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px; 
+}
+
+#socialMedia nav li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0px; 
+}
+
+
+/*----------------------------------------------------------------------------- 
+ photo banner  
+-----------------------------------------------------------------------------*/
+
+.photobanner {
+    background: url(../images/photobanner.png) no-repeat;
+    width: 950px;
+    height: 400px;
+    clear: both;
+}
+
+
+/*----------------------------------------------------------------------------- 
+ text 
+-----------------------------------------------------------------------------*/
+p { 
+   margin: 0px 0px 15px 0px;
+} /* there's no explicit rule, but putting about 15px margin only to the bottom of your p is generally a good rule of thumb */
+  
+/*----------------------------------------------------------------------------- 
+ blurb
+-----------------------------------------------------------------------------*/
+
+.button {
+    background: url(../images/button_blurb.png) no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    text-indent:-9999em;
+    cursor: pointer;
+}
+
+.blurb {
+    display: inline-block;
+    width: 700px;
+}
+
+
+/*----------------------------------------------------------------------------- 
+ home boxes
+-----------------------------------------------------------------------------*/
+
+
+#home-boxes {
+    padding-bottom: 20px;
+}
+
+.home-box {
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    padding: 0 5px;
+    
+}
+
+.home-box img {
+    border: 5px solid lightgrey;
+}
+
+.home-box p {
+    padding-top: 1em;
+    padding-right: 1em;
+    text-align: left;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+ footer 
+-----------------------------------------------------------------------------*/
+
+#footer {
+    background-color: black;
+    color: gray;
+    text-align: left;
+    padding: 50px 200px 2px 250px;
+}
+
+h3 {
+    color: azure;
+}
+
+.blogroll {
+    width: 150px;
+    height: 150px;
+}
+
+.text-widget {
+    width: 350px;
+    height: 150px;
+}
+
+.meta-widget {
+    width: 200px;
+    height: 150px;
+}
+
+#copyright {
+    float: left
+}
+
+#companybottom {
+    float: right;
+}
+
+#clear {
+    clear: both;
+}
+
+a {
+    color:#26689f;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+}
+
+

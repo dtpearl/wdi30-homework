@@ -1,11 +1,20 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <script src="js/homework-array.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+      <<titl>HANGMAN GAME</titl>>
+    <script src="js/word_guesser.js"></script>
+  </head>
 
-<body>
-  <p>Please check the console for program output.</p>
-</body>
+  <body onload = "startUp()">
+    <h1> Guess a letter </h1>
+    <input id="letter" type="text">
+    <input type="button" value="letter" onClick="letter()"/>
+    <p id="answer"></p>
+    <p id="counter"></p>
+    <p id="start"></p>
+
+  </body>
+
+
 </html>

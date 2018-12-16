@@ -1,0 +1,124 @@
+/** {
+  border: 1px solid green;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed%7CRoboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Acme|Mountains+of+Christmas|Unlock');
+
+header {
+  max-width: 960px; /* lazy reponsiveness */
+  margin: 0 auto;
+  background-color: #d3bf748a;
+  padding: 1em;
+}
+
+body {
+  background-color: white; /* equialent #222222;*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+  max-width: 960px; /* lazy reponsiveness */
+  margin: 0 auto;
+  background-color: #e8dbeb;
+  padding: 1em;
+}
+
+
+nav {
+  text-align: right;
+  margin-top: 40px;
+}
+
+nav a {
+  color: #255adb;
+}
+
+
+
+h1 {
+  text-align: center;
+  background-color: #b87575;
+  color: #1e114f;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  font-family: 'Unlock', cursive;
+}
+
+h2 {
+  line-height: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+  line-height: 50px;
+  font-family: 'Acme', sans-serif;
+}
+main {
+  display: inline-block;
+  width: 75%;
+}
+
+.p {
+  line-height: 30px;
+}
+
+aside {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  background-color: #cfc;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 15px #222;
+}
+
+aside nav img {
+  padding-top: 100px;
+  display: block;
+  width: 100%;
+}
+
+aside ul {
+  padding-left: 17px;
+}
+
+main img {
+  position: center;
+}
+
+aside ul img {
+  padding-top: 100px;
+  width: 90%;
+
+}
+#geo {
+  padding-left: 200px;
+}
+.footer-basic-centered{
+	background-color: #50565b;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal 18px sans-serif;
+	padding: 10px;
+	margin-top: 80px;
+}
+
+.footer-basic-centered .footer-company-motto{
+	color:  #d090b8;
+	font-size: 24px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  #d090b8;
+	font-size: 14px;
+	margin: 0;
+}

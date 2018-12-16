@@ -1,0 +1,42 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+.container {
+    width: 900px;
+    margin: auto;
+    padding: 0;
+    position: absolute;
+  }
+.header{
+  margin: auto;
+}
+body
+{
+  text-align: center;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #181818;
+}
+h1{
+  font-family: Dayrom, serif;
+  font-weight: normal;
+  text-align: left;
+  color: gray;
+}
+
+h2
+{
+  font-family: Dayrom, serif;
+  font-weight: normal;
+  text-align: left;
+  width: 900px;
+}
