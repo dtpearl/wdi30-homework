@@ -1,0 +1,56 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+.logoimage{
+  text-align: left;
+}
+
+body {
+    background-size: 0;
+    font-size: 12px;
+  	line-height: : 17px;
+  	font-family: "Times New Roman", serif;
+  	color: #656565;
+    text-align: left;
+    margin: 30px 90px;
+    padding: 0;
+}
+
+.logoimage {
+  margin: 20px 0;
+}
+
+p {
+  text-align: left;
+  color: grey;
+}
+
+a {
+  color: #37a9cc;
+  text-decoration: none;
+}
+
+.imghuffpost, .imgluckylogo, .imgmarieclaire, .imgnbcnewyork {
+  display: inline-block;
+  padding: 1px;
+  border: 5px solid #cccccc;
+  margin: 0 auto;
+}
+
+footer {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+a:hover {
+  Color: #20222a;
+}

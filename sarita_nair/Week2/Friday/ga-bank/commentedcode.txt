@@ -1,0 +1,118 @@
+// let
+// trn = [
+//   transactions('Steve','234344545','Savings',300,'C'),
+//   transactions('Steve','234344545','Savings',300,'C'),
+//   transactions('Steve','234344545','Savings',300,'C'),
+//   transactions('Steve','565678788','Checking',300,'D'),
+//   transactions('Steve','565678788','Checking',300,'D'),
+//   transactions('Steve','234344545','Savings',500,'D'),
+//   transactions('Steve','565678788','Checking',1000,'C')
+//
+// ];
+// trn.push(transactions('Steve','234344545','Savings',300,'D'));
+// trn.push(transactions('Steve','234344545','Savings',300,'D'));
+// trn.push(transactions('Steve','234344545','Savings',300,'D'));
+// trn.push(transactions('Steve','565678788','Checking',300,'D'));
+// trn.push(transactions('Steve','565678788','CheckingChecking',300,'D'));
+
+//console.log(`${CalculateBalance('234344545','Savings')}`);
+//$(trn).each()
+//let balance1 = 0;
+// $.each(trn, function( key, value ) {
+// console.log(`${value.accountNumber}`);
+// });
+
+// $.each( trn, function(index,record){
+//     //console.log(record);
+//
+//       // start a loop on the current record in the iteration
+//     $.each( record, function( index2, sub_record ) {
+//         console.log( index2, sub_record.accountNumber );
+//     });
+// });
+// DepositMoney('Steve','234344545','Savings',300);
+// DepositMoney('Steve','234344545','Savings',300);
+// DepositMoney('Steve','565678788','Checking',300);
+// DepositMoney('Steve','565678788','Checking',1200);
+// WithDrawMoney('Steve','565678788','Checking',300);
+
+// DepositMoney('Steve','565678788','Savings',1000);
+//console.table(trn);
+// DepositMoney('Steve','565678788','Savings',200);
+// console.table(trn);
+//const balance = CalculateBalance('565678788','Checking');
+
+//const balance = CalculateBalance('234344545','Savings');
+// $.each(ArrAccounts , function(){
+//       ArrAccounts.
+// });
+//alert(trn[0].accountNumber);
+//console.table(trn);
+
+// const transaction = $.grep(trn, function(n, i){
+//   return n.accountNumber === '234344545' ;// && n.Type === type;
+// });
+// const transaction = $.filter(trn, function(n){
+//   return n.accountNumber === '234344545' ;// && n.Type === type;
+// });
+// var transaction = trn.filter(function (el, i) {
+//   return el.accountNumber === '234344545' ;//&& el.Type === 'Savings';
+// });
+//console.table(trn);
+//alert(OverDraftArray[0].accountNumber);
+// $.each( OverDraftArray, function(index,record){
+//   alert(record.accountNumber);
+// });
+//trn.push(transactions(name,accno,type,parseFloat(amt),'D'));
+$('#checking-deposit').on('click',function(){
+    // const amount = $('#checking-amount').val();
+    //
+    // DepositMoney(ArrAccounts[1].OwnerName,ArrAccounts[1].accountNumber,ArrAccounts[1].Type,parseFloat(amount));
+    // const balance = CalculateBalance(ArrAccounts[1].accountNumber,ArrAccounts[1].Type);
+    // $('#checking-balance').html(`<span>$${balance}<span>`);
+    // CheckZeroBalance(ArrAccounts[1].accountNumber,ArrAccounts[1].Type);
+    const amount = $('#checking-amount').val();
+    TransacDeposit(ArrAccounts[1].OwnerName,ArrAccounts[1].accountNumber,ArrAccounts[1].Type,parseFloat(amount));
+});
+$('#savings-deposit').on('click', function(){
+
+    // DepositMoney(ArrAccounts[0].OwnerName,ArrAccounts[0].accountNumber,ArrAccounts[0].Type,parseFloat(amount));
+    // //console.table(trn);
+    // const balance = CalculateBalance(ArrAccounts[0].accountNumber,ArrAccounts[0].Type);
+    // $('#savings-balance').html(`<span>$${balance}<span>`);
+    // CheckZeroBalance(ArrAccounts[0].accountNumber,ArrAccounts[0].Type);
+
+    const amount = $('#savings-amount').val();
+    TransacDeposit(ArrAccounts[0].OwnerName,ArrAccounts[0].accountNumber,ArrAccounts[0].Type,parseFloat(amount));
+
+});
+$('#checking-withdraw').on('click', function(){
+    const amount = $('#checking-amount').val();
+    //alert(ArrAccounts[0].OwnerName);
+    // const result = CheckNegativeBalance(ArrAccounts[1].accountNumber,ArrAccounts[1].Type,amount);
+    //   if(result === true)
+    //   {
+    //         WithDrawMoney(ArrAccounts[1].OwnerName,ArrAccounts[1].accountNumber,ArrAccounts[1].Type,parseFloat(amount));
+    //         CheckZeroBalance(ArrAccounts[1].accountNumber,ArrAccounts[1].Type);
+    //   }
+    //   else{
+    //     $('errorMessage').html(`<span>${result}</span>`);
+    //   }
+    TrasacWithdraw(ArrAccounts[1].OwnerName,ArrAccounts[1].accountNumber,ArrAccounts[1].Type,parseFloat(amount));
+});
+
+$('#savings-withdraw').on('click', function(){
+  const amount = $('#savings-amount').val();
+  //alert(ArrAccounts[0].OwnerName);
+  // const result = CheckNegativeBalance(ArrAccounts[0].accountNumber,ArrAccounts[0].Type,amount);
+  //   if(result === true)
+  //   {
+  //         WithDrawMoney(ArrAccounts[0].OwnerName,ArrAccounts[0].accountNumber,ArrAccounts[0].Type,parseFloat(amount));
+  //         CheckZeroBalance(ArrAccounts[0].accountNumber,ArrAccounts[0].Type);
+  //   }
+  //   else{
+  //     $('errorMessage').html(`<span>${result}</span>`);
+  //   }
+  TrasacWithdraw(ArrAccounts[0].OwnerName,ArrAccounts[0].accountNumber,ArrAccounts[0].Type,parseFloat(amount));
+
+});

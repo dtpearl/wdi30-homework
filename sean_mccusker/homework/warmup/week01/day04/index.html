@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="leapYearExercise.js"></script>
+</head>
+
+<body>
+  <h2>Check to see if a year is a leap year</h2>
+
+<script>
+  let isLeapYear = function(year) {
+     var result = document.getElementById("year").value;
+     if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0))
+       result = true
+  };
+  </script>
+
+  <form>
+      Leap Year?<br>
+      <input type="text" name="checkLeapYear" id = "year"><br>
+      <input type="button" value="Submit" id = "submit"
+       onClick = "isLeapYear()">
+  </form>
+
+  <p>Please check the console for program output.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  position:relative;
+}
+
+nav ul {
+  max-width: 900px;
+  margin: 0 20%;
+}
+
+nav li {
+display: inline-block;
+  padding: 30px 15px;
+}
+
+.photobanner {
+  display: inline-block;
+  position: relative;
+  max-width: 900px;
+  margin: 0 20%;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Arial", sans-serif;
+}

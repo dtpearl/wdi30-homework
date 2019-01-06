@@ -1,0 +1,110 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = Times New Roman, serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+body{
+  font-family: Times New Roman, serif;
+  line-height: 17px;
+  font-size: 12px;
+  color: #656565;
+  width: 950px;
+  padding: 10px;
+  margin : 0 auto;
+}
+
+#container
+{
+  width : 400px;
+  display : inline-block;
+}
+#maincontain
+{
+  width : 500px;
+  margin: 0 auto;
+}
+.logo
+{
+  height: 30px;
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+}
+
+.divimg
+{
+  height: 250px;
+  width : 100%;
+  padding: 2px;
+}
+
+span{
+  color : #5db2f7;
+  padding: 10px;
+}
+
+h2{
+  font-weight: 700;
+  color : #999a9b;
+  padding: 10px;
+}
+p{
+  padding: 10px;
+  width: 100%;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.footer{
+  width : 100%;
+  margin :auto;
+}
+.divhuffpost{
+  width:115px;
+  height:80px;
+  background : url(../images/press-huffpost.gif);
+  background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+  display : inline-block;
+  border : 1px solid #000;
+}
+.divlogolucky{
+  width:115px;
+  height:80px;
+  background : url(../images/press-logo_lucky.gif);
+  background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+  display : inline-block;
+  border : 1px solid #000;
+
+}
+.divmarieclaire{
+  width:115px;
+  height:80px;
+  background : url(../images/press-marieclaire.gif);
+  background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+  display : inline-block;
+  border : 1px solid #000;
+
+}
+.divnbcnewyork{
+  width:115px;
+  height:80px;
+  background : url(../images/press-nbcnewyork.gif);
+  background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+  display : inline-block;
+  border : 1px solid #000;
+
+}

@@ -1,0 +1,70 @@
+@import url('https://use.fontawesome.com/releases/v5.6.1/css/all.css');
+body{
+    margin :0;
+    padding: :0;
+}
+.headerdiv{
+  max-width : 100%;
+  margin : 0 auto;
+  height : 50px;
+  background-color: orange;
+  position : relative;
+}
+header{
+  position : fixed;
+  margin : 0 auto;
+  width : 100%;
+  background-color: orange;
+
+}
+nav{
+  width : 350px;
+  margin : 0 auto;
+  text-align: center;
+}
+nav ul li{
+  display : inline;
+  padding : 15px;
+  background-color: orange;
+  color : #FFF;
+}
+nav ul li::after{
+  content: <i class="fas fa-arrow-circle-down"></i>;
+}
+nav ul {
+  width : 300px;
+  margin : auto;
+  padding:15px;
+    /*display: inline-block;
+    list-style-type: none;*/
+}
+.maindiv{
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid blank;
+  padding-top : 10px;
+  height : 620px;
+  overflow-y: auto;
+}
+main{
+  width:70%;
+  margin:0 auto;
+}
+.footerdiv{
+  max-width : 100%;
+  margin : 0 auto;
+  border : 1px solid black;
+  height : 50px;
+  bottom: 0;
+  position: relative;
+  background-color: orange;
+}
+footer{
+  width:100%;
+  position : fixed;
+}
+a[href$=".pdf"]::after {
+    content: " (pdf)";
+    font-size:  .8em;
+    color: tomato;
+}

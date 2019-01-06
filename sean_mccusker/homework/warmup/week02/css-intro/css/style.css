@@ -1,0 +1,64 @@
+/*
+
+selector {
+property: value;
+other-property: other-value;
+}
+
+
+
+
+*/
+
+body {
+  background-color: limegreen;
+  padding: 10px;
+  margin: 0;
+}
+
+h1 {
+  padding: 35px;
+  text-align: center;
+
+}
+
+a {
+  color: #ffdc02;
+}
+
+/* Multiple Selector*/
+h1, h2, h3, h4, h5, h6 {
+  background-color: white;
+  color: limegreen;
+  text-shadow: 0 0 30px green;
+}
+
+.footer {
+  display: block;
+  border: 5px solid black;
+  border-radius: 15px;
+  border-radius: 100%;
+  box-shadow: 0 15px 30px black;
+}
+
+p {
+  font-style: italic;
+}
+
+p {
+  font-style: normal;
+  font-size: 200%;
+  color: red;
+}
+
+p.fancy {
+  color: pink;
+  font-style: normal;
+}
+
+.box {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}

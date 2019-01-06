@@ -1,0 +1,39 @@
+body{
+  background: black;
+}
+
+.container{
+  margin: 0 auto;
+  background: black;
+  width: 960px
+}
+header{
+  margin: 0 auto;
+  width: 40%;
+}
+.left{
+  background: white;
+  width: 40%;
+}
+.left img {
+  display: inline-block;
+  width: 30%;
+}
+.right {
+  font-size: 18px;
+  display: inline-block;
+  color: white;
+}
+.bombe img {
+  width: 20%;
+}
+
+.bombe {
+  display: inline-block;
+  width: 40%;
+  background: green
+}
+.topcontent {
+
+  position: relative;
+}

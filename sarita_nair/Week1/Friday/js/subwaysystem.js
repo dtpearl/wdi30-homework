@@ -12,7 +12,25 @@ let line1StrIndex = 0,line1DestIndex = 0,line2StrIndex = 0,line2DestIndex = 0;
 let result = '';
 //Declarations for all global variables ends
 
+//Function forward traversal begins
+const traverseFwd = function(line1StrIndex,line1DestIndex,arrLine){
+  for(let i = line1StrIndex; i <= line1DestIndex ; i++)
+  {
+    result += `${arrLine[i]}\n`;
+    stops++;
+  }
+};
+//Function forward traversal ends
 
+//Function  backward traversal begins
+const traverseRvs = function(line1StrIndex,line1DestIndex,arrline){
+  for(let i = line1StrIndex; i >= line1DestIndex ; i--)
+  {
+    result += `${arrline[i]}\n`;
+    stops++;
+  }
+};
+//Function  backward traversal ends
 
 //get All Routes for Line1 start
 const getRouteOneDetails = function(line1){
@@ -66,26 +84,6 @@ const getLine = function(line1,route1,line2,route2){
   return result;
 };
 //Actual Function for Displaying the Travel Routes from Start to Destination ends
-
-//Function forward traversal begins
-const traverseFwd = function(line1StrIndex,line1DestIndex,arrLine){
-  for(let i = line1StrIndex; i <= line1DestIndex ; i++)
-  {
-    result += `${arrLine[i]}\n`;
-    stops++;
-  }
-};
-//Function forward traversal ends
-
-//Function  backward traversal begins
-const traverseRvs = function(line1StrIndex,line1DestIndex,arrline){
-  for(let i = line1StrIndex; i >= line1DestIndex ; i--)
-  {
-    result += `${arrline[i]}\n`;
-    stops++;
-  }
-};
-//Function  backward traversal ends
 
 //Validations for checking Lines and Routes begins
 const valLines = function(line){

@@ -32,11 +32,18 @@ that pass or fail? Ideas: check expiration date! Check out the Luhn Algorithm fo
 */
 
 let toType = function(arr){
-    return typeof(arr);
+    return arr.match("/[0-9]/gi")//typeof(arr);
 };
+/*let toType = function(arg){
+    var regexp = "/[A-Z]/gi";
+    var arr = arg.match(regexp);
+    return arr
+};*/
+
 const isStringPresent = function(cardNumber){
-    let result = '';
-    result = cardNumber.map(toType).includes('string');
+    let typeofvarible = '',result='';
+    typeofvarible = cardNumber.map(toType);
+    result = typeofvarible.includes('string');
     return result;
  };
 const isCardNumberSame = function(cardNumber){

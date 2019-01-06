@@ -1,0 +1,152 @@
+body{
+  font-family: "Playfair Display", serif;
+  background-color: #FFF3e6;
+}
+
+header{
+  height:60px;
+  width:100%;
+  padding: 2px;
+  margin:0;
+  background-color: #ff5050;
+  display: inline-block;
+  box-sizing: border-box;
+  color : #424344;
+}
+.divnav{
+  max-width: 700px;
+  margin: 0 auto;
+}
+nav{
+  line-height: 15px;
+  position : absolute;
+  padding: 0 2em;
+  text-align: center;
+}
+nav ul li{
+  height: 60px;
+  width:auto;
+  color:#FFF;
+  display: inline-block;
+  font-weight:700;
+  padding: 5px;
+
+}
+nav ul li a {
+  text-decoration: none;
+  color : #FFF;
+  padding: 20px;
+}
+nav ul li a:hover {
+  background-color: #FFF3e6;
+  color : #000;
+}
+.container{
+  max-width: 960px;
+  margin :0 auto;
+  padding: 0 1em;
+  background-color:#FFF3e6;
+}
+
+main{
+  display: inline-block;
+  width: 100%;
+}
+.diviframe{
+  max-width: 900px;
+}
+iframe {
+    display: block;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    border: 0;
+}
+aside{
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  border-radius : 0.5em;
+
+}
+aside h3{
+  text-align: center;
+}
+footer{
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  width:100%;
+  margin:0;
+  background-color: #ff5050;
+  display: inline-block;
+  color : #FFF;
+
+}
+.divfooter{
+  text-align:center;
+}
+aside h1{
+font-family: 'Abril Fatface', cursive;
+font-size: 50px;
+text-align: center;
+float: right;
+}
+aside p{
+  font-size:20px;
+  font-style: italic;
+  text-align: center;
+}
+main img{
+  padding-top:40px;
+  border-radius: 10px;
+  width : 700px;
+  margin : 0 auto;
+  display :block;
+  text-align: center;
+}
+.content{
+  width:900px;
+  margin :0 auto;
+}
+.content p{
+  width : 800px;
+  padding: 5px 15px;
+  letter-spacing: 0.1px;
+  text-align: justify;
+}
+.content h3{
+ padding : 5px 15px;
+}
+.content p a {
+  text-decoration: none;
+  color : #5eacf9;
+}
+aside div{
+  border : 0.5px solid grey;
+  border-radius : 10px;
+  padding:10px;
+  margin: 35px 10px 10px 10px;
+}
+aside ul {
+  list-style-type: none;
+  padding: 5px;
+}
+aside ul li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+aside span{
+  font-weight: 700;
+}
+
+.triviacontainer{
+  max-width: 960px;
+  margin :0 auto;
+  padding: 0 1em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  margin-top : 10px;
+  background-color:#FFF3e6;
+  border : 1px solid black;
+}

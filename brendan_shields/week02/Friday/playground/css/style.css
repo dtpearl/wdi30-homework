@@ -1,0 +1,28 @@
+body{
+
+}
+
+.container{
+  max-width: 960px;
+  margin: auto;
+}
+
+header{
+  transition: 3s;
+  text-align: center;
+  font-size: 200%;
+  background-color: #ccc;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+header input {
+  font-size: 100%
+}
+/* button:hover {
+  background: pink;
+} */
+header.active {
+  font-size: 400%;
+  background-color: yellow;
+}

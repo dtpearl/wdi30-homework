@@ -1,0 +1,48 @@
+body {
+  background-color: yellow;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 300px;
+}
+
+.block {
+  display: block; /* for most elements this is the default */
+}
+
+.inline {
+  display: inline; /* sit side by side but width and height are ignored */
+}
+
+.inline-block {
+  display: inline-block; /* use this now instead of float */
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* Cild selector */
+.spooky span {
+  color: black;
+  visibility: hidden;
+}
+
+/* PSeudoselector */
+.spooky:hover {
+  background-color: black;
+}
+
+.spooky:hover span {
+  transition: 2s all;
+  color: yellow;
+  visibility: visible;
+}

@@ -1,0 +1,101 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display');
+</style>
+
+/**/
+body{
+  background-color: #F0F0F0;
+  font-family: "Playfair Display", serif;
+  color : red;
+
+}
+
+header{
+  height:60px;
+  width:100%;
+  padding: 5px;
+  margin:0;
+  background-color: black;
+  display: inline-block;
+  box-sizing: border-box;
+  color : #424344;
+
+}
+.container{
+  max-width: 960px;
+  margin :0 auto;
+  padding: 0 1em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  margin-top : 10px;
+
+}
+p{
+  padding :0.1em;
+  line-height: 1em;
+  letter-spacing: 1px;
+}
+nav{
+  line-height: 15px;
+  position : absolute;
+  left : 450px;
+  padding: 0 2em;
+  text-align: center;
+
+}
+nav ul li{
+  height: 60px;
+  width:auto;
+  color:#FFF;
+  display: inline-block;
+  font-weight:700;
+  padding: 5px;
+
+}
+nav ul li a {
+  text-decoration: none;
+  color : #FFF;
+  padding: 20px;
+}
+nav ul li a:hover {
+  background-color: #FFF;
+  color : #000;
+}
+.mainheader h1{
+font-family: 'Abril Fatface', cursive;
+font-size: 50px;
+text-align: center;
+}
+.mainheader p{
+  font-size:15px;
+  font-style: italic;
+  text-align: center;
+}
+main{
+
+}
+main img{
+  margin : 0 auto;
+  display :block;
+
+}
+.content h3{
+}
+.content p a {
+  text-decoration: none;
+  color : #5eacf9;
+}
+footer{
+  text-align: center;
+  width:100%;
+  padding: 10px;
+  margin:0;
+  background-color: black;
+  display: inline-block;
+  box-sizing: border-box;
+  color : #424344;
+}
+footer p{
+  color:#FFF;
+}
+/**/

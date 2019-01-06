@@ -1,0 +1,21 @@
+div {
+  width: 10px;
+}
+.background{
+  position: relative;
+  left: -50px;
+  top: -30px;
+  height: 900px;
+  width: 900px;
+  background-image: url('Images/map.png');
+}
+img{
+  position: absolute;
+  -webkit-clip-path: inset(0px 70px 0px 0px);
+           clip-path: inset(0px 70px 0px 0px);
+         }
+.catCont{
+  position: absolute;
+  top: 200px;
+  left: 140px;
+}

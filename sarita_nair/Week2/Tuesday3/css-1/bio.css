@@ -1,0 +1,9 @@
+header{
+  position:fixed;
+  background-color: #ff5050;
+  width:100px;
+  top : 0;
+}
+nav{
+  margin : 0 auto;
+}

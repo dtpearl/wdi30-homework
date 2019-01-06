@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata|Lora');
+
+/* font-family: 'Cutive Mono', monospace;
+font-family: 'Lora', serif;
+font-family: 'Inconsolata', monospace; */
+
+/* Colors
+
+*/
+
+/* * {
+  box-sizing: border-box;
+
+} */
+
+
+body {
+  background-color: #FEFFE9;
+}
+
+/* NAV CSS */
+
+nav {
+  display: block;
+  background-color: black;
+  height: 60px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.page-link:hover {
+  background-color: #FEFFE9;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "courier new", monospace;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: red;
+}
+
+/* HEADING */
+
+.heading {
+  display: inline-block;
+  font-family: 'Cutive Mono', monospace;
+  text-align: center;
+  font-size: 60px;
+  padding: 1em;
+}
+
+.home-image {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  border: solid black 2px;
+}
+
+main h1 {
+  display: block;
+  position: absolute;
+  max width: 800px;
+  margin: 0 auto;
+  z-index: 20;
+  text-align: center;
+  padding-bottom: 1em;
+
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
+/* MAIN */
+
+.home-page p {
+  display: inline-block;
+  width: 40%;
+  border: solid black 2px;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  padding: 1em;
+  margin: 20px 0;
+  position: absolute;
+  right: 50px;
+  bottom: 21px;
+}
+
+aside {
+  display: inline-block;
+  width: 40%;
+  border: solid black 2px;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  padding: 1em;
+  margin: 25px 0;
+
+}
+
+.main-content {
+  background-color: #ccc;
+  max-width: 800px;
+  margin: 60px auto 60px auto;
+  padding: 15px 50px;
+  position: relative;
+
+}
+
+/* TIMELINE */
+
+.timeline {
+
+}
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  color: red;
+  text-align: center;
+}
+
+
+footer p {
+  /* line-height: 80px; */
+  font-family: "courier new", monospace;
+  padding-top: 30px;
+  font-size: 15px;
+  text-align: center;
+}
