@@ -1,0 +1,24 @@
+<h2><%= @country["name"] %></h2>
+
+<% unless @country.cities.empty? %>
+  <h3>Desitinations of <%= @country["name"] %>:</h3>
+  <ul>
+    <% @country.cities.each do |city| %>
+      <li>
+        <a href="/cities/<%= city.id %>">
+          <%= city.name %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+
+<% end %>
+
+<% unless @country["image"].nil? %>
+  <img class="feature" src="<%= @country["image"] %>" alt="Flag of <%= @country["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/countries/<%= @country["id"] %>/edit">Edit Country</a>
+  <a href="/countries/<%= @country["id"] %>/delete">Delete Country</a>
+</div>

@@ -1,0 +1,12 @@
+body {
+  background-color: salmon;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.feature {
+  max-width: 100%;
+}

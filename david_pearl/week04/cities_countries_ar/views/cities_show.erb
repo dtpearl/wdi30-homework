@@ -1,0 +1,23 @@
+<h2><%= @city["name"] %></h2>
+
+<% unless @city.country.nil? %>
+  <h3>Country:
+    <a href="/countries/<%= @city.country_id %>">
+      <%= @city.country.name %>
+    </a>
+   </h3>
+<% end %>
+
+<% unless @city["image"].nil? %>
+  <img class="feature" src="<%= @city["image"] %>" alt="<%= @city["name"] %>">
+<% end %>
+
+<% unless @city["landmark"].nil? %>
+  <h3>Something to see in <%= @city["name"] %></h3>
+  <img class="feature" src="<%= @city["landmark"] %>" alt="<%= @city["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/cities/<%= @city["id"] %>/edit">Edit City</a>
+  <a href="/cities/<%= @city["id"] %>/delete">Delete City</a>
+</div>
