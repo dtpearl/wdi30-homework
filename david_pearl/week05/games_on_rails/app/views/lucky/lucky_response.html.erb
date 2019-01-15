@@ -1,0 +1,9 @@
+<% if @lucky_number == @player_choice %>
+<h2>Winner!</h2>
+<% else %>
+<h2>Better luck next time.</h2>
+<% end %>
+<a href="/lucky">Play again?</a>
+
+<h3>Lucky number: <%= @lucky_number %></h3>
+<h3>Player chose: <%= @player_choice %></h3>

@@ -1,0 +1,9 @@
+<h2>Ask your question</h2>
+
+<form action="/magic8/response">
+  <label>What would you like to know?</label>
+  <input type="text" name="question" placeholder="Will I pass the test?" required autofocus>
+  <button>Reveal your fortune</button>
+</form>
+
+<h2><%= @magic_answer %></h2>
