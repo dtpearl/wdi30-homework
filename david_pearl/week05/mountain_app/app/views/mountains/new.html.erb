@@ -1,0 +1,22 @@
+<!-- id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+country TEXT,
+height FLOAT,
+mountain_range TEXT,
+image TEXT -->
+
+<h2>Add a new mountain</h2>
+
+<form action="<%= mountains_path %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" required>
+  <label>Country:</label>
+  <input type="text" name="country" placeholder="Nepal" required>
+  <label>Height (m):</label>
+  <input type="number" name="height">
+  <label>Mountain Range:</label>
+  <input type="text" name="mountain_range" placeholder="Himalayas">
+  <label>Image:</label>
+  <input type="url" name="image">
+  <button>Add mountain</button>
+</form>
