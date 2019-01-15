@@ -1,0 +1,3 @@
+class MountainsController < ApplicationController
+
+end
