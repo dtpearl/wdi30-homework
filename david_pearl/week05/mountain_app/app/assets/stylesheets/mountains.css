@@ -1,22 +1,67 @@
 body {
   background-color: lightgrey;
+  background: url('/assets/mt-fuji.jpg') no-repeat center center;
+  background-size: cover;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
+  padding-top: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 15px;
 }
 .feature {
-  width: 100%;
-
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 30px;
 }
 
 .controls {
   line-height: 30px;
 }
 
+form {
+  margin-top: 50px;
+}
+
 .button_to input {
   font-size: 1.5em;
   padding: 1em;
   width: 150px;
+}
+
+form input {
+  display: block;
+  width: 30%;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+form button {
+  display: block;
+  width: 20%;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+button:hover {
+  background-color: lightblue;
 }

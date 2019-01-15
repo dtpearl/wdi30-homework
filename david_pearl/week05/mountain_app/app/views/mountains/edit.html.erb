@@ -4,7 +4,7 @@
   <label>Country:</label>
   <input type="text" name="country" placeholder="Nepal" required value="<%= @mountain.country %>">
   <label>Height (m):</label>
-  <input type="number" name="height" value="<%= @mountain.height %>">
+  <input type="number" name="height" value="<%= @mountain.height %>" step="0.01">
   <label>Mountain Range:</label>
   <input type="text" name="mountain_range" placeholder="Himalayas" value="<%= @mountain.mountain_range %>">
   <label>Image:</label>

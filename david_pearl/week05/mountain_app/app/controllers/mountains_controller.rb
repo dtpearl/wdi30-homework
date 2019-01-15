@@ -42,6 +42,10 @@ class MountainsController < ApplicationController
 
   def destroy
     # Deletes a mountain from the DB
-    
+
+    mountain = Mountain.find params[:id]
+    mountain.destroy
+
+    redirect_to mountains_path
   end
 end

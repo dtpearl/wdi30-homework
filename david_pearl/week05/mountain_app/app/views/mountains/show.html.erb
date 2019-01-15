@@ -2,7 +2,7 @@
 
 <ul>
   <li>Located in: <%= @mountain.country %></li>
-  <li>Height: <%= @mountain.height %> meters</li>
+  <li>Height: <%= number_with_delimiter @mountain.height %> meters</li>
   <li>Part of: <%= @mountain.mountain_range %></li>
 </ul>
 
