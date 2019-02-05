@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flowers</title>
+    <link rel="stylesheet" href="/css/flowers.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+        <a href="/">Home</a>
+        <a href="/flowers">All Flowers</a>
+        <a href="/flowers/new">New Flower</a>
+        </nav>
+
+       <h1 class="animated infinite flash delay-1s">Flowers World</h1> 
+
+       <%= yield %>
+
+    </div>
+
+<footer>&copy; Elli Motaghi 2019</footer>
+</body>
+</html>

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  line-height: 40px;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: thistle;
+}
+
+.pipe {
+  margin: 0 10px;
+}
+
+.container, nav {
+  max-width: 960px;
+  margin: auto;
+}
+
+.thumb {
+  max-height: 10em;
+}
+
+.feature {
+  max-width: 90%;
+}
+
+.countries {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.cities {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: thistle;
+}
+
+.countries:hover .overlay, .cities:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cities {
+  display: inline-block;
+}
+
+.cities img {
+  border-radius: 3px;
+}
+
+.controls a {
+  padding: 6px;
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+}
+
+form {
+  max-width: 400px;
+  margin: 30px 0;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li {
+  display: block;
+  padding: 8px;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+
+form li:last-child {
+  border: none;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+form li > label {
+  display: block;
+	float: left;
+	margin-top: -19px;
+  background-color: white;
+  height: 18px;
+  padding: 2px 5px;
+  color: black;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="datetime"],
+form input[type="email"],
+form input[type="number"],
+form input[type="search"],
+form input[type="time"],
+form input[type="url"],
+form input[type="password"],
+form textarea,
+form select
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 20px;
+	font-size: 16px;
+	padding: 0;
+  background-color: white;
+}
+
+form li > span {
+  background: #769FB6;
+  display: block;
+  padding: 3px;
+  margin: 0px -9px -9px -9px;
+  text-align: center;
+  color: #356F91;
+  font-size: 11px;
+}
+
+form textarea {
+  resize: none;
+}
+
+form input[type="submit"] {
+	background: #DDDDDD;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #CCCCCC;
+	border-radius: 3px;
+	color: black;
+}
+
+form button:hover {
+	background: #6B9FFF;
+	color:#fff;
+}

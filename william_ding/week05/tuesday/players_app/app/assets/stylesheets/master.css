@@ -1,0 +1,48 @@
+
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  margin: 100px auto;
+}
+
+form label {
+  background-color: #ccc;
+}
+
+.demo-layout-transparent {
+  background: url('/assets/bg.jpg') center;
+  background-repeat:no-repeat;
+  background-size: auto 100%;
+
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+.mdl-layout-title {
+  font-size: 30px;
+}
+
+#mainnav .mdl-navigation__link {
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5em;
+  margin: 5px;
+  height: 40px;
+  line-height: 40px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#mainnav .mdl-navigation__link:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}

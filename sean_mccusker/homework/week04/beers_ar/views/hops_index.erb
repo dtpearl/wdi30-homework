@@ -1,0 +1,9 @@
+<h2>All Hops</h2>
+
+<% @hops.each do |hop| %>
+  <p>
+    <a href="/hops/<%= hop["id"] %>">
+      <%= hop["name"] %>
+    </a>
+  </p>
+<% end %>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The world's most famous buildings</title>
+    <link rel="stylesheet" href="/css/buildings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+ 
+</head>
+<body>
+    
+    <nav>
+        <a href="/">Home</a>
+        <a href="/buildings">All Buildings</a>
+        <a href="/buildings/new">New Buildings</a>
+        |
+        <a href="/designers">All Designers</a>
+        <a href="/designers/new">New Designers</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="animated infinite pulse delay-1s">The world's most famous buildings</h1>
+        <%= yield %>
+    </div>
+    
+    <footer>&copy; Copyright 2019 </footer>
+
+</body>
+</html>

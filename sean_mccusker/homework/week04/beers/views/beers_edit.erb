@@ -1,0 +1,11 @@
+<h2>Edit Beer</h2>
+
+<form action="/beers/<%= @beer["id"] %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= @beer["name"] %>" placeholder="Beer name" required autofocus>
+  <label>Brewer:</label>
+  <input type="text" name="brewer" value="<%= @beer["family"] %>" placeholder="Brewer name" required>
+  <label>Image:</label>
+  <input type="url" name="image" value="<%= @beer["image"] %>" placeholder="http://...">
+  <button>Update</button>
+</form>

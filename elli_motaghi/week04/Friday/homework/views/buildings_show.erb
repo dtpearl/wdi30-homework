@@ -1,0 +1,17 @@
+<h2><< <%= @building["name"].capitalize %> >></h2>
+<p id="location"><%= @building["city"].capitalize %>, <%= @building["country"].capitalize %></p>
+
+<% unless @building.designer.nil? %>
+  <h3>Designer:
+    <a href="/designers/<%= @building.designer_id %>">
+      <%= @building.designer.name %>
+    </a>
+   </h3>
+<% end %>
+
+<% unless @building["image"].nil? or @building["image"].empty? %>
+<img class="feature" src="<%= @building["image"] %>" alt="building image">
+<% end %>
+
+<button class="edit"><a href="/buildings/<%= @building["id"] %>/edit">Edit Building</a></button>
+<button class="delete"><a href="/buildings/<%= @building["id"] %>/delete">Delete Building</a></button>

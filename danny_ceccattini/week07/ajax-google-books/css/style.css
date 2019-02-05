@@ -1,0 +1,70 @@
+body {
+  background-color: black;
+}
+
+.container {
+  background-color: white;
+  border-radius: 4em;
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 200vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: courier, sans-serif;
+  font-size: 4em;
+  padding-top: 1em;
+}
+
+h2 {
+  text-align: center;
+  font-family: courier, sans-serif;
+  font-size: 3em;
+  padding-top: 0.5em;
+}
+
+input {
+  font-family: courier, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 40px 10px 40px;
+}
+
+button {
+  font-family: courier, sans-serif;
+  font-size: 1em;
+  display: block;
+  margin: 30px auto 0 auto;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px 10px 40px;
+  background-color: blue;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-height: 80vh;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+p {
+  font-family: courier, sans-serif;
+  text-align: center;
+  padding: 0 4em 0 4em;
+  line-height: 150%;
+}
+
+.price-title {
+  padding-top: 0;
+  font-size: 6em;
+}

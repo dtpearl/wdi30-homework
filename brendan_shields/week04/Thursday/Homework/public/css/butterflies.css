@@ -1,0 +1,145 @@
+body{
+  background-color: #a19178;
+}
+.newsp {
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px 3px #E8E6D9;
+  background: #FEFEFE;
+  width: 850px;
+}
+
+.newsp .title {
+  font-family: 'Cormorant Unicase', serif;
+  letter-spacing: -5px;
+  font-size: 80px;
+  color: #a19178;
+  text-transform: uppercase;
+  border-top: 1px solid #0C0101;
+  border-bottom: 1px solid #0C0101;
+  font-weight: 700;
+}
+
+.newsp .title b {
+  font-family: 'UnifrakturMaguntia', cursive;
+}
+
+.newsp .subtitle {
+  font-family: georgia;
+  text-transform: uppercase;
+  color: #444;
+  font-size: 12px;
+  letter-spacing: 8px;
+  padding: 7px 0;
+  border-bottom: 1px solid #0C0101;
+}
+
+.newsp .date {
+  text-align: right;
+  font-family: times;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.newsp .thenews {
+  padding: 0px;
+  text-align: justify;
+}
+
+.newsp .thenews .first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+}
+
+.newsp .thenews .main {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.newsp .thenews .main li {
+  margin-left: 15px;
+  padding-bottom: 15px;
+  indent: 15px;
+}
+
+.display-pic {
+    width: 100%;
+}
+
+.newsp .thenews h11 {
+  font-family: times;
+  line-height: 80%;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 30px 5px 10px 5px;
+}
+
+.newsp .thenews center {
+  font-weight: 400;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 10px 20px 20px 20px;
+  text-transform: normal;
+  font-family: times;
+  line-height: 100%
+}
+
+.newsp .thenews center:before {
+  border-top: 1px solid #2f2f2f;
+  content: '';
+  width: 100px;
+  height: 7px;
+  display: block;
+  margin: 0 auto;
+}
+
+.newsp .thenews center:after {
+  border-bottom: 1px solid #2f2f2f;
+  content: '';
+  width: 100px;
+  height: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.newsp .thenews h22 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 36px;
+  box-sizing: border-box;
+}
+
+.newsp .thenews .side {
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 0 0% 0 0%;
+  text-align: justify;
+}
+.newsp .thenews .side img {
+
+  padding: 5px;
+  height: 105px;
+  margin-right: -4px;
+  margin-left: -7px;
+  filter: grayscale(80%)
+}
+
+.newsp .thenews .side img:hover {
+
+  padding: 5px;
+  height: 105px;
+  margin-right: -4px;
+  margin-left: -7px;
+  filter: grayscale(0%)
+
+}

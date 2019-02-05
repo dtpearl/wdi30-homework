@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Slabo+27px');
+
+/* font-family: 'Amatic SC', cursive; */
+/* font-family: 'Slabo 27px', serif; */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Slabo 27px', serif;
+  background-color: white;
+  color: #575757;
+}
+
+nav {
+  width: 100%;
+  background-color: white;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75%;
+  margin: auto;
+  /* border: solid lightgrey 2px;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em; */
+}
+
+.navLogo {
+  display: inline-block;
+  height: 100px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-top: 25px;
+}
+
+.navItem {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: darkblue;
+  font-size: 1.2em;
+}
+
+.navItem:hover {
+  color: mistyrose;
+}
+
+
+.container {
+  max-width: 75%;
+  height: 450px;
+  margin: 45px auto;
+  border: solid white 2px;
+  border-radius: 2em;
+  background-color: #c0d8c5;
+  padding: 50px 75px;
+  /* display: flex; */
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+p {
+  color: white;
+  /* padding: 15px;
+  border: solid black 1px;
+  border-radius: 2em;
+  background-color: white; */
+}
+
+.homeContent {
+  font-size: 20px;
+}
+
+.mountainIndex {
+  display: grid;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  /* border: solid black 2px; */
+  padding: 20px;
+  text-align: center;
+}
+
+.mountainIndex:hover {
+  color: mistyrose;
+}
+
+form {
+  display: inline-block;
+}
+
+.feature {
+  max-height: 300px;
+}

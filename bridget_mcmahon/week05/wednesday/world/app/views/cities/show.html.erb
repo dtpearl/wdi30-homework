@@ -1,0 +1,15 @@
+<h1><%= @city.name %></h1>
+
+<%= image_tag @city.image, :class => 'feature' %>
+<ul>
+  <li>Population: <%= number_to_human @city.population %></li>
+  <li>Time Zone: <%= @city.time_zone %></li>
+  <% if @city.country.present? %>
+    <li>Country: <%= link_to @city.country.name, @city.country %></li>
+  <% end %>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit City', edit_city_path(@city) %>
+  <%= link_to 'Delete City', city_path(@city), :method => 'delete' %>
+</div>

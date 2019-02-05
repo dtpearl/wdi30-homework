@@ -1,0 +1,17 @@
+<div class="mainArticle">
+
+<h2>Edit a Country</h2>
+
+<form class="form" action="/countries/<%= @country.id %>" method="post">
+
+  <label class="formbox">Country: </label>
+  <input class="formbox" type="text" name="country" value="<%= @country[:name] %>" placeholder="Australia..">
+
+  <label class="formbox">Map: </label>
+  <input class="formbox" type="text" name="image" value="<%= @country[:image]%>" placeholder="http://...">
+
+  <button class="formbox">Edit Country</button>
+
+</form>
+
+</div>

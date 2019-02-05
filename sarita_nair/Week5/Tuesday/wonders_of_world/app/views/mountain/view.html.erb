@@ -1,0 +1,13 @@
+<h2><%= @mountain.name %></h2>
+  <%= image_tag @mountain.image, :class => 'feature' if @mountain.image.present? %>
+  <div class="main">
+  <ul>
+  <li>
+  <label>Elevation : </label><label><%= number_to_human @mountain.height %>kms</label></li>
+  <li>
+  <label>Location : </label><label><%= @mountain.state %> <%= @mountain.country %></label></li>
+  </ul>
+  <%= link_to 'Edit', "/mountain/#{@mountain.id}/edit" %>
+  <%= button_to 'Delete', "/mountain/#{@mountain.id}", :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+
+  </div>

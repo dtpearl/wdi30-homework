@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase|UnifrakturMaguntia" rel="stylesheet">
+  <link rel="stylesheet" href="/css/butterflies.css">
+</head>
+
+<body>
+  <center>
+
+  <div class='newsp'>
+  <div class='title'><b>C</b>at <b>B</b>ook</div>
+
+  <div class='date'>
+    Pages:
+    <a href="/">1</a>
+    <% @data.each do | butterfly | %>
+      <a href="/<%= @data['id']%>">
+      <%= @data["profile_name"]%>
+      </a>
+    <% end %>
+    <a href="/add">Add New</a>
+  </div>
+
+  <table>
+  <td class='thenews' style='vertical-align: top; width: 60%'>
+
+  <%= yield %>
+
+    </div></td>
+
+  </table>
+  </div>
+  </html>

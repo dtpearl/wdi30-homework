@@ -1,0 +1,11 @@
+<h2>All Leagues</h2>
+<div id="team-grid">
+  <% @leagues.each do |team| %>
+  <div>
+    <a href="/leagues/<%= team["id"] %>">
+      <img src="<%= team["logo"] %>" alt="">
+      <p><%= team["name"] %></p>
+    </a>
+  </div>
+  <% end %>
+<div>

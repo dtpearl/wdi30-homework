@@ -1,0 +1,20 @@
+<div class="secondlinks">
+  <a href="<%= params[:id]%>/edit">Update</a>
+  <a href="<%= params[:id]%>/delete">Delete</a>
+</div>
+<div class="grid-container">
+  <div class="grid-1">
+    <img src="<%= @coffee_menus['other'] %>" id="coffee" alt="coffee">
+  </div>
+  <div id="grid-2">
+    <h3>
+      Name:
+      <%= @coffee_menus['name'] %><br>
+      Taste:
+      <%= @coffee_menus['taste'] %><br>
+      Origin:
+      <%= @coffee_menus['origin'] %><br>
+      Price: $<%= @coffee_menus['cost'] %><br>
+    </h3>
+  </div>
+</div>

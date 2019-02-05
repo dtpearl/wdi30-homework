@@ -1,0 +1,66 @@
+<form id="create-form" class="mdl-button mdl-js-button mdl-button--raised" action="<%= player_new_path %>" method="post">
+  <h3>Create a new player</h3>
+  <label for="name">Name: </label>
+  <input class="mdl-textfield__input" type="text" name="name" required>
+
+  <label for="nation">Nation: </label>
+  <input class="mdl-textfield__input" type="text" name="nation" >
+
+  <label for="team">Team: </label>
+  <input class="mdl-textfield__input" type="text" name="team" >
+
+  <label for="overall">Rating: </label>
+  <input class="mdl-textfield__input" type="text" name="overall" >
+
+  <label for="pac">Pace: </label>
+  <input class="mdl-textfield__input" type="text" name="pac" >
+
+  <label for="sho">Shoting: </label>
+  <input class="mdl-textfield__input" type="text" name="sho" >
+
+  <label for="pas">Passing: </label>
+  <input class="mdl-textfield__input" type="text" name="pas" >
+
+  <label for="dri">Dribbing: </label>
+  <input class="mdl-textfield__input" type="text" name="dri" >
+
+  <label for="def">Defence: </label>
+  <input class="mdl-textfield__input" type="text" name="def" >
+
+  <label for="phy">Physical: </label>
+  <input class="mdl-textfield__input" type="text" name="phy" >
+
+  <label for="image">Photo: </label>
+  <input class="mdl-textfield__input" type="text" name="image" >
+
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Create Player</button>
+</form>
+
+<style>
+  h3 {
+    background-color: #ddd;
+    border-radius: 0.15em;
+  }
+
+  #create-form {
+    height: auto;
+    width: 400px;
+    background-color: #aaa;
+    border-radius: 0.25em;
+    margin-top: 20px;
+  }
+
+  #create-form label {
+    background-color: #aaa;
+  }
+
+  #create-form input {
+    background-color: #ddd;
+    border-radius: 0.25em;
+    text-align: center;
+  }
+
+  button {
+    margin: 20px !important;
+  }
+</style>

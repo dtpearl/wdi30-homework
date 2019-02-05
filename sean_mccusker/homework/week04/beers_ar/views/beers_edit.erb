@@ -1,0 +1,22 @@
+<h2>Edit Beer</h2>
+
+<form action="/beers/<%= @beer["id"] %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= @beer["name"] %>" placeholder="Beer name" required autofocus>
+  <label>Brewer:</label>
+  <input type="text" name="brewer" value="<%= @beer["brewer"] %>" placeholder="Brewer name" required>
+  <label>Image:</label>
+  <input type="url" name="image" value="<%= @beer["image"] %>" placeholder="http://...">
+
+  <label>Hop:</label>
+    <select name="hops_id"> <!-- # hops_id ? -->
+      <option></option>
+      <% Hop.all.each do |hop| %>
+        <option value="<%= hop["id"] %>" <%= "selected" if hop.id == @beer.hops_id %>>
+          <%= hop["name"] %>
+        </option>
+      <% end %>
+    </select>
+
+    <button>Update</button>
+</form>

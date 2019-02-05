@@ -1,0 +1,51 @@
+<div id="player-list">
+  <% @players.each do |p| %>
+  <p class="players mdl-button mdl-js-button mdl-button--raised"><img src="<%= p.image %>" alt=""><%= link_to( p.name, player_path(p.id)) %></p>
+  <% end %>
+</div>
+
+<div id="create-button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  <%= link_to 'Create New Player', player_new_path %>
+</div>
+
+
+<style>
+  #player-list {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .players {
+    background-color: rgb(210, 212, 216);
+    width: 200px;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .players:hover {
+    background-color: rgba(210, 212, 216, 0.6);
+  }
+
+  .players img {
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .players:hover {
+    transform: scale(1.3);
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #create-button {
+    margin-top: 70px;
+  }
+
+  #create-button a{
+    color: white;
+  }
+</style>

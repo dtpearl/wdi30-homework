@@ -1,0 +1,62 @@
+.main-nav {
+  /* background: url("/assets/bg.jpg"); */
+  background-color: #eee;
+}
+
+main {
+  width: 90%;
+  max-width: 960px;
+  margin: 70px auto 0 auto;
+  text-align: center;
+}
+
+.main-header-row {
+  background-color: rgb(255, 193, 7);
+  box-shadow: 0px 4px 21px -4px rgba(0,0,0,0.75);
+}
+
+.main-header-row span {
+  font-size: 28px;
+}
+
+.main-header-row a {
+  font-size: 16px;
+}
+
+.md-36 {
+  font-size: 36px !important;
+}
+
+.tile-button {
+  background-color: rgb(252, 216, 88);
+}
+
+.tile-button:hover {
+  transform: scale(1.1);
+}
+
+.tile-button img{
+  margin: 20px auto 10px auto;
+}
+#toggle {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+#toggle div {
+  display: inline;
+}
+
+#home-search-button {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+}
+
+.player-thumbnail {
+  border-radius: 50%;
+}
+
+.form {
+  
+}

@@ -1,0 +1,42 @@
+body {
+  font-family: monospace;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: #FE654F;
+  color: #FED99B;
+  margin: 0;
+  line-height: 60px;
+}
+
+.search-bar {
+  background-color: #FED18C;
+  color: #D6EFFF;
+  line-height: 60px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#search input {
+  font-size: 110%;
+}
+
+#search button {
+  border: none;
+  background-color: #FE654F;
+  color: #FED18C;
+  padding: 3px;
+  font-size: 110%;
+  border-radius: 3px;
+}

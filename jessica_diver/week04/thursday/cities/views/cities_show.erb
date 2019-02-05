@@ -1,0 +1,11 @@
+<h2><%= @city["city"]%>, <%= @city["country"]%></h2>
+<h3><%= @city["year"]%></h3>
+
+<% unless @city["image"].nil? %>
+<img src="<%= @city["image"] %>" alt="<%= @city["city"]%>" width="500px">
+<% end %>
+
+<div class="controls">
+  <a href="/cities/<%= @city["id"] %>/edit" class="edit">Edit City</a>
+  <a href="/cities/<%= @city["id"] %>/delete">Delete City</a>
+</div>

@@ -1,0 +1,9 @@
+<h2>All Animation</h2>
+
+<% @animations.each do |animation| %>
+  <p>
+    <a href="/animations/<%= animation["id"] %>">
+      <%= animation["name"] %>
+    </a>
+  </p>
+<% end %>

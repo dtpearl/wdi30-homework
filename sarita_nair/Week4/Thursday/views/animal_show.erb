@@ -1,0 +1,11 @@
+<h2><%= @results["name"] %></h2>
+<h3><%= @results["family"] %></h3>
+
+<% unless @results["image"].nil? %>
+  <img class="feature" src="<%= @results["image"] %>" alt="<%= @results["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/animals/<%= @results["id"] %>/edit">Edit</a>
+  <a href="/animals/<%= @results["id"] %>/delete">Delete</a>
+</div>

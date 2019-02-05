@@ -1,0 +1,12 @@
+<div class="pokedex">
+
+  <% @pokedex.each do |pokemon| %>
+  <p>
+    <img src="<%= pokemon["image"] %>" alt="<%= pokemon["name"] %>">
+    <a href="/pokedex/<%= pokemon["id"] %>">
+      <%= pokemon["name"] %>
+    </a>
+  </p>
+  <% end %>
+
+</div>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Tracker</title>
+  <link rel="stylesheet" href="/css/master.css">
+</head>
+<body>
+  <header class="pageHeader">
+    <h1>CITY TRACKER</h1>
+  </header>
+<div class="wrapper">
+
+  <nav class="mainNav">
+    <a href="/">Home</a>
+    <a href="/cities">All cities</a>
+    <a href="/cities/new">Add City</a>
+    <a href="/countries">All countries</a>
+    <a href="/countries/new">Add Country</a>
+    <a href="/all">All cities and Countries</a>
+  </nav>
+  <div class="pageContent">
+
+
+  <%= yield %>
+
+  </div>
+
+  </div> <!-- end of wrapper-->
+
+  <footer class="pageFooter">
+  Site by Jessica Diver 2019
+
+  </footer>
+
+</body>
+</html>

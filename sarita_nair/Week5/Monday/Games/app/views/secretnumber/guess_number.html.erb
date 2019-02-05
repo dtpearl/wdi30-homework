@@ -1,0 +1,11 @@
+<form action="/guess">
+  <div class="secretnumberview">
+    <input type="text" name="input_number" required placeholder="123">
+    <button id="btnsubmit">Submit</button>
+    <input id="msg" type="hidden" value=<%= @msg %>>
+    <% unless @msg.nil? %>
+      <p class="error"> <%= @msg %> </p>
+    <% end %>
+  </div>
+
+</form>

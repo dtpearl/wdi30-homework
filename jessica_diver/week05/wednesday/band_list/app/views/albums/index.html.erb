@@ -1,0 +1,6 @@
+<h2>All Albums</h2>
+
+<% @albums.each do |album| %>
+<h3><%= album.title %></h3>
+<%= link_to image_tag(album.cover, :class => 'thumb', :alt => 'Album cover art'), album %>
+<% end %>

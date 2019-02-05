@@ -1,0 +1,19 @@
+<h1>Edit Wizard</h1>
+
+<form action="/wizards/<%= @wizard["id"] %>" method="post">
+  <label>Name: </label>
+  <input type="text" name="name" value="<%= @wizard.name %>" placeholder="Harry Potter" required>
+  <label>Wand: </label>
+  <input type="text" name="wand" value="<%= @wizard.wand %>" placeholder="11 inch Phoenix Feather" required>
+  <label>Image: </label>
+  <input type="text" name="image" value="<%= @wizard.image %>" placeholder="http://...">
+  <label>House: </label>
+  <select name="house_id" id="">
+    <option></option>
+    <% House.all.each do |house| %>
+      <option value="<%= house.id %>" <%= "selected" if house.id == @wizard.house_id %>><%= house.house_name %></option>
+    <% end %>
+  </select>
+
+  <button>Update Wizard</button>
+</form>

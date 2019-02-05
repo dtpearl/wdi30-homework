@@ -1,0 +1,17 @@
+<%= form_for @dish do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :autofocus => true %>
+  <%= f.label :course %>
+  <%= f.text_field :course %>
+  <%= f.label :wine %>
+  <%= f.text_field :wine, :required => true %>
+  <%= f.label :key_ingredient %>
+  <%= f.text_field :key_ingredient, :required => true %>
+  <%= f.label :image %>
+  <%= f.url_field :image, :required => true %>
+
+  <%= f.label :region_id %>
+  <%= f.select :region_id, Region.pluck(:name, :id), :include_blank => true %>
+
+  <%= f.submit %>
+<% end  %>

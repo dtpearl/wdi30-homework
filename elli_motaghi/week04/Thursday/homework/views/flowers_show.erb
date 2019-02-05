@@ -1,0 +1,15 @@
+<h2>Beautiful <%= @flower["name"] %></h2>
+<h3>From <strong><%= @flower["family"]%></strong> family!</h3>
+
+<% unless @flower['image'].nil? %>
+<img class="feature" src="<%= @flower['image'] %>" alt="Flower image">
+<% end %>
+
+<button class="controls">
+<a class="edit" href="/flowers/<%= @flower['id'] %>/edit">Edit Flower</a>
+</button>
+
+<button class="controls">
+<a class="delete" href="/flowers/<%= @flower['id'] %>/delete">Delete Flower</a>
+</button>
+

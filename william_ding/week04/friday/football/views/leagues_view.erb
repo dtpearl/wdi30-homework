@@ -1,0 +1,24 @@
+<h2><%= @league["name"] %></h2>
+<img src="<%= @league["logo"] %>" alt="">
+
+<table>
+
+  <tr>
+    <th>Country: </th>
+    <td><%= @league["country"] %></td>
+  </tr>
+
+  <tr>
+    <th>Name: </th>
+    <td><%= @league["name"] %></td>
+  </tr>
+
+</table>
+
+<div id="control">
+  <a href="<%= @league["id"] %>/edit">Edit</a>
+
+  <a href="<%= @league["id"] %>/show_teams">Show Teams</a>
+
+  <a href="<%= @league["id"] %>/delete">Delete</a>
+</div>

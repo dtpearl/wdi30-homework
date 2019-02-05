@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+ .container {
+   width: 965px;
+   max-width: 100%;
+   margin: auto;
+   min-width:420px;
+   padding: 1em;
+
+   background-color: #f5f5f5;
+ }
+
+ .container:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+@media screen and (max-width: 965px) {
+  .container {
+      padding: 0 25px;
+  }
+}
+
+
+.booktitle {
+  font-size: 90%;
+}
+
+.bookcover {
+  float: left;
+  margin-right: 12px;
+}
+
+.bookcover img {
+    padding: 1px;
+}
+
+img[Attributes Style] {
+    width: 128px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+.search-bar {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input:focus {
+	outline: none;
+}
+
+/*
+header {
+  background: salmon;
+}
+
+#nav-header {
+  display: grid;
+  grid-template-columns: 200px 200px auto 400px;
+  grid-template-rows: 40px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+#logo,
+#nav,
+#social {
+  align-self: center;
+  /* justify-self: center; Screws logo */
+}
+/*
+#logo h1 {
+  display: flex;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+#search-box {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  padding: 100px 100px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 70px;
+  grid-template-rows: 30px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+input,
+button {
+  height: 30px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5em;
+}
+
+input {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  padding: 1px 8px;
+  border-radius: 5em;
+}
+
+button {
+    vertical-align: top;
+    color: salmon;
+    border: 0;
+    width: 100%;
+    cursor: help;
+}
+
+#output-box {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 250px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  padding: 50px 100px;
+}
+
+
+.box {
+  border-radius: 1px;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+
+#title-box {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  line-height: 40px;
+  font-size: 28px
+}
+
+#overview-box {
+  display: grid;
+  grid-template-columns: 142px auto;
+  grid-template-rows: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  line-height: 40px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.year,
+.reviews {
+  color: rgb(128, 128, 128);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+p,
+.rating {
+  color: rgb(84, 84, 84);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+#thumbnail-box {
+  display: grid;
+}
+
+img {
+  width: 100%;
+}

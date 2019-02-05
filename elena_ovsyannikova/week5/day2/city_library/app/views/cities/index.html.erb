@@ -1,0 +1,8 @@
+<h1>All CITIES</<h1>
+<% @cities.each do |city| %>
+<p>
+  <%= link_to city.name, city_path(city.id) %>
+  has
+  <%= pluralize city.population, 'person' %>.
+</p>
+<% end %>

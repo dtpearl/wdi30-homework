@@ -1,0 +1,12 @@
+<h1>All Cities</h1>
+
+<% @cities.each do |city| %>
+  <div class="cities">
+    <a href="<%= city_path(city) %>">
+      <%= image_tag city.image, :class => 'thumb' %>
+      <div class="overlay">
+        <div class="text"><%= city.name %></div>
+      </div>
+    </a>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+body{
+  background: rgb(115, 193, 231);
+}
+
+.container{
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  background: white;
+  height: 80vh;
+  margin-top: 200px;
+  line-height: 65px;
+  box-shadow: 5px 5px rgba(0,0,0, 0.3);
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+h2 {
+  color: rgb(84, 198, 227);
+  font-size: 50px;
+  margin-bottom: 20px;
+  display: inline;
+}
+h3 {
+  margin-bottom: -40px;
+  display: inline;
+}
+h1 {
+  font-size: 50px;
+}

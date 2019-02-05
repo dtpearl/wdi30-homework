@@ -1,0 +1,7 @@
+<h2>The Dishes</h2>
+
+<div class="dish_list">
+  <% @dishes.each do |dish| %>
+    <%= link_to image_tag(dish.image, :class => 'thumb'), dish %>
+  <% end %>
+</div>

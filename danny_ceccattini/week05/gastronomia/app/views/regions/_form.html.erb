@@ -1,0 +1,14 @@
+<%= form_for @region do |f| %>
+  <%= f.label :name%>
+  <%= f.text_field :name, :autofocus => true%>
+  <%= f.label :capital%>
+  <%= f.text_field :capital%>
+  <%= f.label :population%>
+  <%= f.number_field :population%>
+  <%= f.label :flag%>
+  <%= f.url_field :flag%>
+  <%= f.label :image%>
+  <%= f.url_field :image%>
+
+  <%= f.submit %>
+<% end %>

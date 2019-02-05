@@ -1,0 +1,16 @@
+<form action="/prediction">
+  <div class="magic">
+    <div class="ball">
+      <% unless @prediction.nil? %>
+        <p class="predictions flash"> <%= @prediction %> </p>
+      <% end %>
+    </div>
+    <div style="padding-top:10px;">
+      <label>Ask your question</label>
+      <input type="text" name="question" required placeholder="curious questions">
+      <button>Go</button>
+    </div>
+
+  </div>
+
+</form>

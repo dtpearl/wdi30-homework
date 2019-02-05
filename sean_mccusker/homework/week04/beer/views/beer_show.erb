@@ -1,0 +1,12 @@
+<h2><%= @beer["brewer"] %></h2>
+<h2><%= @beer["name"] %></h2>
+<h2><%= @beer["style"] %></h2>
+
+<% unless @beer["image"].nil? %>
+<img class="feature" src="<%= @beer["image"] %>" alt="<%= @beer["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/beers/<%= @beer["id"] %>/edit">Edit Beer</a>
+  <a href="/beers/<%= @beer["id"] %>/delete">Delete beer</a>
+</div>

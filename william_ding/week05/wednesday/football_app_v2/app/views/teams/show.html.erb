@@ -1,0 +1,29 @@
+<h3><%= @team.name %></h3>
+
+<div class="mdl-card--border	mdl-shadow--2dp">
+<%= image_tag @team.image if @team.image.present? %>
+<p>Name: <%= @team.name %></p>
+<p>City: <%= @team.city %></p>
+<p>Country: <%= @team.country.name if @team.country_id.present? %></p>
+<p>Stadium: <%= @team.stadium %></p>
+<p>Title: <%= @team.title %></p>
+</div>
+
+<div class="controls">
+  <%= link_to 'Edit Team', edit_team_path(@team), :class=>"mdl-button mdl-js-button mdl-button--raised mdl-button--colored" %>
+
+  <%= link_to 'Delete Team', team_path(@team.id), :method=>"delete", :class=>"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" %>
+</div>
+
+<div class="mdl-grid">
+<% @players.each do |t| %>
+  <% if t.team_id == @team.id %>
+  <div class="mdl-cell mdl-cell--3-col mdl-shadow--6dp tile-button">
+    <% if t.image.present? %>
+      <%= link_to image_tag(t.image), t %>
+    <% end %>
+    <%= link_to t.name, t %>
+    </div>
+    <% end %>
+<% end %>
+</div>

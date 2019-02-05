@@ -49,7 +49,7 @@ Hints:
 const intersection = 'Union Square';
 
 const nySubWay = {
-  n: ['Times Square', '34th', '28th', '23rd', intersection, '8th'],
+  n:  ['Times Square', '34th','28th', '23rd', intersection, '8th'],
   l: ['8th', '6th', intersection, '3rd', '1st'],
   six: ['Grand Central', '33rd', '28th', '23rd', intersection, 'Astor Place'],
 };

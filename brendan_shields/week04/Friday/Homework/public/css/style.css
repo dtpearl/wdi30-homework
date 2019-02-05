@@ -1,0 +1,80 @@
+body {
+  text-align: center;
+  background-color: #fdc300;
+}
+
+h3 {
+  text-align: left;
+  line-height: 15vh;
+  font-size: 30px;
+  color: rgb(45, 45, 45);
+}
+
+img {
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 55vw 50%;
+  grid-gap: 0px;
+  padding: 10px;
+}
+
+.grid-container>div {
+  text-align: center;
+  padding: 0px 0;
+  font-size: 30px;
+}
+
+.nav {
+  position: absolute;
+  top: 0px;
+}
+
+.head {
+  font-family: 'Coiny', cursive;
+  padding: 0px;
+  margin: 0px;
+  font-size: 40px;
+}
+
+p {
+  position: relative;
+  left: 0vw;
+  top: -10vh;
+}
+
+#coffee {
+  border-radius: 400px;
+  margin: 1em auto;
+  position: relative;
+}
+
+.home a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Coiny', cursive;
+  font-size: 25px;
+  position: relative;
+  top: -10vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Coiny', cursive;
+  font-size: 25px;
+  padding: 20px;
+}
+
+a:hover {
+  color: rgb(240, 23, 23);
+}
+
+.secondlinks {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}

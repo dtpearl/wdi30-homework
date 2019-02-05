@@ -1,0 +1,16 @@
+<h2><%= @dish.name %></h2>
+
+<%= image_tag @dish.image, :alt => @dish.name, :class => 'feature' %>
+<ul>
+  <% if @dish.region.present? %>
+    <li>Region: <%= link_to @dish.region.name, @dish.region %></li>
+  <% end %>
+  <li>Course: <%= @dish.course %></li>
+  <li>Wine: <%= @dish.wine %></li>
+  <li>Key Ingredient: <%= @dish.key_ingredient %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to "Edit Dish", edit_dish_path(@dish) %>
+  <%= link_to "Delete Dish", @dish, :method => 'delete' %>
+</div>

@@ -1,0 +1,10 @@
+<% if @user_wins == true %>
+  <h1>User Wins!</h1>
+<% elsif @draw == true %>
+  <h1>It's a Draw!</h1>
+<% elsif @user_wins == false && @draw == false %>
+  <h1>Computer Wins!</h1>
+<% end %>
+
+<p>Computer chose <%= @computer_throw %></p>
+<a href="/games/rock_paper_scissors">Want to play again?</a>

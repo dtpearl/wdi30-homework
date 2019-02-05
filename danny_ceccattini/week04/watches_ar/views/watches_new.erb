@@ -1,0 +1,28 @@
+<h2>NEW PIECE</h2>
+
+<form action="/watches" method="post">
+  <label>Name:</label>
+    <input type="text" name="name" placeholder="New name" required autofocus>
+  <label>Dial Image:</label>
+    <input type="text" name="dial" placeholder="http://..." required>
+  <label>Movement Image:</label>
+    <input type="text" name="movement" placeholder="http://..." required>
+
+  <!-- HERE WE HAVE TO TYPE THE OPTION TO PICK WHICH WATCHMAKER MADE THE PIECE -->
+
+  <div class="scroll">
+    <label>Watchmaker:</label>
+    <select name="watchmaker_id">
+      <option></option>
+      <% Watchmaker.all.each do |watchmaker| %>
+        <option value="<%= watchmaker["id"] %>"> <%= watchmaker["name"] %></option>
+      <% end %>
+    </select>
+  </div>
+
+  <!-- END OF WATCHMAKER OPTION -->
+
+  <div class="button">
+    <button>Add</button>
+  </div>
+</form>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+
+body {
+  background-color: #aaa;
+  font-family: 'Thasadith', sans-serif;
+  text-align: center;
+  margin: 25px;
+  max-width: 800px;
+  margin: auto;
+  justify-content: center;
+}
+
+.pageHeader {
+  padding: 15px;
+  background-color: #495159;
+}
+
+.pageHeader h1 {
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-auto-rows: minmax(70vh, auto);
+  /* border: solid black 2px; */
+}
+
+.pageContent {
+  padding: 25px;
+
+}
+
+.mainNav {
+  grid-column: 1/2;
+  display: block;
+  padding: 25px;
+}
+
+.mainNav a {
+  display: inline-block;
+  padding-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1em;
+  /* max-width: 70%; */
+}
+
+
+.map {
+  max-width: 70%;
+}
+
+h2 {
+  color: black;
+}

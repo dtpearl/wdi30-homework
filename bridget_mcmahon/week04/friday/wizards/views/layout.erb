@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wizards</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/master.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="/">Home</a>
+        <a href="/wizards">All Wizards</a>
+        <a href="/wizards/new">New Wizard</a> |
+        <a href="/houses">All Houses</a>
+        <a href="/houses/new">New House</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </main>
+
+</body>
+</html>

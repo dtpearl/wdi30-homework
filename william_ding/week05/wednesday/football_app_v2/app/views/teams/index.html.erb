@@ -1,0 +1,14 @@
+<h3>All Players</h3>
+
+<div class="mdl-grid">
+  <% @teams.each do |p| %>
+  <div class="mdl-cell mdl-cell--3-col mdl-shadow--6dp tile-button ">
+    <% if p.image.present? %>
+    <a href="<%= team_path(p.id) %>">
+    <%= image_tag p.image, :class=>"player-thumbnail" %>
+    </a>
+    <% end %>
+    <p><%= link_to p.name, p, :class=>"mdl-button" %></p>
+  </div>
+  <% end %>
+</div>

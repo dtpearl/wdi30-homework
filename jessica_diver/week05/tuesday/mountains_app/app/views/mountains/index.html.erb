@@ -1,0 +1,12 @@
+<h2>All Mountains</h2>
+
+<div class="mountains_all">
+
+
+<% @mountains.each do |mountain| %>
+<p>
+  <%= link_to mountain.name, mountain_path(mountain.id), :class => 'mountainIndex' %>
+</p>
+<% end %>
+
+</div>

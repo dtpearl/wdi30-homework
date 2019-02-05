@@ -1,0 +1,18 @@
+<h2><%= @mountain.name %></h2>
+
+<%= image_tag @mountain.image, :class => 'feature' if @mountain.image.present? %>
+
+<ul>
+  <li>Name: <%= @mountain.name %></li>
+  <li>Standing Tall In? <%= @mountain.location %></li>
+  <li>How High? <%= @mountain.height %> meters</li>
+  <li>First Climber? <%= @mountain.white_man %></li>
+</ul>
+
+<div class="controls">
+  <!-- LINKS TAKE YOU SOMEWHERE -->
+  <%= link_to "Make It Higher!", mountain_edit_path(@mountain.id), :class => 'edit' %>
+  <!-- BUTTONS DO SOMETHING -->
+  <%= button_to "Raze It!", mountain_path(@mountain.id), :method => 'delete', :data => {:confirm => 'Are You Sure?'}%>
+
+</div>

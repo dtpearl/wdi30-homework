@@ -1,0 +1,35 @@
+<%= form_for @team, :html => {:class=>"mdl-grid"} do |f|%>
+  <div class="mdl-cell mdl-cell--12-col">
+  <%= f.label :name %>
+  <%= f.text_field :name, :required=>true%>
+</div>
+
+<div class="mdl-cell mdl-cell--12-col">
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+</div>
+
+<div class="mdl-cell mdl-cell--12-col">
+  <%= f.label :stadium %>
+  <%= f.text_field :stadium %>
+</div>
+
+<div class="mdl-cell mdl-cell--12-col">
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</div>
+
+<div class="mdl-cell mdl-cell--12-col">
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+</div>
+
+<div class="mdl-cell mdl-cell--12-col">
+  <%= f.label :country_id %>
+  <%= f.select :country_id, Country.pluck(:name, :id) %>
+</div>
+
+<div class="mdl-cell mdl-cell--12-col">
+  <%= f.submit %>
+</div>
+<% end %>

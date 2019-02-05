@@ -1,0 +1,12 @@
+<h3 class="animated flipInX delay-1s" id="title">The Most Famous Designers</h3>
+
+<% @designers.each do |designer| %>
+<div class="animated flipInX delay-2s" id="list">
+    <a id="new-item" href="/designers/<%= designer["id"]%>">
+      <%= designer["name"].capitalize %>
+    </a>
+</div>
+<% end %>
+
+<br>
+

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Charm|Great+Vibes|Nanum+Myeongjo|Playfair+Display');
+/* font-family: 'Charm', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Great Vibes', cursive; */
+
+body {
+  background-color: blanchedalmond;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+
+a {
+  font-family: 'Playfair Display', serif;
+}
+
+.feature {
+  max-width: 100%;
+}

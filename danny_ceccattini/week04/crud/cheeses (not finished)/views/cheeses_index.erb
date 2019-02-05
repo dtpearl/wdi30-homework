@@ -1,0 +1,10 @@
+<h2>ALL   CHEESES</h2>
+
+<% @cheeses.each do |cheese| %>
+  <p>
+    <a
+      href="/cheeses/<%= cheese["id"] %>">
+      <%= "#{ cheese["name"] } from #{ cheese["province"] }, #{ cheese["region"] }" %>
+    </a>
+  </p>
+<% end %>

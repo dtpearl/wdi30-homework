@@ -1,0 +1,1695 @@
+  [1m[35m (514.2ms)[0m  [1m[35mCREATE DATABASE "world_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (430.4ms)[0m  [1m[35mCREATE DATABASE "world_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (19.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(874772514789078570)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCities (20190116050417)
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (82.3ms)[0m  [1m[35mCREATE TABLE "cities" ("id" bigserial primary key, "name" text, "population" text, "image" text, "time_zone" text, "country_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190116050417_create_cities.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190116050417"]]
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCountries (20190116051613)
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" text, "area" text, "population" text, "currency" text, "image" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190116051613_create_countries.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190116051613"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-01-16 05:28:25.087883"], ["updated_at", "2019-01-16 05:28:25.087883"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(874772514789078570)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/bin/annotate:23
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 16:43:27 +1100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by CitiesController#index as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/cities_controller.rb:3:in `sort'
+app/controllers/cities_controller.rb:3:in `index'
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 16:43:56 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (2.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 1097ms (Views: 1089.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 16:46:17 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (1.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 228ms (Views: 217.6ms | ActiveRecord: 4.6ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCity Create (2.1ms)[0m  [1m[32mINSERT INTO "cities" ("name", "population", "image", "time_zone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sydney"], ["population", "5131236"], ["image", "https://lonelyplanetimages.imgix.net/mastheads/65830387.jpg?sharp=10&vib=20&w=1200"], ["time_zone", "AEST"], ["created_at", "2019-01-16 05:47:43.879152"], ["updated_at", "2019-01-16 05:47:43.879152"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mCountry Load (15.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (26.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCountry Create (7.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "area", "population", "currency", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Australia"], ["area", "7692024"], ["population", "25220800"], ["currency", "Australian Dollar (AUD)"], ["image", "https://www.interstatequarantine.org.au/wp-content/uploads/2016/04/map-img-australia.png"], ["created_at", "2019-01-16 05:47:43.994829"], ["updated_at", "2019-01-16 05:47:43.994829"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 16:47:49 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.8ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 54ms (Views: 44.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 16:48:31 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 268ms (Views: 263.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 16:48:57 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 16:48:59 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 26.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 16:49:13 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 16:49:15 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 16:53:27 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 65ms (Views: 60.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 16:53:54 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (1.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 80ms (Views: 74.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 17:05:41 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 64ms (Views: 40.2ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2019-01-16 17:06:53 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-16 17:06:53 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (14.4ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (46.5ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (72.4ms)
+Completed 200 OK in 89ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-16 17:07:20 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (5.0ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 32ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 17:07:24 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (1.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 49ms (Views: 42.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 17:07:54 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 54ms (Views: 47.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 17:08:02 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 38.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 17:11:30 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (153.2ms)
+Completed 200 OK in 199ms (Views: 187.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2019-01-16 17:11:35 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-16 17:11:35 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (11.7ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 52ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 17:12:47 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 168ms (Views: 153.6ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 17:12:49 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/1/edit" for 127.0.0.1 at 2019-01-16 17:12:52 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.9ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:20
+  Rendering cities/edit.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:15
+  Rendered cities/_form.html.erb (17.7ms)
+  Rendered cities/edit.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 49ms (Views: 38.5ms | ActiveRecord: 3.8ms)
+
+
+Started PATCH "/cities/1" for 127.0.0.1 at 2019-01-16 17:12:57 +1100
+Processing by CitiesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vnwbqiUo1iY/InrO1wgJsERY21wDMzl06uCjF6qS+pfwvNaxzBsw3hav4BD4YfVwi7kPEl2tb2maquKoe3YvIA==", "city"=>{"name"=>"Sydney", "population"=>"5131236", "image"=>"https://lonelyplanetimages.imgix.net/mastheads/65830387.jpg?sharp=10&vib=20&w=1200", "time_zone"=>"AEST", "country_id"=>"1"}, "commit"=>"Update City", "id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cities_controller.rb:25
+  [1m[36mCity Update (0.8ms)[0m  [1m[33mUPDATE "cities" SET "country_id" = $1, "updated_at" = $2 WHERE "cities"."id" = $3[0m  [["country_id", 1], ["updated_at", "2019-01-16 06:12:57.328669"], ["id", 1]]
+  ↳ app/controllers/cities_controller.rb:25
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cities_controller.rb:25
+Redirected to http://localhost:3000/cities/1
+Completed 302 Found in 10ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 17:12:57 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (2.0ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 245ms (Views: 234.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 17:13:00 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering countries/show.html.erb within layouts/application
+  Rendered countries/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 72ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 17:14:13 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 50ms (Views: 43.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 17:14:13 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:15
+  Rendered cities/_form.html.erb (5.1ms)
+  Rendered cities/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 39ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-16 17:14:22 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9EBbth/3SqQ4SzSkocQiE84JxToL2+4xFwadaGAQAXo22csgN7z3IhanewLcglSPEcOTM1mjsz/3zr5XyC3Ong==", "city"=>{"name"=>"blah", "population"=>"0", "image"=>"", "time_zone"=>"", "country_id"=>""}, "commit"=>"Create City"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cities_controller.rb:15
+  [1m[36mCity Create (0.7ms)[0m  [1m[32mINSERT INTO "cities" ("name", "population", "image", "time_zone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "blah"], ["population", "0"], ["image", ""], ["time_zone", ""], ["created_at", "2019-01-16 06:14:22.150104"], ["updated_at", "2019-01-16 06:14:22.150104"]]
+  ↳ app/controllers/cities_controller.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cities_controller.rb:15
+Redirected to http://localhost:3000/cities/2
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2019-01-16 17:14:22 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 25.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/cities/2" for 127.0.0.1 at 2019-01-16 17:14:24 +1100
+Processing by CitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hMmD4eFvxfOrYnOfBNlZku46UolApGilNuKZ1m182NbESE+7beXvWRdg+nUC++y4e6wHw9ftmBmSHnnmqNwIlA==", "id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cities_controller.rb:31
+  [1m[36mCity Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/cities_controller.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cities_controller.rb:31
+Redirected to http://localhost:3000/cities
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 17:14:24 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2019-01-16 17:26:04 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-16 17:26:04 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (9.6ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 39ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-16 17:37:19 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 11ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 17:37:23 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (2.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (139.5ms)
+Completed 200 OK in 221ms (Views: 168.2ms | ActiveRecord: 44.9ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 17:38:10 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.9ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 17:38:25 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 54ms (Views: 41.8ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 17:38:31 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (2.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 48ms (Views: 40.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 17:38:59 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 21.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 17:39:01 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 34ms (Views: 30.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 17:39:01 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 74ms (Views: 68.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 17:39:08 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 17:39:10 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 33ms (Views: 26.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 17:39:20 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"countries", :id=>nil}, missing required keys: [:id]):
+    1: <h1>All Countries</h1>
+    2: 
+    3: <% @countries.each do |country| %>
+    4:   <%= link_to image_tag(country.image, :class => 'thumb'), country_path(@country) %>
+    5:   <p><%= country.name %></p>
+    6: <% end %>
+  
+app/views/countries/index.html.erb:4:in `block in _app_views_countries_index_html_erb___4160752952232148867_70246939905040'
+app/views/countries/index.html.erb:3:in `_app_views_countries_index_html_erb___4160752952232148867_70246939905040'
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 17:39:42 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 17:39:44 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  Rendered countries/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 22.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 17:39:57 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  Rendered countries/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 21:35:07 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountry Load (5.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  Rendered countries/show.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 396ms (Views: 344.4ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 21:36:00 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  Rendered countries/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 272ms (Views: 260.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 21:36:56 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 253ms (Views: 238.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 21:37:23 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (1.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 219ms (Views: 211.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 21:37:39 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 162ms (Views: 156.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 21:38:22 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 56ms (Views: 49.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 21:38:38 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 21:39:06 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 65ms (Views: 60.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 21:39:10 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (2.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 48ms (Views: 38.9ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 21:39:12 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:15
+  Rendered cities/_form.html.erb (34.4ms)
+  Rendered cities/new.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 72ms (Views: 65.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-16 21:41:23 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u2YunutRvdTAb4maffj5x7KXTTPTttFQDvLBi6w9pEl5/74IwxoAUu6DxjwAvo9bbV0bOoHOjF7uOuK0BABrrQ==", "city"=>{"name"=>"Brisbane", "population"=>"2408223", "image"=>"https://cdn.newsapi.com.au/image/v1/bbc2f2900b0472a57079f78c0c3af8ae?width=1024", "time_zone"=>"AEST", "country_id"=>"1"}, "commit"=>"Create City"}
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cities_controller.rb:15
+  [1m[36mCity Create (7.8ms)[0m  [1m[32mINSERT INTO "cities" ("name", "population", "image", "time_zone", "country_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Brisbane"], ["population", "2408223"], ["image", "https://cdn.newsapi.com.au/image/v1/bbc2f2900b0472a57079f78c0c3af8ae?width=1024"], ["time_zone", "AEST"], ["country_id", 1], ["created_at", "2019-01-16 10:41:23.864964"], ["updated_at", "2019-01-16 10:41:23.864964"]]
+  ↳ app/controllers/cities_controller.rb:15
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cities_controller.rb:15
+Redirected to http://localhost:3000/cities/3
+Completed 302 Found in 44ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-16 21:41:23 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 64ms (Views: 56.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 21:41:29 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 21:42:16 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 84ms (Views: 54.8ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 21:42:18 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 21:43:44 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 176ms (Views: 170.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 21:44:45 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 21:44:47 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (132.1ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (208.2ms)
+Completed 200 OK in 288ms (Views: 131.1ms | ActiveRecord: 137.8ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 21:46:48 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 256ms (Views: 239.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 21:46:49 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 43ms (Views: 37.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 21:46:52 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:15
+  Rendered cities/_form.html.erb (7.5ms)
+  Rendered cities/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 49ms (Views: 42.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries/new" for 127.0.0.1 at 2019-01-16 21:46:53 +1100
+Processing by CountriesController#new as HTML
+  Rendering countries/new.html.erb within layouts/application
+  Rendered countries/_form.html.erb (4.8ms)
+  Rendered countries/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 45ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 21:46:54 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:15
+  Rendered cities/_form.html.erb (6.9ms)
+  Rendered cities/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 49ms (Views: 43.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:04:14 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:17
+  Rendered cities/_form.html.erb (18.3ms)
+  Rendered cities/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 129ms (Views: 88.3ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:05:15 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (4.0ms)
+  Rendered cities/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 47ms (Views: 41.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:05:48 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (4.9ms)
+  Rendered cities/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 64ms (Views: 59.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:06:39 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (3.5ms)
+  Rendered cities/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:07:05 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (5.3ms)
+  Rendered cities/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 62ms (Views: 54.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:07:21 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (3.0ms)
+  Rendered cities/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:08:27 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (4.5ms)
+  Rendered cities/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 76ms (Views: 71.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:08:40 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (4.4ms)
+  Rendered cities/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:08:46 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (5.3ms)
+  Rendered cities/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 48ms (Views: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:08:51 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (4.6ms)
+  Rendered cities/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 122ms (Views: 117.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:08:59 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (4.1ms)
+  Rendered cities/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 55ms (Views: 50.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:09:09 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.9ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 35ms (Views: 29.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:09:12 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 32ms (Views: 23.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:09:13 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (6.6ms)
+  Rendered cities/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 40ms (Views: 35.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/countries/new" for 127.0.0.1 at 2019-01-16 22:09:14 +1100
+Processing by CountriesController#new as HTML
+  Rendering countries/new.html.erb within layouts/application
+  Rendered countries/_form.html.erb (3.9ms)
+  Rendered countries/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 35ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/countries/new" for 127.0.0.1 at 2019-01-16 22:10:18 +1100
+Processing by CountriesController#new as HTML
+  Rendering countries/new.html.erb within layouts/application
+  Rendered countries/_form.html.erb (3.0ms)
+  Rendered countries/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:10:21 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 26.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:10:23 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 34ms (Views: 29.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-16 22:10:24 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 39ms (Views: 28.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/cities/3/edit" for 127.0.0.1 at 2019-01-16 22:10:26 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:20
+  Rendering cities/edit.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (5.8ms)
+  Rendered cities/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 54ms (Views: 49.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:10:31 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 32.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 22:15:00 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (7.4ms)
+  Rendered cities/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 56ms (Views: 50.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-16 22:18:29 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"frv6higc3aaK47iyapYqBLtTVDEqupUthpoDKUa0MKK8ImoQAFdgIKQP9xQX0FyYZJkCOHjCyCNmUiAW7on/Rg==", "city"=>{"name"=>"Mumbai", "population"=>"12442373", "image"=>"https://www.trawell.in/admin/images/upload/955980782Mumbai_Bandra_Worli_Link_Main.jpg", "time_zone"=>"UTC+5.30", "country_id"=>""}, "commit"=>"Create City"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cities_controller.rb:15
+  [1m[36mCity Create (2.8ms)[0m  [1m[32mINSERT INTO "cities" ("name", "population", "image", "time_zone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mumbai"], ["population", "12442373"], ["image", "https://www.trawell.in/admin/images/upload/955980782Mumbai_Bandra_Worli_Link_Main.jpg"], ["time_zone", "UTC+5.30"], ["created_at", "2019-01-16 11:18:29.986908"], ["updated_at", "2019-01-16 11:18:29.986908"]]
+  ↳ app/controllers/cities_controller.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cities_controller.rb:15
+Redirected to http://localhost:3000/cities/4
+Completed 302 Found in 18ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/cities/4" for 127.0.0.1 at 2019-01-16 22:18:30 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 45ms (Views: 39.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/countries/new" for 127.0.0.1 at 2019-01-16 22:18:32 +1100
+Processing by CountriesController#new as HTML
+  Rendering countries/new.html.erb within layouts/application
+  Rendered countries/_form.html.erb (6.6ms)
+  Rendered countries/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/countries" for 127.0.0.1 at 2019-01-16 22:21:30 +1100
+Processing by CountriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4ZCfNEYedMV02BkM74Q/XxjSdlDb6awpIgGiSG4SsD0mn/K7E70qI6r7jfIjkAdWMWlM4hMthfPOldXGZThJFw==", "country"=>{"name"=>"India", "area"=>"3287263", "population"=>"1324171354", "currency"=>"Indian Rupee (INR)", "image"=>"data:image/jpeg;base64,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"}, "commit"=>"Create Country"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/countries_controller.rb:15
+  [1m[36mCountry Create (9.8ms)[0m  [1m[32mINSERT INTO "countries" ("name", "area", "population", "currency", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "India"], ["area", "3287263"], ["population", "1324171354"], ["currency", "Indian Rupee (INR)"], ["image", "data:image/jpeg;base64,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"], ["created_at", "2019-01-16 11:21:30.437458"], ["updated_at", "2019-01-16 11:21:30.437458"]]
+  ↳ app/controllers/countries_controller.rb:15
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/countries_controller.rb:15
+Redirected to http://localhost:3000/countries/2
+Completed 302 Found in 132ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/countries/2" for 127.0.0.1 at 2019-01-16 22:21:30 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  Rendered countries/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 89ms (Views: 81.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:21:34 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 58ms (Views: 52.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities/4" for 127.0.0.1 at 2019-01-16 22:21:35 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/4/edit" for 127.0.0.1 at 2019-01-16 22:21:37 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:20
+  Rendering cities/edit.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (8.3ms)
+  Rendered cities/edit.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 43ms (Views: 33.8ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/cities/4" for 127.0.0.1 at 2019-01-16 22:21:40 +1100
+Processing by CitiesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FsYZhBgIflDccePNm28UkHxOBSsF2iLUo5ymrGFSB87BsXZ4A5hvoUKtOqsZqBh1DlnBUiQzRzFzTcRXO54Y3A==", "city"=>{"name"=>"Mumbai", "population"=>"12442373", "image"=>"https://www.trawell.in/admin/images/upload/955980782Mumbai_Bandra_Worli_Link_Main.jpg", "time_zone"=>"UTC+5.30", "country_id"=>"2"}, "commit"=>"Update City", "id"=>"4"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cities_controller.rb:25
+  [1m[36mCity Update (2.8ms)[0m  [1m[33mUPDATE "cities" SET "country_id" = $1, "updated_at" = $2 WHERE "cities"."id" = $3[0m  [["country_id", 2], ["updated_at", "2019-01-16 11:21:40.313839"], ["id", 4]]
+  ↳ app/controllers/cities_controller.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cities_controller.rb:25
+Redirected to http://localhost:3000/cities/4
+Completed 302 Found in 12ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/cities/4" for 127.0.0.1 at 2019-01-16 22:21:40 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (1.1ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 24.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/cities/4" for 127.0.0.1 at 2019-01-16 22:22:49 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 56ms (Views: 50.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities/4" for 127.0.0.1 at 2019-01-16 22:23:05 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 47ms (Views: 41.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:23:25 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:26:11 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 54ms (Views: 48.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:26:23 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 50ms (Views: 44.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:27:48 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 341ms (Views: 337.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:31:00 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 77ms (Views: 70.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:31:04 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 55ms (Views: 49.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:39:18 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 115ms (Views: 103.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:39:18 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 79ms (Views: 74.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:39:46 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 250ms (Views: 245.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:40:02 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 45ms (Views: 41.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:41:40 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (2.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 95ms (Views: 85.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:41:41 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:41:57 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 36ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:41:59 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:42:46 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 49ms (Views: 44.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:45:19 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (9.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 209ms (Views: 125.6ms | ActiveRecord: 73.1ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:45:19 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 175ms (Views: 170.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:45:21 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (1.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 27.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:46:11 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 99ms (Views: 94.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:46:12 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:46:15 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (1.0ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:47:32 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (2.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 83ms (Views: 71.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:47:45 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.8ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 62ms (Views: 41.6ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:47:52 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 36ms (Views: 30.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:49:38 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:51:26 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (2.9ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 145ms (Views: 115.8ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:56:37 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.9ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 66ms (Views: 49.2ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 22:56:39 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 55ms (Views: 42.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:57:35 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:57:37 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 37ms (Views: 31.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 22:57:40 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  Rendered countries/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 132ms (Views: 118.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:57:42 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 73ms (Views: 65.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 22:57:43 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 239ms (Views: 229.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-16 22:57:45 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 26.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 22:58:16 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 52ms (Views: 47.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 22:58:17 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 35ms (Views: 28.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 22:58:21 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 58ms (Views: 50.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 22:58:45 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 52ms (Views: 47.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 22:58:47 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 22:58:49 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 27.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 22:59:09 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (1.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 66ms (Views: 51.3ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 22:59:44 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 26.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 22:59:52 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 43.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 22:59:58 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (1.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 34ms (Views: 29.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 23:00:00 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  Rendered countries/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 27.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 23:00:03 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (3.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 38ms (Views: 32.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 23:00:06 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/4" for 127.0.0.1 at 2019-01-16 23:00:18 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 32.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-16 23:00:36 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ app/views/cities/index.html.erb:3
+  Rendered cities/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 45ms (Views: 40.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-16 23:00:37 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (6.5ms)
+  Rendered cities/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 36ms (Views: 29.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-01-16 23:00:45 +1100
+Processing by CountriesController#index as HTML
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.8ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/countries/index.html.erb:3
+  Rendered countries/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 43ms (Views: 37.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 23:00:46 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  Rendered countries/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 39ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 23:02:01 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/countries/show.html.erb:10
+  Rendered countries/show.html.erb within layouts/application (57.7ms)
+Completed 200 OK in 125ms (Views: 120.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 23:02:15 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/countries/show.html.erb:10
+  Rendered countries/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 156ms (Views: 150.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-16 23:02:17 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.8ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 35ms (Views: 29.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/countries/1" for 127.0.0.1 at 2019-01-16 23:02:23 +1100
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/countries_controller.rb:7
+  Rendering countries/show.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."country_id" = $1[0m  [["country_id", 1]]
+  ↳ app/views/countries/show.html.erb:10
+  Rendered countries/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 43ms (Views: 36.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-16 23:02:26 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:7
+  Rendering cities/show.html.erb within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/cities/show.html.erb:7
+  Rendered cities/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33ms (Views: 25.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities/3/edit" for 127.0.0.1 at 2019-01-16 23:02:29 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cities_controller.rb:20
+  Rendering cities/edit.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "countries"."name", "countries"."id" FROM "countries"[0m
+  ↳ app/views/cities/_form.html.erb:21
+  Rendered cities/_form.html.erb (6.2ms)
+  Rendered cities/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 40ms (Views: 33.5ms | ActiveRecord: 0.7ms)
+
+

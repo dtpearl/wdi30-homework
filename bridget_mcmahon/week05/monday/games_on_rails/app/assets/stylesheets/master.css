@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|ZCOOL+QingKe+HuangYou');
+
+body {
+  box-sizing: border-box;
+  background-color: #EAEBED;
+  color: #006989;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #006989;
+  color: #A3BAC3;
+}
+
+nav {
+  line-height: 40px;
+  max-width: 960px;
+  margin: auto;
+}
+
+nav a {
+  color: #A3BAC3;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+nav a:hover {
+  color: #EAEBED;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'ZCool QingKe HuangYou', cursive;
+}
+
+input {
+  display: block;
+  margin: 15px auto 0 auto;
+  width: 300px;
+  text-align: center;
+  padding-bottom: 0;
+  border: none;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  background-color: #006989;
+  width: 300px;
+  color: white;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 18px;
+}
+
+main a {
+  color: white;
+  background-color: #006989;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+main p, main label {
+  font-size: 18px;
+}

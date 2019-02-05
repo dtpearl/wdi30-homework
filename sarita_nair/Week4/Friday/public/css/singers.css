@@ -1,0 +1,64 @@
+body{
+  /* background-color: grey; */
+  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  /* background: #C9CCD3;
+ background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: lighten; */
+  /* background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%); */
+  /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+  /* background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%); */
+}
+
+.container{
+  background: #C9CCD3;
+ background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: lighten;
+  max-width : 960px;
+  margin : 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 10px 2px 65px 0px rgba(0,0,0,0.74);
+-moz-box-shadow: inset 10px 2px 65px 0px rgba(0,0,0,0.74);
+box-shadow: inset 10px 2px 65px 0px rgba(0,0,0,0.74);
+overflow-y: auto;
+}
+.singerTitle{
+  font-family: 'Charm', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+iframe{
+  width:300px;
+  height: 300px;
+}
+
+.main{
+  width : 50%;
+  position: relative;
+  display:inline-block;
+  top: 0px;
+  left: 0px;
+}
+.aside{
+  width : 40%;
+  vertical-align: top;
+  position: relative;
+  display:inline-block;
+  top: 0px;
+  left: 0px;
+  margin-top: 50px;
+}
+.aside p{
+  /* width : 35px; */
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-left:20px;
+}
+nav{
+  text-align: right;
+}
+
+.dpimage{
+
+  width: 100%;
+}

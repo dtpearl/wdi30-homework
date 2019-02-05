@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>High Places</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <%= link_to 'Home', root_path %>
+        <%= link_to 'All The High Places', mountains_path %>
+        <%= link_to 'Another High Place?', mountains_new_path %>
+      </nav>
+      <h1>LOOK UP!</h1>
+      <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1688 @@
+Started GET "/" for 127.0.0.1 at 2019-01-15 19:58:49 +1100
+  
+ActionController::RoutingError (uninitialized constant PagesController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-15 20:00:41 +1100
+Processing by MountainsController#home as HTML
+Completed 406 Not Acceptable in 251ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MountainsController#home is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.2) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-15 20:01:12 +1100
+Processing by MountainsController#home as HTML
+  Rendering mountains/home.html.erb within layouts/application
+  Rendered mountains/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 383ms (Views: 379.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 20:03:37 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  Rendered mountains/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMountain Create (1.5ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "range", "height", "location") VALUES (?, ?, ?, ?)[0m  [["name", "Mount Everest"], ["range", "Himalayas"], ["height", 8848], ["location", "China, Nepal"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2019-01-15 20:18:39 +1100
+Processing by MountainsController#home as HTML
+  Rendering mountains/home.html.erb within layouts/application
+  Rendered mountains/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 673ms (Views: 664.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 20:18:45 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (1.6ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (270.2ms)
+Completed 500 Internal Server Error in 321ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `mountain_path' for #<#<Class:0x00007f984e16b5a0>:0x00007f984e5a5b48>
+Did you mean?  mountains_path):
+    1: <h1>All Mountains</h1>
+    2: 
+    3: <% @mountains.each do |mountain| %>
+    4:   <p><%= link_to mountain.name, mountain_path(mountain.id) %></p>
+    5: <% end %>
+  
+app/views/mountains/index.html.erb:4:in `block in _app_views_mountains_index_html_erb__887959890152055683_70146063151660'
+app/views/mountains/index.html.erb:3:in `_app_views_mountains_index_html_erb__887959890152055683_70146063151660'
+Started GET "/rails/info" for 127.0.0.1 at 2019-01-15 20:19:01 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-15 20:19:01 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [7 times] (5.9ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (28.1ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (54.3ms)
+Completed 200 OK in 77ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-15 20:19:41 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [7 times] (2.6ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 31ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 20:19:46 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 27.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 20:35:53 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2019-01-15 20:37:15 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 90ms (Views: 61.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2019-01-15 20:41:47 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 63ms (Views: 48.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2019-01-15 20:43:54 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-15 20:43:54 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (7.0ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 30ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-15 21:18:23 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (12.8ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 210ms (Views: 201.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-15 21:19:47 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (19.6ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.2ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 91ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 21:19:56 +1100
+Processing by MountainsController#home as HTML
+  Rendering mountains/home.html.erb within layouts/application
+  Rendered mountains/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 53ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2019-01-15 21:23:18 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-15 21:23:18 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (3.7ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 30ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2019-01-15 21:23:56 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-15 21:23:56 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (5.8ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/actionpack-5.2.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/bridgetmcmahon/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 35ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 21:23:58 +1100
+Processing by MountainsController#home as HTML
+  Rendering mountains/home.html.erb within layouts/application
+  Rendered mountains/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:23:59 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 35ms (Views: 26.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 21:24:01 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:24:04 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.5ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 28.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2019-01-15 21:24:05 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2019-01-15 21:25:49 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 21:26:19 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:26:22 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:34:34 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 489ms (Views: 473.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:34:56 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 47ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2019-01-15 21:35:30 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/1/edit" for 127.0.0.1 at 2019-01-15 21:35:31 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:30
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/mountains/:id" for 127.0.0.1 at 2019-01-15 21:36:14 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Mount Everest", "range"=>"Himalayas", "image"=>"https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg", "height"=>"8848", "type"=>"", "location"=>"China, Nepal", "id"=>":id"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Mountain with 'id'=:id):
+  
+app/controllers/mountains_controller.rb:34:in `update'
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:36:59 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.7ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 47ms (Views: 41.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2019-01-15 21:37:00 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (1.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 28.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2019-01-15 21:37:58 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 144ms (Views: 122.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/mountains/1/edit" for 127.0.0.1 at 2019-01-15 21:37:59 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:30
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 27.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/mountains/:id" for 127.0.0.1 at 2019-01-15 21:38:01 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Mount Everest", "range"=>"Himalayas", "image"=>"", "height"=>"8848", "type"=>"", "location"=>"China, Nepal", "id"=>":id"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Mountain with 'id'=:id):
+  
+app/controllers/mountains_controller.rb:34:in `update'
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:38:06 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 42ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/1" for 127.0.0.1 at 2019-01-15 21:38:06 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/mountains/1" for 127.0.0.1 at 2019-01-15 21:38:09 +1100
+Processing by MountainsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qqVA3OEg3Yk/No1fU4D6jcBqB/XkIAZjFjZSeXfQKtZyqkcoCQr0VaFq+qylqziGi4/3SsJSXb92HZ+Y/yFauw==", "id"=>"1"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:48
+  [1m[36mMountain Destroy (0.4ms)[0m  [1m[31mDELETE FROM "mountains" WHERE "mountains"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/mountains_controller.rb:48
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:48
+Redirected to http://localhost:3000/mountains
+Completed 302 Found in 7ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:38:09 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:38:10 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 21:38:11 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mountains" for 127.0.0.1 at 2019-01-15 21:38:30 +1100
+Processing by MountainsController#create as HTML
+  Parameters: {"name"=>"Mount Everest", "range"=>"Himalayas", "image"=>"https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg", "height"=>"8848", "type"=>"", "location"=>"Nepal, China"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:20
+  [1m[36mMountain Create (0.4ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "range", "image", "height", "type", "location") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Mount Everest"], ["range", "Himalayas"], ["image", "https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg"], ["height", 8848], ["type", ""], ["location", "Nepal, China"]]
+  ↳ app/controllers/mountains_controller.rb:20
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:20
+Redirected to http://localhost:3000/mountains/2
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:38:30 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/2/edit" for 127.0.0.1 at 2019-01-15 21:38:38 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:30
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/2/edit" for 127.0.0.1 at 2019-01-15 21:38:53 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:30
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/mountains/:id" for 127.0.0.1 at 2019-01-15 21:38:56 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Mount Everest", "range"=>"Himalayas", "image"=>"https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg", "height"=>"8848", "type"=>"", "location"=>"Nepal, China", "id"=>":id"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Mountain with 'id'=:id):
+  
+app/controllers/mountains_controller.rb:34:in `update'
+Started POST "/mountains/:id" for 127.0.0.1 at 2019-01-15 21:41:40 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Mount Everest", "range"=>"Himalayas", "image"=>"https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg", "height"=>"8848", "type"=>"", "location"=>"Nepal, China", "id"=>":id"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+Completed 404 Not Found in 14ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Mountain with 'id'=:id):
+  
+app/controllers/mountains_controller.rb:34:in `update'
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:43:30 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 54ms (Views: 38.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:43:31 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 54ms (Views: 48.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:43:33 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 73ms (Views: 66.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/2/edit" for 127.0.0.1 at 2019-01-15 21:43:35 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:30
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/mountains/2" for 127.0.0.1 at 2019-01-15 21:44:39 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Mount Everest", "range"=>"Himalayas", "image"=>"https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg", "height"=>"8848", "type"=>"", "location"=>"Nepal", "id"=>"2"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:41
+  [1m[36mMountain Update (0.5ms)[0m  [1m[33mUPDATE "mountains" SET "location" = ? WHERE "mountains"."id" = ?[0m  [["location", "Nepal"], ["id", 2]]
+  ↳ app/controllers/mountains_controller.rb:41
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:41
+Redirected to http://localhost:3000/mountains/2
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:44:39 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/2/edit" for 127.0.0.1 at 2019-01-15 21:44:43 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:30
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 42ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/mountains/2" for 127.0.0.1 at 2019-01-15 21:44:45 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Mount Everest", "range"=>"Himalayas", "image"=>"https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg", "height"=>"8848", "type"=>"", "location"=>"Nepal", "id"=>"2"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:41
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:41
+Redirected to http://localhost:3000/mountains/2
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:44:45 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.5ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 32ms (Views: 24.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mountains/2/edit" for 127.0.0.1 at 2019-01-15 21:44:47 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.5ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:30
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 26.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/mountains/2" for 127.0.0.1 at 2019-01-15 21:44:50 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Mount Everest", "range"=>"Himalayas", "image"=>"https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg", "height"=>"8848", "type"=>"", "location"=>"Nepal, China", "id"=>"2"}
+  [1m[36mMountain Load (0.5ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:41
+  [1m[36mMountain Update (0.5ms)[0m  [1m[33mUPDATE "mountains" SET "location" = ? WHERE "mountains"."id" = ?[0m  [["location", "Nepal, China"], ["id", 2]]
+  ↳ app/controllers/mountains_controller.rb:41
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:41
+Redirected to http://localhost:3000/mountains/2
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:44:50 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 76ms (Views: 70.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:49:01 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 71ms (Views: 66.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:49:17 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:49:55 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 175ms (Views: 169.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:50:02 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:50:24 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:51:04 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.6ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 130ms (Views: 63.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:51:42 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:52:08 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 82ms (Views: 77.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:58:43 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 160ms (Views: 148.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 21:59:26 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 87ms (Views: 80.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 21:59:31 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 21:59:33 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mountains" for 127.0.0.1 at 2019-01-15 22:00:57 +1100
+Processing by MountainsController#create as HTML
+  Parameters: {"name"=>"Aconcagua", "range"=>"Andes", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Aconcagua2016.jpg/1200px-Aconcagua2016.jpg", "height"=>"6962", "type"=>"", "location"=>"Argentina"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:20
+  [1m[36mMountain Create (0.4ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "range", "image", "height", "type", "location") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Aconcagua"], ["range", "Andes"], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Aconcagua2016.jpg/1200px-Aconcagua2016.jpg"], ["height", 6962], ["type", ""], ["location", "Argentina"]]
+  ↳ app/controllers/mountains_controller.rb:20
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:20
+Redirected to http://localhost:3000/mountains/3
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/mountains/3" for 127.0.0.1 at 2019-01-15 22:00:57 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 83ms (Views: 76.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:01:01 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 55ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:01:18 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:01:30 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 44ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:01:30 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:01:31 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:01:31 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:01:31 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:01:46 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 48ms (Views: 43.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:03:50 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+    2: 
+    3: <% @mountains.each do |mountain| %>
+    4:   <div>
+    5:     <%= image_tag @mountain.image, :alt => @mountain.name %>
+    6:     <p><%= link_to mountain.name, "/mountains/#{ mountain.id }" %></p>
+    7:   </div>
+    8: 
+  
+app/views/mountains/index.html.erb:5:in `block in _app_views_mountains_index_html_erb__887959890152055683_70146038365940'
+app/views/mountains/index.html.erb:3:in `_app_views_mountains_index_html_erb__887959890152055683_70146038365940'
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:05:20 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:3
+  Rendered mountains/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:06:08 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:07:44 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:07:57 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 46.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:08:41 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 166ms (Views: 161.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:09:02 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:10:15 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:10:20 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 43ms (Views: 38.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:11:15 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 64ms (Views: 60.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/2" for 127.0.0.1 at 2019-01-15 22:11:24 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 34ms (Views: 26.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 22:12:13 +1100
+Processing by MountainsController#home as HTML
+  Rendering mountains/home.html.erb within layouts/application
+  Rendered mountains/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 22:12:53 +1100
+Processing by MountainsController#home as HTML
+  Rendering mountains/home.html.erb within layouts/application
+  Rendered mountains/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-15 22:12:55 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 22:12:57 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 22:21:28 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 65ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 22:22:33 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 22:22:44 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 22:26:31 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 22:28:39 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 22:30:10 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 58ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-15 22:30:13 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 06:48:36 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 100ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 06:55:51 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 117ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 06:55:55 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 06:55:57 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 06:56:46 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 95ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 06:57:30 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 78ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 07:38:42 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 144ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 07:39:01 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 61ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 07:40:20 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 213ms (Views: 209.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 07:40:44 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 77ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 07:41:03 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 07:41:16 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 07:41:28 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 07:41:41 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 08:02:03 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 70ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 08:02:59 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-16 08:03:21 +1100
+Processing by MountainsController#home as HTML
+  Rendering mountains/home.html.erb within layouts/application
+  Rendered mountains/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-16 08:03:22 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 70ms (Views: 37.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 08:03:28 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/mountains" for 127.0.0.1 at 2019-01-16 08:04:47 +1100
+Processing by MountainsController#create as HTML
+  Parameters: {"name"=>"Island Peak", "range"=>"Himalayas", "image"=>"data:image/jpeg;base64,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", "height"=>"6198", "type"=>"", "location"=>"Nepal"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:20
+  [1m[36mMountain Create (1.3ms)[0m  [1m[32mINSERT INTO "mountains" ("name", "range", "image", "height", "type", "location") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Island Peak"], ["range", "Himalayas"], ["image", "data:image/jpeg;base64,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"], ["height", 6198], ["type", ""], ["location", "Nepal"]]
+  ↳ app/controllers/mountains_controller.rb:20
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:20
+Redirected to http://localhost:3000/mountains/4
+Completed 302 Found in 46ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 08:04:48 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 54ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-16 08:04:54 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (5.0ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 43ms (Views: 32.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:45:40 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (5.4ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 223ms (Views: 155.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/mountains/4/edit" for 127.0.0.1 at 2019-01-16 09:45:42 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (1.7ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:30
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 60ms (Views: 51.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/mountains/4/edit" for 127.0.0.1 at 2019-01-16 09:48:05 +1100
+Processing by MountainsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (2.7ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:30
+  Rendering mountains/edit.html.erb within layouts/application
+  Rendered mountains/edit.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 67ms (Views: 58.1ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/mountains/4" for 127.0.0.1 at 2019-01-16 09:48:24 +1100
+Processing by MountainsController#update as HTML
+  Parameters: {"name"=>"Island Peak", "range"=>"Himalayas", "image"=>"https://cimages1.touristlink.com/data/cache/I/S/L/A/N/D/P/E/island-peak-6189-m-in-bad-weather-nepal-himalayas_640_480.jpg", "height"=>"6198", "type"=>"", "location"=>"Nepal", "id"=>"4"}
+  [1m[36mMountain Load (0.9ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/mountains_controller.rb:41
+  [1m[36mMountain Update (1.2ms)[0m  [1m[33mUPDATE "mountains" SET "image" = ? WHERE "mountains"."id" = ?[0m  [["image", "https://cimages1.touristlink.com/data/cache/I/S/L/A/N/D/P/E/island-peak-6189-m-in-bad-weather-nepal-himalayas_640_480.jpg"], ["id", 4]]
+  ↳ app/controllers/mountains_controller.rb:41
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/mountains_controller.rb:41
+Redirected to http://localhost:3000/mountains/4
+Completed 302 Found in 34ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:48:24 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 333ms (Views: 325.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-16 09:48:28 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 49ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:48:32 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.6ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 53ms (Views: 45.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:49:21 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 68ms (Views: 62.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:49:22 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:49:28 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (1.0ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 54ms (Views: 48.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:49:40 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (1.0ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 59ms (Views: 53.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:49:47 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 42ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:50:15 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:50:24 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 52ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:50:40 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:50:51 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:59:22 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 134ms (Views: 116.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 09:59:25 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 41ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:00:17 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (1.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 84ms (Views: 43.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:00:19 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/new" for 127.0.0.1 at 2019-01-16 10:00:42 +1100
+Processing by MountainsController#new as HTML
+  Rendering mountains/new.html.erb within layouts/application
+  Rendered mountains/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-16 10:01:10 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-16 10:01:11 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 63ms (Views: 58.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:01:13 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:01:29 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:01:40 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:02:08 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.6ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 41.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:02:23 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 73ms (Views: 67.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:02:25 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:02:37 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 50ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:02:48 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 58ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:03:00 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:03:19 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:03:26 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.3ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 51ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:03:33 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 52ms (Views: 47.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/mountains/4" for 127.0.0.1 at 2019-01-16 10:03:38 +1100
+Processing by MountainsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT  "mountains".* FROM "mountains" WHERE "mountains"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/mountains_controller.rb:26
+  Rendering mountains/show.html.erb within layouts/application
+  Rendered mountains/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 53ms (Views: 46.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-16 10:04:45 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.2ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/mountains" for 127.0.0.1 at 2019-01-16 10:04:52 +1100
+Processing by MountainsController#index as HTML
+  Rendering mountains/index.html.erb within layouts/application
+  [1m[36mMountain Load (0.4ms)[0m  [1m[34mSELECT "mountains".* FROM "mountains"[0m
+  ↳ app/views/mountains/index.html.erb:4
+  Rendered mountains/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 47ms (Views: 42.4ms | ActiveRecord: 0.4ms)
+
+

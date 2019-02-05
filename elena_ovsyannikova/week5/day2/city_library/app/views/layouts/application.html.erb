@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CityLibrary</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+    <nav>
+      <div class="styl">
+      <%= link_to 'Home', root_path, :class =>'simple' %>
+      </div>
+      <div class="styl">
+      <%= link_to 'All Cities', cities_path, :class =>'simple' %>
+      </div>
+      <div class="styl">
+      <%= link_to 'New City', cities_new_path, :class =>'simple' %>
+      </div>
+    </nav>
+    <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hometown</title>
+    <link rel="stylesheet" href="css/developer.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="trivia.asp">Trivia</a></li>
+                    <li><a href="index1.html">Hometown</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+
+        <h1>Hometown of FRANCES ("FRAN") ELIZABETH ALLEN </h1>
+        <h3>Peru, New York</h3>
+        <p>Peru is a town in Clinton County in the U.S. state of New York. The population was 6,998 at the 2010 census. The town was so named for its views of the Adirondack Mountains to the west and the farmlands throughout the town, resembling scenery
+            found in the country of Peru in South America. Peru, New York is in the southeastern part of Clinton County, south of Plattsburgh.</p>
+
+        <div class="map-wrapper">
+            <div id="map"></div>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+        function initMap() {
+
+            var peru = {
+                lat: 44.57895,
+                lng: -73.534112
+            };
+
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 4,
+                    center: peru
+                });
+
+            var marker = new google.maps.Marker({
+                position: peru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=your_key_up_lr5MXOXuTrSXMbk&callback=initMap"></script>
+</body>
+
+</html>

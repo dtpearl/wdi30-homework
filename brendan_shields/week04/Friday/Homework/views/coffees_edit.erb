@@ -1,0 +1,32 @@
+<h2>Edit<%= @coffee_menu["name"]%></h2>
+
+<form action="/coffees/<%= @coffee_menu["id"] %>" method="post">
+
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= @coffee_menu["name"] %>" placeholder="<%= @coffee_menu["name"] %>" required="required" autofocus="autofocus">
+
+  <label>Family:</label>
+  <input type="text" name="taste" value="<%= @coffee_menu["taste"] %>" placeholder="<%= @coffee_menu["taste"] %>" required="required">
+
+  <label>Origin:</label>
+  <input type="text" name="origin" value="<%= @coffee_menu["origin"] %>" placeholder="<%= @coffee_menu["origin"] %>">
+
+  <label>Cost:</label>
+  <input type="number" name="cost" value="<%= @coffee_menu["cost"] %>" placeholder="<%= @coffee_menu["cost"] %>">
+
+  <label>Other:</label>
+  <input type="url" name="other" value="<%= @coffee_menu["other"] %>" placeholder="<%= @coffee_menu["other"] %>">
+
+  <select name="plant_id">
+
+  <label>Shop:</label>
+    <option></option>
+    <% Coffee_shop.all.each do | shop | %>
+      <option value="<%= shop["id"]%> <%= " selected" if shop.id === @coffee_menu.profiles %>"><%= shop["name"]%></option>
+    <% end %>
+
+  </select>
+
+  <button>Create</button>
+
+</form>

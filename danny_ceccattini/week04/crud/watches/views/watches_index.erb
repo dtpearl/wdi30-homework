@@ -1,0 +1,9 @@
+<h2>All Watches</h2>
+
+<% @watches.each do |watch| %>
+  <p>
+    <a href="/watches/<%= watch["id"] %>">
+      <%= "#{watch["company"]}: #{watch["model"]} - #{watch["country"]}" %>
+    </a>
+  </p>
+<% end %>

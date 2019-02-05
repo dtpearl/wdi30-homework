@@ -1,0 +1,42 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.feature {
+  max-width: 100%;
+}
+
+body {
+  background-image: url("https://oregonencyclopedia.org/media/uploads/OE_Fig01_CascadeRange_Landsat_c1ayoSs.jpg");
+  background-size: auto;
+  max-width: 600px;
+  height: 1800px;
+  /* border: 2px solid; */
+  resize: both;
+  overflow: scroll;
+  background-color: blue;
+
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+.container a img {
+    width: 100%;
+ }
+
+ #jump2top	{
+ 	display: block;
+ 	position: absolute;
+  bottom: -40px;
+	right: 990px;
+	width: 100px;
+	height: 100px;
+  top: 1700px;
+ 	background: transparent url("https://www.oregonhops.org/img/icons.png") 0 0 no-repeat;
+ 	text-indent: -9999px;
+ 	text-decoration: none;
+ 	}

@@ -1,0 +1,41 @@
+<h2><%= @team["name"] %></h2>
+<img src="<%= @team["logo"] %>" alt="">
+
+<table>
+  <% unless @team.league_id.nil? %>
+  <tr>
+    <th>League</th>
+    <td><%= @team.league.name %></td>
+  </tr>
+  <% end %>
+
+  <tr>
+    <th>City</th>
+    <td><%= @team["city"] %></td>
+  </tr>
+
+  <tr>
+    <th>Stadium</th>
+    <td><%= @team["stadium"] %></td>
+  </tr>
+
+  <tr>
+    <th>Stadium Capacity</th>
+    <td><%= @team["stadium_capacity"] %></td>
+  </tr>
+
+  <tr>
+    <th>Last Season Standing</th>
+    <td><%= @team["last_rank"] %></td>
+  </tr>
+
+  <tr>
+    <th>La Liga Title Won</th>
+    <td><%= @team["title"] %></td>
+  </tr>
+</table>
+
+<div id="control">
+  <a href="<%= @team["id"] %>/edit">Edit</a>
+  <a href="<%= @team["id"] %>/delete">Delete</a>
+</div>

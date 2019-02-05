@@ -1,0 +1,39 @@
+<h2>All Customers</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Date of birth</th>
+    <th>Gender</th>
+    <th>Phone</th>
+    <th>State</th>
+    <th>City</th>
+    <th>Country</th>
+
+  </tr>
+  <% @customer.each do |customer| %>
+    <tr>
+      <td>
+        <%= customer.name %>
+      </td>
+      <td>
+        <%= customer.dob %>
+      </td>
+      <td>
+        <%= customer.gender %>
+      </td>
+      <td>
+        <%= customer.phone %>
+      </td>
+      <td>
+        <%= customer.state %>
+      </td>
+      <td>
+        <%= customer.city %>
+      </td>
+      <td>
+        <%= customer.country %>
+      </td>
+    </tr>
+  <% end %>
+
+</table>

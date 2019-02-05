@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Playfair+Display');
+
+body {
+    margin: 10px;
+    background-image: linear-gradient(90deg, blue, lightblue, white);
+    background-size: cover;
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+nav {
+    text-align: right;
+    color: white;
+    display: inline-block;
+    margin-left: 350px; 
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d2f7fb;
+    padding: 4px;
+}
+
+h1, h2, h3, h4, h5 {
+    padding-top: 5px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#home {
+    margin: 20px 110px 10px 110px;
+    padding: 20px;
+    background: rgba(10, 33, 60, 0.5);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: justify;
+}
+
+#title {
+    margin-bottom: 40px;
+}
+
+#list {
+    margin: 10px 140px;
+    background: rgba(10, 33, 60, 0.5);
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#new-item {
+    color: #d6cda1;
+    text-decoration: none;
+    font: bolder;
+ 
+}
+
+label {
+    display: block;
+    margin-left: 330px;
+}
+ 
+input, select {
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 5px 5px 20px black;
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 15px 10px 15px 0;
+    position: relative;
+    font-size: 15px;
+    background: #3a6b90;
+    box-shadow: 5px 5px 20px black;
+}
+
+a {
+    text-decoration: none;
+    color: white;   
+}
+
+ul {
+    text-align: center;
+}
+    
+li {
+display: block;
+color: #4f679a;
+}
+
+.create, .update {
+    left: 420px;
+    color: lightcyan;
+}
+
+.edit, .delete {
+    left: 350px;    
+    color: lightcyan;
+}
+
+#location {
+    text-align: center;
+}
+
+#designer-work {
+    margin-left: 440px
+}
+
+.feature {
+    display: block;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    position: relative;
+    left: 650px;
+    font-size: 15px;
+}

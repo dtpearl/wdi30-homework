@@ -1,0 +1,9 @@
+<h2>THE MAKERS</h2>
+
+<% @watchmakers.each do |watchmaker| %>
+  <p>
+    <a class="index_list" href="/watchmakers/<%= watchmaker["id"] %>">
+      <%= watchmaker["name"] %>
+    </a>
+  </p>
+<% end %>

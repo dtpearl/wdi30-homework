@@ -1,0 +1,20 @@
+<h1>Sign In</h1>
+
+<% if flash[:error_message].present? %>
+  <p><%= flash[:error_message] %></p>
+<% end %>
+
+<%= form_tag login_path do %>
+
+  <div class="form-row">
+    <%= label_tag :email %>
+    <%= email_field_tag :email, nil, :class => 'form-control' %>
+  </div>
+
+  <div class="form-row">
+    <%= label_tag :password %>
+    <%= password_field_tag :password, nil, :class => 'form-control' %>
+  </div>
+
+  <%= submit_tag "Sign in" %>
+<% end %>

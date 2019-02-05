@@ -1,0 +1,66 @@
+<form id="edit-form" class="mdl-button mdl-js-button mdl-button--raised" action="<%= player_edit_path(@player.id)%>" method="post">
+  <h3>Edit player</h3>
+  <label for="name">Name: </label>
+  <input class="mdl-textfield__input" type="text" name="name" value="<%= @player.name %>"required>
+
+  <label for="nation">Nation: </label>
+  <input class="mdl-textfield__input" type="text" name="nation" value="<%= @player.nation %>">
+
+  <label for="team">Team: </label>
+  <input class="mdl-textfield__input" type="text" name="team" value="<%= @player.team %>">
+
+  <label for="overall">Rating: </label>
+  <input class="mdl-textfield__input" type="text" name="overall" value="<%= @player.overall %>">
+
+  <label for="pac">Pace: </label>
+  <input class="mdl-textfield__input" type="text" name="pac" value="<%= @player.pac %>">
+
+  <label for="sho">Shoting: </label>
+  <input class="mdl-textfield__input" type="text" name="sho" value="<%= @player.sho %>">
+
+  <label for="pas">Passing: </label>
+  <input class="mdl-textfield__input" type="text" name="pas" value="<%= @player.pas %>">
+
+  <label for="dri">Dribbing: </label>
+  <input class="mdl-textfield__input" type="text" name="dri" value="<%= @player.dri %>">
+
+  <label for="def">Defence: </label>
+  <input class="mdl-textfield__input" type="text" name="def" value="<%= @player.def %>">
+
+  <label for="phy">Physical: </label>
+  <input class="mdl-textfield__input" type="text" name="phy" value="<%= @player.phy %>">
+
+  <label for="image">Photo: </label>
+  <input class="mdl-textfield__input" type="text" name="image" value="<%= @player.image %>">
+
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Submit Change</button>
+</form>
+
+<style>
+  h3 {
+    background-color: #ddd;
+    border-radius: 0.15em;
+  }
+
+  #edit-form {
+    height: auto;
+    width: 400px;
+    background-color: #aaa;
+    border-radius: 0.25em;
+    margin-top: 20px;
+  }
+
+  #edit-form label {
+    background-color: #aaa;
+  }
+
+  #edit-form input {
+    background-color: #ddd;
+    border-radius: 0.25em;
+    text-align: center;
+  }
+
+  button {
+    margin: 20px !important;
+  }
+</style>

@@ -1,0 +1,23 @@
+<div class="container" id="output-box">
+  <div class="box">
+    <div class="box" id="title-box">
+      <a class="title" href=<%= @book[:link] %> ><%= @book[:title] %></a>
+    </div>
+    <div class="box" id="overview-box">
+      <div class="box" id="thumbnail-box">
+        <img src=<%= @book[:thumbnail] %> alt="">
+      </div>
+      <div class="box" id="info-box">
+        <div class="box" id="detail-box">
+          <a class="author" href=<%= @book[:link] %> ><%= @book[:author] %></a>
+          <span class="year"> - <%= @book[:year] %> - </span>
+          <span class="rating"><%= @book[:rating] %> stars</span>
+          <span class="reviews"> - <%= @book[:reviews] %> reviews</span>
+        </div>
+        <div class="box" id="summary-box">
+          <p><%= @book[:summary] %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

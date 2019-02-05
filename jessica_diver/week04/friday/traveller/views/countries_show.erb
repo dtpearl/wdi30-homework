@@ -1,0 +1,13 @@
+<div class="mainArticle">
+
+<h2><%= @country[:name] %></h2>
+
+<img class="map" src="<%= @country[:image] %>" alt="<%= @country[:city] %>">
+
+<div class="controls">
+<a href="/countries/<%= @country["id"]%>/edit">Edit Country</a>
+<a href="/countries/<%= @country["id"]%>/delete">Delete Country</a>
+
+</div>
+
+</div>

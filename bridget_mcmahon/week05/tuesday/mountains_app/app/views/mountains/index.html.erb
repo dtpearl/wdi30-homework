@@ -1,0 +1,10 @@
+<h1>All Mountains</h1>
+
+<div class="index">
+  <% @mountains.each do |mountain| %>
+    <div>
+      <%= image_tag mountain.image, :alt => mountain.name %>
+      <p><%= link_to mountain.name, "/mountains/#{ mountain.id }" %></p>
+    </div>
+  <% end %>
+</div>

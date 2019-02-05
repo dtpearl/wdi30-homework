@@ -1,0 +1,11 @@
+<h1>All Oceans</h1>
+
+<% @oceans.each do |ocean| %>
+<ul>
+    <li><%= link_to ocean.name.upcase, ocean_path(ocean.id) %>
+    ocean has 
+    <%= number_to_percentage(ocean.area, precision: 2) %>
+    of total world oceans' area.
+    </li>
+</ul>
+<% end %>

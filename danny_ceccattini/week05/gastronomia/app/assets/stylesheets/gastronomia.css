@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Kanit|Rajdhani|Work+Sans');
+/*
+font-family: 'Work Sans', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Kanit', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+*/
+
+body {
+  background-color: black;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 200vh;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+h1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  /* font-family: 'Kanit', sans-serif; */
+  font-size: 3em;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+nav {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+a {
+  margin: 0 20px 0 20px;
+  padding-top: 20px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 0 0 10px 0;
+  list-style-type: none;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.5em;
+  margin-left: 2em;
+}
+
+.controls {
+  margin-top: 3em;
+  margin-left: 2em;
+}
+
+
+.feature {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.thumb {
+  max-height: 10vh;
+}
+
+.thumb_show {
+  max-height: 10vh;
+  margin-left: 30px;
+}
+
+.flag {
+  max-height: 20vh;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 3em;
+}
+
+.region_index {
+  display: inline;
+}
+
+input {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+}
+
+label {
+  font-family: 'Rajdhani', sans-serif;
+  color: black;
+  font-size: 30px;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+select {
+  display: block;
+  padding: 2em 0 2em 0;
+  color: black;
+  margin: 0 auto;
+}
+
+option {
+  font-family: 'Inconsolata', monospace;
+}
+
+.dish_list {
+  display: inline-block;
+  margin: 0 auto;
+  align-items: center;
+}

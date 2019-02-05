@@ -1,0 +1,24 @@
+<h2><%= @hop["name"] %></h2>
+
+<% unless @hop.beers.empty? %>
+  <h3>Associated Hops:</h3>
+  <ul>
+    <% @hop.beers.each do |beer| %>
+      <li>
+        <a href="/beers/<%= beer.id %>">
+          <%= beer.name %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<% unless @hop["image"].nil? %>
+  <img class="feature" src="<%= @hop["image"] %>" alt="<%= @hop["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/hops/<%= @hop["id"] %>/edit">Edit Hop</a>
+  <a href="/hops/<%= @hop["id"] %>/delete">Delete Hop</a>
+</div>

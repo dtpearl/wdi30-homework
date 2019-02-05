@@ -1,0 +1,25 @@
+<h2><%= @designer["name"].capitalize %></h2>
+
+<% unless @designer.buildings.empty? %>
+
+  <h3>Designed Buildings:</h3>
+
+ 
+  <% @designer.buildings.each do |building| %>
+  <p>
+      <a id="designer-work" href="/buildings/<%= building.id %>">
+        => <%= building.name.capitalize %>
+      </a>
+  </p>
+  <% end %>
+ 
+
+<% end %>
+
+
+<% unless @designer["image"].nil? %>
+<img class="feature" src="<%= @designer["image"] %>" alt="designer image">
+<% end %>
+
+<button class="edit"><a href="/designers/<%= @designer["id"] %>/edit">Edit</a></button>
+<button class="delete"><a href="/designers/<%= @designer["id"] %>/delete">Delete</a></button>

@@ -23,16 +23,14 @@ h1, h2, p{
   color: #A9A9A9;
 }
 
-
 body
 {
   text-align: left;
-  color: ##D3D3D3;
+  color: #D3D3D3;
 }
 
-.smalllogos {
+.footerbanners img {
   position: relative;
   display: inline-block;
   border: 3px solid #D3D3D3;
-
 }

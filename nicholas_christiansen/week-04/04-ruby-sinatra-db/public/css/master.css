@@ -1,0 +1,245 @@
+/** ---------------
+ * Import fonts
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/** ---------------
+ * All
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/** ---------------------------------------------------------------------------
+ * Body
+ */
+
+body {
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+
+/** ---------------------------------------------------------------------------
+ * Semantic Elements
+ */
+
+
+/** ---------------------------------------------------------------------------
+ * Container
+ */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 965px;
+    max-width: 100%;
+    margin: auto;
+    min-width:420px;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 965px) {
+  .container {
+      padding: 0 25px;
+  }
+}
+
+header {
+  background: rgb(0, 31, 79, 1);
+}
+
+
+#nav-header {
+  display: grid;
+  grid-template-columns: 200px 200px auto 400px;
+  grid-template-rows: 40px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+#logo,
+#nav,
+#social {
+  align-self: center;
+  /* justify-self: center; Screws logo */
+}
+
+#logo h1 {
+  display: flex;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.icon {
+  color: rgb(255, 255, 255, 1);
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.icon:hover {
+  color: rgb(255, 255, 255, 0.8);
+}
+
+#social {
+  text-align: right;
+}
+
+.spacer {
+  height: 50px;
+}
+
+#controls-box {
+  display: grid;
+  grid-template-columns: auto 150px;
+  grid-template-rows: 40px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  line-height: 40px;
+}
+
+
+
+#output-box {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  border: 1px solid rgb(0, 31, 79, 0.2);
+}
+
+/*
+.box {
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+}
+*/
+
+#title-box {
+  display: grid;
+  grid-template-columns: auto 50px;
+  grid-template-rows: 40px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  line-height: 40px;
+
+  font-size:
+}
+
+#overview-box {
+  display: grid;
+  grid-template-columns: 142px auto;
+  grid-template-rows: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  line-height: 40px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 1em;
+}
+
+.state {
+  color: rgb(128, 128, 128);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+p,
+.country {
+  color: rgb(84, 84, 84);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+#thumbnail-box {
+  display: grid;
+}
+
+img {
+  height: 100%;
+}
+
+#info-box {
+  padding: 1em;
+}
+
+.icon.add {
+  color: rgb(0, 31, 79, 0.8);
+  line-height: 40px !important;
+  text-align: right;
+}
+
+.icon.add:hover {
+  color: rgb(0, 31, 79, 0.2);
+}
+
+
+.edit {
+  color: rgb(0, 31, 79, 0.2);
+  text-align: center;
+  line-height: 40px !important;
+}
+
+.edit:hover {
+  color: rgb(0, 31, 79, 0.8);
+}
+
+.input {
+  padding: 0.5em 1em;
+  text-align: right;
+}
+
+.input.text {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: 30px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  line-height: 40px;
+}
+
+.input.unit {
+  display: grid;
+  grid-template-columns: 150px auto 100px;
+  grid-template-rows: 30px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  line-height: 40px;
+}
+
+.input.textarea {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: 80px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  line-height: 40px;
+}
+
+.input label {
+  padding-right: 1em;
+}
+
+#mapid {
+  height: 700px !important;
+}

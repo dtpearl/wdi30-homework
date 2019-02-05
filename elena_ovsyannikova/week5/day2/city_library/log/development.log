@@ -1,0 +1,2272 @@
+Started GET "/" for 127.0.0.1 at 2019-01-15 15:54:36 +1100
+  
+AbstractController::ActionNotFound (The action 'home' could not be found for CitiesController):
+  
+actionpack (5.1.6.1) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-15 15:55:39 +1100
+Processing by CitiesController#home as HTML
+Completed 406 Not Acceptable in 282ms
+
+
+  
+ActionController::UnknownFormat (CitiesController#home is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.6.1) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.6.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6.1) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.6.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:04:27 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  Rendered cities/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 219ms (Views: 214.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:05:26 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  Rendered cities/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 19.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:11:49 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (1.7ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 43ms (Views: 37.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:12:11 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 29ms (Views: 25.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:16:06 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 27.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:16:11 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:16:16 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (1.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:16:44 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 37ms (Views: 33.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:17:16 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 33ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:18:37 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (2.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 445ms (Views: 159.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-15 16:19:04 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/elena/.rvm/gems/ruby-2.4.2/gems/railties-5.1.6.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/elena/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (9.4ms)
+  Rendered /Users/elena/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.4ms)
+  Rendered /Users/elena/.rvm/gems/ruby-2.4.2/gems/railties-5.1.6.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 53ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:20:44 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 27.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:21:14 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:21:17 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 16:21:20 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 52ms (Views: 46.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2019-01-15 16:31:15 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 16:31:44 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 40ms (Views: 32.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 16:31:48 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities/edit" for 127.0.0.1 at 2019-01-15 17:01:17 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/cities/edit"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 17:11:35 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Samara", "image"=>"", "population"=>"1200000", "square"=>"2000000", "country"=>"Russia"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.6.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.6.1) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.6.1) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cities/new/rails/info/routes" for 127.0.0.1 at 2019-01-15 17:13:36 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/cities/new/rails/info/routes"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-15 17:15:46 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 13ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find City with 'id'=1):
+  
+app/controllers/cities_controller.rb:7:in `show'
+Started GET "/cities/show" for 127.0.0.1 at 2019-01-15 17:16:04 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find City with 'id'=show):
+  
+app/controllers/cities_controller.rb:7:in `show'
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 17:16:25 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 17:16:44 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Samara", "image"=>"", "population"=>"1200000", "square"=>"2000000", "country"=>"Russia"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.6.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.6.1) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.6.1) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 17:22:54 +1100
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/cities_controller.rb:1:in `<top (required)>'
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 17:23:45 +1100
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/cities_controller.rb:1:in `<top (required)>'
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 17:25:21 +1100
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/cities_controller.rb:1:in `<top (required)>'
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 17:25:32 +1100
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/cities_controller.rb:1:in `<top (required)>'
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 17:25:52 +1100
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/cities_controller.rb:1:in `<top (required)>'
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 17:26:37 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (2.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 468ms (Views: 168.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 17:26:44 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 17:26:52 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Glasgow", "image"=>"", "population"=>"", "square"=>"", "country"=>"Scotland"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "cities" ("name", "image", "country") VALUES (?, ?, ?)[0m  [["name", "Glasgow"], ["image", ""], ["country", "Scotland"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities.1
+Completed 302 Found in 22ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/cities.1" for 127.0.0.1 at 2019-01-15 17:26:52 +1100
+Processing by CitiesController#index as 
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (198.7ms)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `planet' for #<#<Class:0x00007fdc52041b28>:0x00007fdc562b94b0>):
+    3: <p>
+    4:   <%= link_to city.name, cities_path(city.id) %>
+    5:   has
+    6:   <%= pluralize planet.population, 'person' %>.
+    7: </p>
+    8: <% end %>
+  
+app/views/cities/index.html.erb:6:in `block in _app_views_cities_index_html_erb__2763054728917692806_70292157617880'
+app/views/cities/index.html.erb:2:in `_app_views_cities_index_html_erb__2763054728917692806_70292157617880'
+Started PUT "/__web_console/repl_sessions/12a424d7ac2da4bb6a660504b3cc31fa" for 127.0.0.1 at 2019-01-15 17:26:59 +1100
+Started PUT "/__web_console/repl_sessions/12a424d7ac2da4bb6a660504b3cc31fa" for 127.0.0.1 at 2019-01-15 17:27:00 +1100
+Started PUT "/__web_console/repl_sessions/12a424d7ac2da4bb6a660504b3cc31fa" for 127.0.0.1 at 2019-01-15 17:27:01 +1100
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-15 17:29:43 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 2.6ms)
+
+
+  
+SyntaxError (/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/cities/show.html.erb:3: syntax error, unexpected =>
+mage_tag @city.image, class =>'feature'  if @city.image.pres
+                              ^):
+  
+app/views/cities/show.html.erb:3: syntax error, unexpected =>
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-15 17:31:09 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/elena/.rvm/gems/ruby-2.4.2/gems/railties-5.1.6.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/elena/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [5 times] (3.6ms)
+  Rendered /Users/elena/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.9ms)
+  Rendered /Users/elena/.rvm/gems/ruby-2.4.2/gems/railties-5.1.6.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 40ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 17:43:33 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (193.9ms)
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `planet' for #<#<Class:0x00007fdc56032048>:0x00007fdc5642b460>):
+    3: <p>
+    4:   <%= link_to city.name, city_path(city.id) %>
+    5:   has
+    6:   <%= pluralize planet.population, 'person' %>.
+    7: </p>
+    8: <% end %>
+  
+app/views/cities/index.html.erb:6:in `block in _app_views_cities_index_html_erb__2763054728917692806_70292158373680'
+app/views/cities/index.html.erb:2:in `_app_views_cities_index_html_erb__2763054728917692806_70292158373680'
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 17:44:22 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 17:45:06 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 17:45:44 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 17:45:59 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Samara", "image"=>"", "population"=>"1200000", "square"=>"2000000", "country"=>"Russia"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "cities" ("name", "image", "population", "square", "country") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Samara"], ["image", ""], ["population", 1200000.0], ["square", 2000000.0], ["country", "Russia"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/2
+Completed 302 Found in 13ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2019-01-15 17:46:00 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (84.9ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `city_edit_path' for #<#<Class:0x00007fdc56032048>:0x00007fdc5230ce98>
+Did you mean?  city_path):
+    11: </ul>
+    12: 
+    13: <div class="controls">
+    14:   <%= link_to 'Edit city', city_edit_path(@city.id) %>
+    15: 
+    16: </div>
+  
+app/views/cities/show.html.erb:14:in `_app_views_cities_show_html_erb__1860783146140699891_70292124232780'
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 17:47:04 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Samara", "image"=>"", "population"=>"1200000", "square"=>"2000000", "country"=>"Russia"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "cities" ("name", "image", "population", "square", "country") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Samara"], ["image", ""], ["population", 1200000.0], ["square", 2000000.0], ["country", "Russia"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/3
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-15 17:47:04 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-15 17:47:36 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 17:47:45 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 41ms (Views: 35.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-01-15 17:55:12 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/elena/.rvm/gems/ruby-2.4.2/gems/railties-5.1.6.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/elena/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [6 times] (2.2ms)
+  Rendered /Users/elena/.rvm/gems/ruby-2.4.2/gems/actionpack-5.1.6.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/elena/.rvm/gems/ruby-2.4.2/gems/railties-5.1.6.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 32ms (Views: 24.5ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:08:17 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/cities/edit" for 127.0.0.1 at 2019-01-15 18:08:31 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find City with 'id'=edit):
+  
+app/controllers/cities_controller.rb:7:in `show'
+Started GET "/cities/1/edit" for 127.0.0.1 at 2019-01-15 18:08:40 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering cities/edit.html.erb within layouts/application
+  Rendered cities/edit.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <h1>Edit City</h1>
+    2: 
+    3: <form action="<%= city_path(@city.id) %>" method="post">
+    4: <label>Name: </label>
+    5: <input type="text" name="name" value="<%= @city.name %>" required>
+    6: <label>Image: </label>
+  
+app/views/cities/edit.html.erb:3:in `_app_views_cities_edit_html_erb___4534823878271207560_70292123965500'
+Started GET "/cities/1/edit" for 127.0.0.1 at 2019-01-15 18:11:46 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cities/edit.html.erb within layouts/application
+  Rendered cities/edit.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 26.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/cities/1" for 127.0.0.1 at 2019-01-15 18:12:19 +1100
+  
+ActionController::RoutingError (No route matches [POST] "/cities/1"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/cities/1" for 127.0.0.1 at 2019-01-15 18:16:04 +1100
+  
+SyntaxError (/Users/elena/Documents/GA/week5/day2/homework/city_library/app/controllers/cities_controller.rb:43: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/cities_controller.rb:43: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/cities/1" for 127.0.0.1 at 2019-01-15 18:16:30 +1100
+Processing by CitiesController#update as HTML
+  Parameters: {"name"=>"Glasgow", "image"=>"", "population"=>"3000000", "square"=>"", "country"=>"Scotland", "id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 1.3ms)
+
+
+  
+NameError (undefined local variable or method `city' for #<CitiesController:0x00007fdc562bb0d0>
+Did you mean?  @city):
+  
+app/controllers/cities_controller.rb:30:in `update'
+Started POST "/cities/1" for 127.0.0.1 at 2019-01-15 18:17:12 +1100
+Processing by CitiesController#update as HTML
+  Parameters: {"name"=>"Glasgow", "image"=>"", "population"=>"3000000", "square"=>"", "country"=>"Scotland", "id"=>"1"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "cities" SET "population" = ? WHERE "cities"."id" = ?[0m  [["population", 3000000.0], ["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/1
+Completed 302 Found in 18ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-15 18:17:13 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:25:57 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 45ms (Views: 38.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-15 18:25:59 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/1/edit" for 127.0.0.1 at 2019-01-15 18:26:01 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cities/edit.html.erb within layouts/application
+  Rendered cities/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-15 18:28:37 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:28:46 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-15 18:28:47 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/cities/3" for 127.0.0.1 at 2019-01-15 18:28:49 +1100
+Processing by CitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KmZthlp7VJhhmUjPPePtA1wVAz8MZ9yFrUE19kGkttVm4IlrybL//+lKLNDSHDJWUxCRwNeVcoqw9sXVO2pIDA==", "id"=>"3"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:28:49 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 35ms (Views: 30.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:29:32 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:29:34 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:29:35 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:29:35 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:29:44 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2019-01-15 18:29:46 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 27.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/2/edit" for 127.0.0.1 at 2019-01-15 18:29:48 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/edit.html.erb within layouts/application
+  Rendered cities/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 23.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/cities/2" for 127.0.0.1 at 2019-01-15 18:29:54 +1100
+Processing by CitiesController#update as HTML
+  Parameters: {"name"=>"Samara", "image"=>"", "population"=>"1200000", "square"=>"2000000.0", "country"=>"Russia", "id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/2
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2019-01-15 18:29:54 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/2/edit" for 127.0.0.1 at 2019-01-15 18:30:00 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/edit.html.erb within layouts/application
+  Rendered cities/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/cities/2" for 127.0.0.1 at 2019-01-15 18:30:05 +1100
+Processing by CitiesController#update as HTML
+  Parameters: {"name"=>"Samara", "image"=>"", "population"=>"1200000", "square"=>"2000000.0", "country"=>"Russia", "id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/2
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2019-01-15 18:30:05 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/2/edit" for 127.0.0.1 at 2019-01-15 18:31:09 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/edit.html.erb within layouts/application
+  Rendered cities/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 534ms (Views: 174.6ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/cities/2" for 127.0.0.1 at 2019-01-15 18:31:13 +1100
+Processing by CitiesController#update as HTML
+  Parameters: {"name"=>"Samara", "image"=>"", "population"=>"1200000", "square"=>"2000000.0", "country"=>"Russia", "id"=>"2"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/2
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2019-01-15 18:31:13 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 18:36:48 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (1.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 454ms (Views: 164.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2019-01-15 18:36:58 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:37:10 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 54ms (Views: 47.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 18:37:22 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 18:37:38 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Samara", "image"=>"", "population"=>"1200000", "square"=>"2000000", "country"=>"Russia"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "image", "population", "square", "country") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Samara"], ["image", ""], ["population", 1200000], ["square", 2000000.0], ["country", "Russia"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/1
+Completed 302 Found in 22ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-15 18:37:38 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 24.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 18:39:13 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 55ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 18:39:41 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Glasgow", "image"=>"", "population"=>"5000000", "square"=>"1000000", "country"=>"Scotland"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "image", "population", "square", "country") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Glasgow"], ["image", ""], ["population", 5000000], ["square", 1000000.0], ["country", "Scotland"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/2
+Completed 302 Found in 7ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2019-01-15 18:39:41 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 31.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:39:48 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 35ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:44:23 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"cities"}, missing required keys: [:id]):
+    13:     <nav>
+    14:       <%= link_to 'Home', root_path %>
+    15:       <%= link_to 'All Cities', cities_path %>
+    16:       <%= link_to 'New City', city_path %>
+    17:     </nav>
+    18:     <%= yield %>
+    19:     </div>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__4192608329205922600_70093829209380'
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:46:12 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 19.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:46:15 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 18:46:16 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 18:46:18 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:46:20 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 18:46:21 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:46:21 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 18:46:22 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:46:23 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 18:46:23 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 47ms (Views: 40.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:46:24 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 18:46:26 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 18:46:27 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 37ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 18:46:29 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 20:41:07 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (1.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 122ms (Views: 104.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 20:41:10 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 77ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 20:53:25 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Glasgow", "image"=>"https://ichef.bbci.co.uk/news/660/cpsprodpb/2756/production/_103507001_gettyimages-543289466.jpg", "population"=>"621020", "square"=>"175", "country"=>"Scotland"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "image", "population", "square", "country") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Glasgow"], ["image", "https://ichef.bbci.co.uk/news/660/cpsprodpb/2756/production/_103507001_gettyimages-543289466.jpg"], ["population", 621020], ["square", 175.0], ["country", "Scotland"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/3
+Completed 302 Found in 13ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-15 20:53:25 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 20:54:01 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 33ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-15 20:54:03 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 20:54:04 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 36ms (Views: 30.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-15 20:54:07 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 31.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 20:54:26 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2019-01-15 20:54:27 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 20:54:28 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 36ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2019-01-15 20:54:30 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/cities/2" for 127.0.0.1 at 2019-01-15 20:54:32 +1100
+Processing by CitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vlKlc+K2ftgVtAt7wVcjubK8DEY5tzCQ8MZLppWezdic0BD4x+FlTLRk9Hb7desn/VpfiOQDvd9w1rjKl4r6fg==", "id"=>"2"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities
+Completed 302 Found in 7ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 20:54:32 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 20.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2019-01-15 20:54:34 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/cities/1" for 127.0.0.1 at 2019-01-15 20:54:37 +1100
+Processing by CitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SknBjR2crkpy9CwlQtQDhexf/PU3j7QDeyXRTB/Wd+QW3FFabBp9OtE/ajp7fgz1VPF4Fy0mK77gAv75p+DzDg==", "id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = ?[0m  [["id", 1]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities
+Completed 302 Found in 8ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 20:54:37 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 20:54:40 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 21:06:39 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Samara", "image"=>"https://www.nationsonline.org/gallery/Russia/Opera-and-Ballet-Theater-Samara.jpg", "population"=>"1163399", "square"=>"541", "country"=>"Russia"}
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "cities" ("name", "image", "population", "square", "country") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Samara"], ["image", "https://www.nationsonline.org/gallery/Russia/Opera-and-Ballet-Theater-Samara.jpg"], ["population", 1163399], ["square", 541.0], ["country", "Russia"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/4
+Completed 302 Found in 25ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/cities/4" for 127.0.0.1 at 2019-01-15 21:06:39 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 65ms (Views: 60.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 21:06:49 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 49ms (Views: 43.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 21:06:54 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 21:11:53 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Moskow", "image"=>"https://www.cre.ru/content/upload/news/big/1476873500_city.jpg", "population"=>"11503501", "square"=>"2511", "country"=>"Russia"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "cities" ("name", "image", "population", "square", "country") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Moskow"], ["image", "https://www.cre.ru/content/upload/news/big/1476873500_city.jpg"], ["population", 11503501], ["square", 2511.0], ["country", "Russia"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/5
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:11:53 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 21:11:57 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 21:14:53 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"Saint Petersburg", "image"=>"http://www.citycome.ru/wp-content/uploads/2016/04/tour1_-700x427.jpg", "population"=>"5323300", "square"=>"1439", "country"=>"Russia"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "cities" ("name", "image", "population", "square", "country") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Saint Petersburg"], ["image", "http://www.citycome.ru/wp-content/uploads/2016/04/tour1_-700x427.jpg"], ["population", 5323300], ["square", 1439.0], ["country", "Russia"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/6
+Completed 302 Found in 5ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 21:14:53 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 40.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 21:15:05 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 21:15:09 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2019-01-15 21:17:48 +1100
+Processing by CitiesController#create as HTML
+  Parameters: {"name"=>"London", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/City_of_London_skyline_from_London_City_Hall_-_Sept_2015_-_Crop_Aligned.jpg/280px-City_of_London_skyline_from_London_City_Hall_-_Sept_2015_-_Crop_Aligned.jpg", "population"=>"8825000", "square"=>"1572", "country"=>"England"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "cities" ("name", "image", "population", "square", "country") VALUES (?, ?, ?, ?, ?)[0m  [["name", "London"], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/City_of_London_skyline_from_London_City_Hall_-_Sept_2015_-_Crop_Aligned.jpg/280px-City_of_London_skyline_from_London_City_Hall_-_Sept_2015_-_Crop_Aligned.jpg"], ["population", 8825000], ["square", 1572.0], ["country", "England"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/7
+Completed 302 Found in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/cities/7" for 127.0.0.1 at 2019-01-15 21:17:48 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/7/edit" for 127.0.0.1 at 2019-01-15 21:17:53 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering cities/edit.html.erb within layouts/application
+  Rendered cities/edit.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/cities/7" for 127.0.0.1 at 2019-01-15 21:18:22 +1100
+Processing by CitiesController#update as HTML
+  Parameters: {"name"=>"London", "image"=>"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg/1000px-Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg", "population"=>"8825000", "square"=>"1572.0", "country"=>"England", "id"=>"7"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "cities" SET "image" = ? WHERE "cities"."id" = ?[0m  [["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg/1000px-Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg"], ["id", 7]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cities/7
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/cities/7" for 127.0.0.1 at 2019-01-15 21:18:22 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/7" for 127.0.0.1 at 2019-01-15 21:21:50 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 84ms (Views: 79.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 21:21:54 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 37ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/4" for 127.0.0.1 at 2019-01-15 21:21:55 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/4" for 127.0.0.1 at 2019-01-15 21:22:25 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 21:22:31 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 28.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:22:31 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:23:16 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 37.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:24:46 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 38.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:28:01 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 51ms (Views: 44.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:28:19 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 67ms (Views: 62.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:30:58 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 56ms (Views: 52.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:31:36 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 92ms (Views: 86.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:32:07 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 61ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:32:47 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:33:57 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 49ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:34:34 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:35:16 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:37:51 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+', :class =>'simple' root_path );@output_buffer.safe_append=
+                              ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+ :class =>'simple' cities_path );@output_buffer.safe_append=
+                              ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+ass =>'simple' cities_new_path );@output_buffer.safe_append=
+                              ^):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:38:12 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting =>
+:class =>'simple', root_path );@output_buffer.safe_append='
+                              ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:18: syntax error, unexpected ')', expecting =>
+lass =>'simple', cities_path );@output_buffer.safe_append='
+                              ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:21: syntax error, unexpected ')', expecting =>
+ =>'simple', cities_new_path );@output_buffer.safe_append='
+                              ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:18: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:21: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:39:28 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:15: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+=( link_to 'Home', root_path :class =>'simple' );@output_buf
+                              ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:18: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+to 'All Cities', cities_path :class =>'simple' );@output_buf
+                              ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/layouts/application.html.erb:21: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+ 'New City', cities_new_path :class =>'simple' );@output_buf
+                              ^):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:18: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:21: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:39:46 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:44:56 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 49ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:45:13 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 42ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:47:31 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 45ms (Views: 40.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:48:06 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 67ms (Views: 63.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:49:08 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 60ms (Views: 55.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:49:18 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 37ms (Views: 32.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:49:50 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 44ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 21:53:02 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 55ms (Views: 51.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/5/edit" for 127.0.0.1 at 2019-01-15 21:55:07 +1100
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/edit.html.erb within layouts/application
+  Rendered cities/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 42ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 21:56:30 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.8ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 47ms (Views: 42.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 21:56:30 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 21:56:32 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 21:56:38 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 21:58:20 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 75ms (Views: 70.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:00:41 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:02:06 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 35.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:04:59 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:08:11 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:09:07 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:17:29 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:18:41 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 45ms (Views: 41.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:20:07 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 79ms (Views: 70.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:20:40 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:20:47 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.8ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:27:33 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 88ms (Views: 83.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 22:27:37 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 22:27:38 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:27:39 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:28:16 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `symbolize_keys' for "person":String):
+    3: <p>
+    4:   <%= link_to city.name, city_path(city.id) %>
+    5:   has
+    6:   <%= pluralize number_to_human city.population, 'person' %>.
+    7: </p>
+    8: <% end %>
+  
+app/views/cities/index.html.erb:6:in `block in _app_views_cities_index_html_erb___4376108330383754705_70093833139980'
+app/views/cities/index.html.erb:2:in `_app_views_cities_index_html_erb___4376108330383754705_70093833139980'
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:28:30 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  Rendered cities/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/cities/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+luralize, number_to_human city.population, 'person' );@outpu
+                              ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/cities/index.html.erb:6: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+an city.population, 'person' );@output_buffer.safe_append='.
+                              ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/cities/index.html.erb:8: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/cities/index.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/elena/Documents/GA/week5/day2/homework/city_library/app/views/cities/index.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/cities/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/cities/index.html.erb:6: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/cities/index.html.erb:8: syntax error, unexpected keyword_end, expecting ')'
+app/views/cities/index.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/cities/index.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:28:49 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:28:52 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:28:54 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cities/3" for 127.0.0.1 at 2019-01-15 22:28:55 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:29:13 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 37.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/4" for 127.0.0.1 at 2019-01-15 22:29:14 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:29:18 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/5" for 127.0.0.1 at 2019-01-15 22:29:20 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:29:22 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:29:23 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:29:24 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities/7" for 127.0.0.1 at 2019-01-15 22:29:25 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2019-01-15 22:29:33 +1100
+Processing by CitiesController#new as HTML
+  Rendering cities/new.html.erb within layouts/application
+  Rendered cities/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2019-01-15 22:29:39 +1100
+Processing by CitiesController#index as HTML
+  Rendering cities/index.html.erb within layouts/application
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/6" for 127.0.0.1 at 2019-01-15 22:29:41 +1100
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cities/show.html.erb within layouts/application
+  Rendered cities/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+

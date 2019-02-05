@@ -1,0 +1,19 @@
+<h1>New Wizard</h1>
+
+<form action="/wizards" method="post">
+  <label>Name: </label>
+  <input type="text" name="name" placeholder="Harry Potter" required>
+  <label>Wand: </label>
+  <input type="text" name="wand" placeholder="11 inch Phoenix Feather" required>
+  <label>Image: </label>
+  <input type="text" name="image" placeholder="http://...">
+  <label>House: </label>
+  <select name="house_id" id="">
+    <option></option>
+    <% House.all.each do |house| %>
+      <option value="<%= house.id %>"><%= house.house_name %></option>
+    <% end %>
+  </select>
+
+  <button>Create Wizard</button>
+</form>

@@ -1,0 +1,32 @@
+
+<form action="search" >
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" name="name" >
+    <label class="mdl-textfield__label" for="name">Search a player...</label>
+  </div>
+
+  <div id="toggle">
+
+    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="player">
+    <input type="checkbox" id="player" name="player" class="mdl-switch__input" >
+    <span class="mdl-switch__label">Search Team</span>
+
+  </label>
+  </div>
+
+  <button id= "home-search-button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Search</button>
+</form>
+
+
+<div class="mdl-grid">
+  <% @countries.each do |p| %>
+  <% if p.image.present? %>
+  <div class="mdl-cell mdl-cell--4-col mdl-shadow--6dp tile-button ">
+    <a href="<%= country_path(p.id) %>">
+    <%= image_tag p.image, :class=>"mdl-shadow--4dp" %>
+    </a>
+    <% end %>
+    <p><%= link_to p.name, p, :class=>"mdl-button" %></p>
+  </div>
+  <% end %>
+</div>

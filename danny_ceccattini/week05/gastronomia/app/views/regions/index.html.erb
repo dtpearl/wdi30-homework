@@ -1,0 +1,10 @@
+<h2>The Regions</h2>
+
+<div class="region_index">
+  <% @regions.each do |region| %>
+    <%= image_tag region.flag, :class => 'thumb' %>
+    <ul>
+      <li><%= link_to region.name, region_path(region.id) %></li>
+    </ul>
+  <% end %>
+</div>

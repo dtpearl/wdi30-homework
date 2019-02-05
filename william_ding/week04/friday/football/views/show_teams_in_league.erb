@@ -1,0 +1,13 @@
+<h2><%= @league.name %></h2>
+<div id="team-grid">
+  <% @teams.each do |team| %>
+  <% if team.league_id == @league.id %>
+  <div>
+    <a href="/teams/<%= team["id"] %>">
+      <img src="<%= team["logo"] %>" alt="">
+      <p><%= team["name"] %></p>
+    </a>
+  </div>
+  <% end %>
+  <% end %>
+<div>

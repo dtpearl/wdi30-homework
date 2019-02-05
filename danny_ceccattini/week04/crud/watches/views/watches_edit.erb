@@ -1,0 +1,15 @@
+<h2>Edit Watch</h2>
+
+<form action="/watches/<%= @watch["id"] %>" method="post">
+  <label>Company:</label>
+  <input type="text" name="company" value="<%= @watch["company"] %>" placeholder="company" required autofocus>
+  <label>Model:</label>
+  <input type="text" name="model" value="<%= @watch["model"] %>" placeholder="model" required>
+  <label>Country:</label>
+  <input type="text" name="country" value="<%= @watch["country"] %>" placeholder="country" required>
+  <label>Dial Image:</label>
+  <input type="text" name="dial" value="<%= @watch["dial"] %>" placeholder="http://...">
+  <label>Movement Image:</label>
+  <input type="text" name="movement" value="<%= @watch["movement"] %>" placeholder="http://...">
+  <button>Update</button>
+</form>

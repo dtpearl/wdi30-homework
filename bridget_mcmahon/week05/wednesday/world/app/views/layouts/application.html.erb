@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>World</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <i class="fas fa-city"></i>
+        <%= link_to 'All Cities', cities_path %>
+        <%= link_to 'New City', new_city_path %>
+        <span class="pipe">|</span>
+        <i class="fas fa-globe-asia"></i>
+        <%= link_to 'All Countries', countries_path %>
+        <%= link_to 'New Country', new_country_path %>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+  </body>
+</html>

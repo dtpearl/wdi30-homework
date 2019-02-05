@@ -1,0 +1,85 @@
+
+
+<div id="player-info">
+  <h2><%= @player.name %></h2>
+  <% if @player.image.present?  %>
+  <%= image_tag (@player.image) %>
+  <% end %>
+
+  <% if @player.age.present?  %>
+  <p>Age: <%= @player.age %></p>
+  <% end %>
+
+  <% if @player.nation.present?  %>
+  <p>Nation: <%= @player.nation %></p>
+  <% end %>
+
+  <% if @player.team.present?  %>
+  <p>Team: <%= @player.team %></p>
+  <% end %>
+
+  <% if @player.overall.present?  %>
+  <p>Rating: <%= @player.overall %></p>
+  <% end %>
+
+  <% if @player.pac.present?  %>
+  <p>Pace: <%= @player.pac %></p>
+  <% end %>
+
+  <% if @player.sho.present?  %>
+  <p>Shoting: <%= @player.sho %></p>
+  <% end %>
+
+  <% if @player.pas.present?  %>
+  <p>Passing: <%= @player.pas %></p>
+  <% end %>
+
+  <% if @player.dri.present?  %>
+  <p>Dribbing: <%= @player.dri %></p>
+  <% end %>
+
+  <% if @player.def.present?  %>
+  <p>Defence: <%= @player.def %></p>
+  <% end %>
+
+  <% if @player.phy.present?  %>
+  <p>Physical: <%= @player.phy %></p>
+  <% end %>
+
+</div>
+
+<div class="control">
+  <%= link_to 'Edit Player', player_edit_path(@player.id), :class=>"mdl-button mdl-js-button mdl-button--raised mdl-button--colored" %>
+
+  <%=  link_to 'Delete Player', player_delete_path, :method=>'delete', :class=>"mdl-button mdl-js-button mdl-button--raised mdl-button--accent", :data=>{:confirm=>"Are you sure?"} %>
+</div>
+
+<style>
+  h2 {
+    padding-top: 20px;
+  }
+
+  #player-info {
+    background-color: rgba(210, 212, 216, 0.7);
+    width: 400px;
+    margin: auto;
+    border-radius: 0.5em;
+  }
+
+  #player-info p {
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(210, 212, 216, 0.9)
+  }
+  #player-info p:last-of-type {
+    border-radius: 0 0 0.5em 0.5em;
+  }
+
+  .control a {
+    margin: 10px;
+    width: 150px;
+  }
+
+</style>

@@ -1,0 +1,5 @@
+<h2>Oh My God There Are So Many High Places!</h2>
+
+<% @mountains.each do |mountain| %>
+  <p class="index"><%= link_to mountain.name, mountain_path(mountain.id) %> is <%= mountain.height %> meters HIGH!!!</p>
+<% end %>

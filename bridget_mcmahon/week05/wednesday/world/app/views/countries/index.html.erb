@@ -1,0 +1,12 @@
+<h1>All Countries</h1>
+
+<% @countries.each do |country| %>
+  <div class="countries">
+    <a href="<%= country_path(country) %>">
+      <%= image_tag country.image, :class => 'thumb' %>
+      <div class="overlay">
+        <div class="text"><%= country.name %></div>
+      </div>
+    </a>
+  </div>
+<% end %>

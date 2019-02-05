@@ -1,0 +1,20 @@
+<h1><%= @city.name %></h1>
+
+
+<ul>
+
+  <li>Name: <%= @city.name %></li>
+  <li>Population: <%= @city.population %></li>
+  <li>Square: <%= @city.square %></li>
+  <li>Country: <%= @city.country %></li>
+</ul>
+
+<%= image_tag @city.image, :class =>'feature'  if @city.image.present? %>
+
+<div class="controls">
+  <%= link_to 'Edit City', city_edit_path(@city.id), :class => 'control' %>
+</div>
+<div class="controls">
+  <%= button_to 'Delete City', city_path(@city.id), :method => 'delete', :data => {:confirm => 'Are you sure?', :class => 'control'} %>
+
+</div>

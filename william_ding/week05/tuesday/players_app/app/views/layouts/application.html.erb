@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PlayersApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <body>
+
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Dream Team</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav id="mainnav" class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/">Home</a>
+        <a class="mdl-navigation__link" href="<%= players_path %>">All Players</a>
+        <a class="mdl-navigation__link" href="<%= player_new_path %>">Create Player</a>
+        <a class="mdl-navigation__link" href="/">Home</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Dream Team</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="/">Home</a>
+      <a class="mdl-navigation__link" href="<%= players_path %>">All Players</a>
+      <a class="mdl-navigation__link" href="<%= player_new_path %>">Create Player</a>
+      <a class="mdl-navigation__link" href="/">Home</a>
+    </nav>
+  </div>
+  <main class="container mdl-layout__content">
+    <%= yield %>
+  </main>
+</div>
+  </body>
+</html>

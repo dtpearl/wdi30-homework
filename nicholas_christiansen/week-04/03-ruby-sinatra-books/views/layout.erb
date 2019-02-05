@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @site[:title] %></title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/master.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div class="container" id="nav-header">
+        <div class="nav-box" id="logo">
+          <h1 href="/home">Book Finder</h1>
+        </div>
+        <div class="nav-box" id="nav"></div>
+        <div class="nav-box"></div>
+        <div class="nav-box" id="social"></div>
+      </div>
+    </header>
+
+
+
+    <!-- before yield -->
+    <%= yield %>
+    <!-- after yield -->
+
+  </body>
+</html>

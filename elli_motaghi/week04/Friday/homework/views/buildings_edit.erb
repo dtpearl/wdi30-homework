@@ -1,0 +1,27 @@
+<h2 class="animated flip delay-1s">Edit Building</h2>
+
+<form action="/buildings/<%= @building['id']%>" method="post">
+    <label>Name:</label>
+    <input type="text" name="name" value="<%= @building['name'] %>" placeholder="Building name:" required autofocus>
+
+    <label>City:</label>
+    <input type="text" name="city" value="<%= @building['city'] %>" placeholder="In which City:" required>
+
+    <label>Country:</label>
+    <input type="text" name="country" value="<%= @building['country'] %>" placeholder="In which Country:" required>
+
+    <label>Image:</label>
+    <input type="url" name="image" value="<%= @building['image'] %>" placeholder="http://...">
+
+    <label>Designer:</label>
+    <select name="designer_id">
+        <option></option>
+        <% Designer.all.each do |designer| %>
+        <option value="<%= designer["id"] %>" <%= "selected" if designer.id == @building.designer_id %>>
+            <%= designer["name"] %>
+        </option>
+        <% end %>
+    </select>
+
+    <button class="update">Update</button>
+</form>

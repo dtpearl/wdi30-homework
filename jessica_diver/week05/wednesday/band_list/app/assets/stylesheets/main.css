@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Staatliches');
+
+body {
+font-family: 'Playfair Display', serif;
+}
+
+.thumb {
+  height: 150px;
+}
+
+h1, h2, h3 {
+  font-family: 'Staatliches', cursive;
+}
+
+.navBar {
+  min-height: 38px;
+  background-color: #f55e55;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  flex-direction: row-reverse;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 38px;
+}
+
+ul {
+  list-style-type: none;
+  max-width: 60%;
+  margin: 20px auto;
+}
+
+.mainContent {
+  max-width: 960px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.feature {
+  max-width: 60%;
+}

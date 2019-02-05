@@ -1,0 +1,13 @@
+<%= form_for @film do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, :autofocus => true %>
+  <%= f.label :year %>
+  <%= f.text_field :year %>
+  <%= f.label :rotten_tomatoes %>
+  <%= f.text_field :rotten_tomatoes %>
+  <%= f.label :image %>
+  <%= f.url_field :image, :required => true %>
+  <%= f.label :director_id %>
+  <%= f.select :director_id, Director.pluck(:name, :id) %>
+  <%= f.submit %>
+<% end %>

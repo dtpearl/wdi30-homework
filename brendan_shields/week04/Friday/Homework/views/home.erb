@@ -1,0 +1,12 @@
+<img src="/images/Coffee.svg" alt="coffee">
+<p>
+  <span class="head">Select one of the coffees below.</span></p>
+<div class="home">
+  <% @coffee_menus.each do |coffee| %>
+
+    <a href="/coffees/<%= coffee['id'] %>">
+      <%= coffee['name'] %>
+    </a>
+
+  <% end %>
+</div>

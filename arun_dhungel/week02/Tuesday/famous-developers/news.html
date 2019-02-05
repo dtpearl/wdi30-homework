@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hometown</title>
+    <link rel="stylesheet" href="css/developer.css">
+    <link rel="stylesheet" href="css/developer1.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="trivia.asp">Trivia</a></li>
+                    <li><a href="index1.html">Hometown</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main>
+            <ul class="news-list">
+                <li>
+                    <h3>News Header</h3>
+                    <p class="news-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, laboriosam ea unde totam veniam reprehenderit harum, minima, dolorum voluptatum quo nobis quis odit repellendus mollitia qui iusto itaque ratione magni.</p>
+                </li>
+                <li>
+                    <h3>News Header</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, laboriosam ea unde totam veniam reprehenderit harum, minima, dolorum voluptatum quo nobis quis odit repellendus mollitia qui iusto itaque ratione magni.</p>
+                </li>
+                <li>
+                    <h3>News Header</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, laboriosam ea unde totam veniam reprehenderit harum, minima, dolorum voluptatum quo nobis quis odit repellendus mollitia qui iusto itaque ratione magni.</p>
+                </li>
+                <li>
+                    <h3>News Header</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, laboriosam ea unde totam veniam reprehenderit harum, minima, dolorum voluptatum quo nobis quis odit repellendus mollitia qui iusto itaque ratione magni.</p>
+                </li>
+            </ul>
+
+        </main>
+
+
+    </div>
+
+
+
+    <script>
+        function initMap() {
+
+            var peru = {
+                lat: 44.57895,
+                lng: -73.534112
+            };
+
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 4,
+                    center: peru
+                });
+
+            var marker = new google.maps.Marker({
+                position: peru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDrb3YjOqJx0eNLJQ_lr5MXOXuTrSXMbk&callback=initMap"></script>
+</body>
+
+</html>

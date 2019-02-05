@@ -1,0 +1,11 @@
+<h2>All Laliga Teams</h2>
+<div id="team-grid">
+  <% @laliga.each do |team| %>
+  <div>
+    <a href="/laliga/<%= team["id"] %>">
+      <img src="<%= team["logo"] %>" alt="">
+      <p><%= team["name"] %></p>
+    </a>
+  </div>
+  <% end %>
+<div>

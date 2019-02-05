@@ -1,0 +1,27 @@
+<h2><%= @watch["name"].upcase %></h2>
+
+<!-- HERE GOES YOUR IF STATEMENT FOR YOUR WATCHMAKERS ID -->
+
+<% unless @watch.watchmaker.nil? %>
+  <h3 class="watchmaker_name">
+    <a href="/watchmakers/<%= @watch.watchmaker_id %>">
+      By <%= @watch.watchmaker.name %>
+    </a>
+  </h3>
+<% end %>
+
+<!-- END OF STATEMET -->
+
+
+<% unless @watch["dial"].nil? || @watch["dial"].empty? %>
+  <img class="feature" src="<%= @watch["dial"] %>" alt="<%= "#{ @watch["name"] } Dial" %>">
+<% end %>
+
+<% unless @watch["movement"].nil? || @watch["movement"].empty? %>
+  <img class="feature" src="<%= @watch["movement"] %>" alt="<%= "#{ @watch["name"] } Movement" %>">
+<% end %>
+
+<div class="controls">
+  <a class="controls" href="/watches/<%= @watch["id"] %>/edit">Edit |</a>
+  <a class="controls" href="/watches/<%= @watch["id"] %>/delete"> Remove</a>
+</div>

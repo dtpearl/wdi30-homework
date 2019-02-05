@@ -1,0 +1,26 @@
+<h2>Edit Details</h2>
+
+<form action="/watches/<%= @watch["id"] %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= @watch["name"] %>" placeholder="Watch's name" required autofocus>
+  <label>Dial Image:</label>
+  <input type="url" name="dial" value="<%= @watch["dial"] %>" placeholder="http://..." required>
+  <label>Movement Image:</label>
+  <input type="url" name="movement" value="<%= @watch["movement"] %>" placeholder="http://..." required>
+
+  <!-- AGAIN, here we need to add the option to modify the watchmaker -->
+  <label>Watchmaker:</label>
+  <select name="watchmaker_id">
+    <option></option>
+    <% Watchmaker.all.each do |watchmaker| %>
+      <option value="<%= watchmaker["id"] %>" <%= "selected" if watchmaker.id == @watch.watchmaker_id %>>
+        <%= watchmaker["name"] %>
+      </option>
+    <% end %>
+  </select>
+
+  <div class="button">
+    <button>Update</button>
+  </div>
+
+</form>

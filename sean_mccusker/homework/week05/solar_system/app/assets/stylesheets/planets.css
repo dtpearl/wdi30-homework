@@ -1,0 +1,18 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.feature {
+  max-width: 100%;
+}
+
+body {
+  background-color: blue;
+  color: white;
+  background-image: url("http://en.es-static.us/upl/2011/09/solar_system-e1429031444824.jpg")
+}
+
+a {
+  color: white;
+}

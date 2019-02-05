@@ -1,0 +1,13 @@
+<h2>Car Edit</h2>
+
+<form action="/cars/<%= @car["id"] %>" method="post">
+  <label>Model:</label>
+  <input type="text" name="model" value="<%= @car["model"] %>" placeholder="Car model" required autofocus>
+  <label>Model Year:</label>
+  <input type="number" name="model_year" value="<%= @car["model_year"] %>" placeholder="Model year" required>
+  <label>Manufacturer:</label>
+  <input type="text" name="manufacturer" value="<%= @car["manufacturer"] %>" placeholder="Manufacturer" required>
+  <label>Image:</label>
+  <input type="url" name="image" value="<%= @car["image"] %>" placeholder="http://...">
+  <button>Update</button>
+</form>

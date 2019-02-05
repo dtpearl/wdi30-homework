@@ -1,0 +1,16 @@
+<h2>Name: <%= @pokemon["name"] %></h2>
+<h3>Type: <%= @pokemon["type"] %></h3>
+<% if @pokemon["evolves"].to_s == "1" %>
+  <h3>Evolves: Yes</h3>
+<% else %>
+  <h3>Evolves: Yes</h3>
+<% end %>
+
+<% unless @pokemon["image"].nil? %>
+  <img class="feature" src="<%= @pokemon["image"] %>" alt="<%= @pokemon["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/pokedex/<%= @pokemon["id"] %>/edit"><i class="fas fa-pen"></i> Edit Pokemon</a>
+  <a href="/pokedex/<%= @pokemon["id"] %>/delete"><i class="fas fa-trash"></i> Delete Pokemon</a>
+</div>

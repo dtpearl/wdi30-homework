@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Geocode</title>
+  <link rel="stylesheet" href="css/master.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/ajax-geocode.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="search">
+      <input type="search" id="query" required autofocus placeholder="Paris">
+      <button>Search</button>
+    </form>
+
+    <div id="map">
+    </div>
+
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUPm0Pl3yvAfw6vhDYrqx7CDTvAKpscdM&callback=initMap" async defer></script>
+</body>
+</html>

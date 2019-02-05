@@ -1,0 +1,11 @@
+<h2>All your favorite singers</h2>
+<ul>
+<% @singer.each do |singer| %>
+<li>
+  <a href="/details/<%= singer.id %>">
+    <%= singer.name %>
+  </a>
+  <a href="/singer/<%= singer.id %>/edit">Edit</a>  <a href="">Delete</a>
+</li>
+<% end %>
+</ul>

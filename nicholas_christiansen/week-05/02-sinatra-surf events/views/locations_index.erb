@@ -1,0 +1,24 @@
+<div class="container spacer"></div>
+
+<div class="container header">
+  <div class="box" id="controls-box">
+    <div></div>
+    <a class="icon add" href="/locations/new">add location <i class="fas fa-plus"></i></a>
+  </div>
+
+</div>
+
+<div class="container" id="map">
+  <div id="mapid"></div>
+</div>
+
+<div class="container">
+  <% @locations.each do |loc| %>
+    <div class="box" id="output-box">
+      <div class="box" id="title-box">
+        <h1 class="title data" data-lat="<%= loc["latitude"] %>" data-lon="<%= loc["longitude"] %>"><%= loc["beach"] %></h1>
+        <a class="icon edit fas fa-caret-right" href="/locations/<%= loc["id"] %>"></a>
+      </div>
+    </div>
+  <% end %>
+</div>

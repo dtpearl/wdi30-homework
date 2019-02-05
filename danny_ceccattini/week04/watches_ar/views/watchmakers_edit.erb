@@ -1,0 +1,14 @@
+<h2>Edit Details</h2>
+
+<form action="/watchmakers/<%= @watchmaker["id"] %>" method="post">
+  <label>Name:</label>
+    <input type="text" name="name" value="<%= @watchmaker.name %>" placeholder="New Name" required autofocus>
+  <label>Nationality:</label>
+    <input type="text" name="country" value="<%= @watchmaker.country %>" placeholder="New Nationality" required>
+  <label>Photo:</label>
+    <input type="url" name="photo" value="<%= @watchmaker.photo %>" placeholder="http://...">
+
+  <div class="button">
+    <button>Update</button>
+  </div>
+</form>

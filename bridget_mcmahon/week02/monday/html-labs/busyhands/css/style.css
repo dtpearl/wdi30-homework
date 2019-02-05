@@ -5,28 +5,37 @@ body {
 #container {
   max-width: 950px;
   margin: 0 auto;
+  max-width: 960px;
 }
 
-/* #wrapper {
-  background-image: /images/bg_body.png;
-} */
+#wrapper {
+  background-image: url(../images/bg_body.png);
+  background-repeat: repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  margin: 15px 0;
+}
 
 nav {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   display: block;
-  background: black;
+  background-color: black;
   color: white;
   margin: 0;
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin-right: 20px;
+  line-height: 60px
 }
 
-nav li a {
-  display: block;
+nav ul li a {
   width: 100%;
   padding: 10px 0;
 }
@@ -36,18 +45,24 @@ h2 {
   padding: 10px 0;
 }
 
-#home-boxes p {
-  font-size: 11px;
-  padding: 6px 0;
+.photobanner {
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #1f9cef;
+#blurb {
+  border-top: 1px solid #CCCCCC;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  display: flex;
+  padding: 0.8em;
 }
 
 #blurb p {
-  font-size: 14px;
+  font-size: 17px;
+  margin-right: 3em;
+  vertical-align: middle;
 }
 
 #blurb img {
@@ -57,10 +72,16 @@ a {
   border: none;
 }
 
+a {
+  text-decoration: none;
+  color: #1f9cef;
+}
+
 #social-media * {
   width: 50%;
   height: 60px;
   display: inline;
+  order: 2;
 }
 
 #social-media ul li{
@@ -106,7 +127,11 @@ a {
 #logo {
   width: 300px;
   height: 100%;
-  display: inline-block;
+  order: 0;
+}
+
+#home-boxes {
+  margin-bottom: 15px;
 }
 
 .home-box {
@@ -116,7 +141,24 @@ a {
   display: inline-block;
 }
 
+#home-boxes p {
+  font-size: 11px;
+  padding: 6px 0;
+}
+
 #home-boxes img {
   border: 3px solid #EEEEEE;
   padding: 1px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+#companybottom {
+  text-align: right;
 }

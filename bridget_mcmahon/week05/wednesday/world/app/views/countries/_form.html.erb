@@ -1,0 +1,27 @@
+<%= form_for @country do |f| %>
+  <ul>
+    <li>
+      <%= f.label :name %>
+      <%= f.text_field :name, :autofocus => true, :required => true %>
+    </li>
+    <li>
+      <%= f.label :area %>
+      <%= f.text_field :area %>
+    </li>
+    <li>
+      <%= f.label :population %>
+      <%= f.text_field :population %>
+    </li>
+    <li>
+      <%= f.label :currency %>
+      <%= f.text_field :currency %>
+    </li>
+    <li>
+      <%= f.label :image %>
+      <%= f.text_field :image %>
+    </li>
+    <li>
+      <%= f.submit %>
+    </li>
+  </ul>
+<% end %>

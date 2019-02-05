@@ -1,0 +1,14 @@
+<h1><%= @wizard.name %></h1>
+
+<% unless @wizard.house.nil? %>
+  <h2>House: <a href="/houses/<%= @wizard.house_id %>"><%= @wizard.house.house_name %></a></h2>
+<% end %>
+
+<% unless @wizard.image.nil? %>
+  <img class="feature" src="<%= @wizard.image %>" alt="<%= @wizard.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="/wizards/<%= @wizard.id %>/edit">Edit Wizard</a>
+  <a href="/wizards/<%= @wizard.id %>/delete">Delete Wizard</a>
+</div>

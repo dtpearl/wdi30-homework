@@ -1,0 +1,26 @@
+<h2 class="singerTitle"><%= @singer.name %></h2>
+<form action="">
+  <div class="main">
+      <label>Born :</label>
+      <p><%= @singer.birthdate %> <%= @singer.city %> , <%= @singer.state %> <%= @singer.country %></p>
+      <img class="dpimage" src="<%= @singer.image %>" alt="<%= @singer.name %>">
+  </div>
+  <div class="aside">
+    <p>
+      Jackson was inducted onto the Hollywood Walk of Fame in 1980 as member of the Jacksons and in 1984 as solo artist. Throughout his career he received numerous honors and awards, including the World Music Awards' Best-Selling Pop Male Artist of the Millennium, the American Music Award's Artist of the Century Award and the Bambi Pop Artist of the Millennium Award.He was a double-inductee of the Rock and Roll Hall of Fame, once as a member of The Jackson 5 in 1997 and later as a solo artist in 2001. Jackson was also inducted in several other halls of fame, including Vocal Group Hall of Fame (as a Jackson 5 member) in 1999 and the Songwriters Hall of Fame in 2002. In 2010, Jackson was inducted into the Dance Hall of Fame as the first (and currently only) dancer from the world of pop and rock 'n' roll. In 2014, Jackson was inducted into the second class of inductees to the Rhythm and Blues Music Hall of Fame; his father Joe Jackson accepted on his behalf.
+    </p>
+    <!-- <a href="/songs/new">Add Songs</a> -->
+  <% unless @songs.size == 0 %>
+
+    <ul>
+    <% @songs.each do |song| %>
+      <li>
+      <a href="/songs/<%= song.id %>">
+        <%= song.name %>
+      </a>
+      </li>
+    <% end %>
+    </ul>
+    <% end %>
+  </div>
+</form>

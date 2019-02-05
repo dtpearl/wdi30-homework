@@ -1,0 +1,10 @@
+$primaryColor: white;
+
+body {
+  $primaryColor: white;
+  background: $primaryColor;
+}
+
+p {
+  color: $primaryColor;
+}

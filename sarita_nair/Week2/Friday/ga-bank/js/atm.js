@@ -15,7 +15,7 @@ $(document).ready(function(){
   ];
 
   let transactions = function(name,acno,type,amount,transtype){
-    return [{
+    return {
       OwnerName: name,
       accountNumber: acno,
       Type: type,
@@ -30,7 +30,7 @@ $(document).ready(function(){
     //       }
     //     }
     // };
-  }];
+  };
   };
   let OverDraftArray = [];
   let ovrdiv, ovraccno, currdiv,ovrtype = '';
@@ -79,9 +79,9 @@ $(document).ready(function(){
       else
       {
         $.each( OverDraftArray, function(index,record){
-            $.each( record, function( index2, sub_record ) {
-                trn.push(transactions(name,sub_record.accountNumber,sub_record.Type,sub_record.balance,'D'));
-            });
+            //$.each( record, function( index2, sub_record ) {
+                trn.push(transactions(name,record.accountNumber,record.Type,record.balance,'D'));
+            //});
         });
 
         const ovrbalance = CalculateBalance(ovraccno,ovrtype);
@@ -89,29 +89,30 @@ $(document).ready(function(){
       }
         const curbalance = CalculateBalance(accno,type);
         $((`#${type}-balance`).toLowerCase()).html(`<span>$${curbalance}<span>`);
+        CheckZeroBalance(ovraccno,ovrtype);
+
   };
 
-  const CalculateBalance = function(accountNumber,type)
-  {
-        let transaction = [];
-        $.each( trn, function(index,record){
-            const tranFilterelements = record.filter( function( el, index ) {
+  const CalculateBalance = function(accountNumber,type){
+        //let transaction = [];
+        //$.each( trn, function(index,record){
+            const transaction = trn.filter( function( el, index ) {
               console.table(el.accountNumber);
                 return el.accountNumber === accountNumber && el.Type === type;
             });
-            if(tranFilterelements.length > 0)
-            transaction.push(tranFilterelements);
+            //if(tranFilterelements.length > 0)
+            //transaction.push(tranFilterelements);
 
-        });
+        //});
 
         let balance = 0;
             $.each( transaction, function(index,record){
-                $.each( record, function( index2, sub_record ) {
-                  if(sub_record.TransType === 'C')
-                      balance += sub_record.balance;
+                //$.each( record, function( index2, sub_record ) {
+                  if(record.TransType === 'C')
+                      balance += record.balance;
                   else
-                      balance -= sub_record.balance;
-                });
+                      balance -= record.balance;
+                //});
             });
         return balance;
   };
@@ -132,6 +133,7 @@ $(document).ready(function(){
       ovrdiv = (`#${secondAcc[0].Type}-balance`).toLowerCase();
       ovrtype = secondAcc[0].Type;
       ovraccno = secondAcc[0].accountNumber;
+
       generateOverDraftArray(acno,type,currentBalance,secondAcc[0].accountNumber,secondAcc[0].Type,(amt-currentBalance));
       return true;
     }

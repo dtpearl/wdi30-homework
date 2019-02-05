@@ -1,0 +1,22 @@
+<h2>Edit a League</h2>
+
+<form action="/league_edit" method="post">
+
+  <input id="edit-id" type="text" name="id" value="<%= @league["id"] %>">
+
+  <div class="form-row">
+    <label for="name">Name: </label>
+    <input type="text" name="name" value="<%= @league["name"] %>" required>
+  </div>
+
+  <div class="form-row">
+    <label for="country">Country: </label>
+    <input type="text" name="country" value="<%= @league["country"] %>" required>
+  </div>
+
+  <div class="form-row">
+    <label for="logo">Logo URL: </label>
+    <input type="URL" name="logo" value="<%= @league["logo"] %>" required>
+  </div>
+  <button>Submit</button>
+</form>

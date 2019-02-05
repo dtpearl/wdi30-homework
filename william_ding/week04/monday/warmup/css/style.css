@@ -1,0 +1,7 @@
+#text-container {
+  display: none;
+}
+
+#display {
+  position: absolute;
+}

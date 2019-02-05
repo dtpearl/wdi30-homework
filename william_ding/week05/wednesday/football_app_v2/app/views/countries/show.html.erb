@@ -1,0 +1,15 @@
+<h2><%= @country.name %></h2>
+<%= image_tag @country.image if @country.image.present? %>
+
+<div class="mdl-grid">
+<% @teams.each do |t| %>
+  <% if t.country_id == @country.id %>
+  <div class="mdl-cell mdl-cell--3-col mdl-shadow--6dp tile-button">
+    <% if t.image.present? %>
+      <%= link_to image_tag(t.image), t %>
+    <% end %>
+    <%= link_to t.name, t %>
+    </div>
+  <% end %>
+<% end %>
+</div>

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Thasadith');
+
+/* font-family: 'Staatliches', cursive;
+font-family: 'Thasadith', sans-serif; */
+
+body {
+  background-color: black;
+  color: white;
+  max-width: 960;
+  margin: auto;
+  text-align: center;
+  font-family: 'Thasadith', sans-serif;
+  font-size: 20px;
+}
+
+nav {
+  color: white;
+  height: 5vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  padding: 10px;
+  margin-top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+
+}
+
+nav a:hover {
+  
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  display: block;
+  margin: 50px;
+  font-size: 50px;
+}

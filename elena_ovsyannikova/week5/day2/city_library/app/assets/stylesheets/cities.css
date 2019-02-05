@@ -1,0 +1,44 @@
+
+
+body {
+  background-color: #e6fcff;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #e6fcff;
+
+}
+.feature {
+  max-width:100%;
+  margin-bottom: 50px;
+}
+nav {
+  text-align: right;
+}
+.simple {
+  color: white;
+}
+.styl {
+
+  text-align: center;
+  width: 100px;
+  display: inline-block;
+  background-color: #3b3baf;
+  border-radius: 20px;
+
+}
+.controls {
+  text-align: center;
+  width: 100px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+
+}
+.control {
+  color: black;
+  font-size: 14px;
+
+}

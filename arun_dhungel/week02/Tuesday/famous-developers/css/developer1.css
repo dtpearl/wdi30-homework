@@ -1,0 +1,15 @@
+.map-wrapper {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    border: 2px black solid;
+    width: 100%;
+    margin: 0px 5px;
+}

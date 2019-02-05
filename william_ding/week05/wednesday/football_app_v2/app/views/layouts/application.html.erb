@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FootballAppV2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.amber-cyan.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="main-nav mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="main-header-row mdl-layout__header-row">
+      <!-- Title -->
+          <i class="material-icons md-36">
+            sentiment_very_satisfied
+          </i>
+          <span class="mdl-layout-title">
+            My Football App
+          </span>
+          <i class="material-icons md-36">
+            sentiment_very_satisfied
+          </i>
+      <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <%= link_to 'Home', countries_path, :class=>"mdl-navigation__link" %>
+            <%= link_to 'All Player', players_path, :class=>"mdl-navigation__link" %>
+            <%= link_to 'New Player', new_player_path, :class=>"mdl-navigation__link" %>
+            <%= link_to 'All Teams', teams_path, :class=>"mdl-navigation__link" %>
+            <%= link_to 'New Team', new_team_path, :class=>"mdl-navigation__link" %>
+          </nav>
+        </div>
+      </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">My Football App</span>
+      <nav class="mdl-navigation">
+      <%= link_to 'Home', countries_path, :class=>"mdl-navigation__link" %>
+      <%= link_to 'All Player', players_path, :class=>"mdl-navigation__link" %>
+      <%= link_to 'New Player', new_player_path, :class=>"mdl-navigation__link" %>
+      <%= link_to 'All Teams', teams_path, :class=>"mdl-navigation__link" %>
+      <%= link_to 'New Team', new_team_path, :class=>"mdl-navigation__link" %>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+
+    <%= yield %>
+
+  </main>
+
+  </body>
+</html>

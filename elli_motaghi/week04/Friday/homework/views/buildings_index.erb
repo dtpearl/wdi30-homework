@@ -1,0 +1,12 @@
+<h3 class="animated flipInX delay-1s" id="title">The Most Famous Buildings</h3>
+
+<% @buildings.each do |building| %>
+<div class="animated flipInX delay-2s" id="list">
+    <a id="new-item" href="/buildings/<%= building["id"]%>">
+      "<%= building["name"].upcase %>" in <%= building["city"].capitalize %>, <%= building["country"].capitalize %>
+    </a>
+</div>
+<% end %>
+
+<br>
+

@@ -1,0 +1,18 @@
+<h2><%= @animation["name"] %></h2>
+
+<% unless @animation.author.nil? %>
+  <h3>Related Animation:
+    <a href="/authors/<%= @animation.author_id %>">
+      <%= @animation.author.name %>
+    </a>
+   </h3>
+<% end %>
+
+<% unless @animation["image"].nil? %>
+  <img class="feature" src="<%= @animation["image"] %>" alt="<%= @animation["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/animations/<%= @animation["id"] %>/edit">Edit Animation</a>
+  <a href="/animations/<%= @animation["id"] %>/delete">Delete Animation</a>
+</div>

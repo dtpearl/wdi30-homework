@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny|Roboto+Slab|ZCOOL+KuaiLe');
+
+body {
+  background-color: blanchedalmond;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  background-color: blanchedalmond;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Coiny', cursive;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Coiny', cursive;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+nav {
+  font-family: 'Roboto Slab', serif;
+}
+
+label {
+  font-family: 'Roboto Slab', serif;
+}
+
+button {
+  font-family: 'Roboto Slab', serif;
+}
+
+.book_cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+}
+
+img {
+  margin: 0 auto;
+}
+
+.price {
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+footer {
+  padding: 100px 0 0 0;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}

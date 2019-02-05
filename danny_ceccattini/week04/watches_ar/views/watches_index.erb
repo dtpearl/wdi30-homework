@@ -1,0 +1,9 @@
+<h2>THE COLLECTION</h2>
+
+<% @watches.each do |watch| %>
+  <p>
+    <a class="index_list" href="/watches/<%= watch["id"] %>">
+      <%= watch["name"]%>
+    </a>
+  </p>
+<% end %>

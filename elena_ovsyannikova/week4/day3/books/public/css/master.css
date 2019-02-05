@@ -1,0 +1,19 @@
+body {
+  background-color: lightgreen;
+  background-image: url(/image/library.jpg);
+
+}
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  background-color: rgba(247, 188, 166, 0.8);
+  padding: 1em;
+}
+.row {
+  display: inline-block;
+
+}

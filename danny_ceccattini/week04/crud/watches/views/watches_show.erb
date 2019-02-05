@@ -1,0 +1,15 @@
+<h2><%= @watch["company"] %></h2>
+<h3><%= @watch["model"] %></h3>
+
+<% unless @watch["dial"].nil? %>
+  <img class="feature" src="<%= @watch["dial"] %>  alt="<%= @watch["model"] %>">
+<% end %>
+
+<% unless @watch["movement"].nil? %>
+  <img class="feature" src=" <%= @watch["movement"] %>" alt=" <%= "#{ @watch["model"] } calibre" %>">
+<% end %>
+
+<div class="controls">
+  <a href="/watches/<%= @watch["id"] %>/edit">Edit Watch</a>
+  <a href="/watches/<%= @watch["id"] %>/delete">Delete Watch</a>
+</div>

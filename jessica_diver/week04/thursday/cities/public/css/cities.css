@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+
+body {
+  background: #ccddee;
+  font-family: monospace;
+  font-family: 'Thasadith', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.controls a {
+  padding: 15px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+.intro {
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 15px;
+}
+
+.all_cities a {
+  padding: 50px;
+}

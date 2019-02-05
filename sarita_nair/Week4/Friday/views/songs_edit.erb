@@ -1,0 +1,12 @@
+<h2>Edit Songs</h2>
+<form action="/songs/<%= @songs.id %>" method="post">
+  <input type="text" name="name" placeholder="Song Name" value="<%= @songs.name %>">
+  <select name="artist_id">
+    <% Singer.all.each do |singer| %>
+    <option value="<%= singer.id %>" <%= "selected" if singer.id == @songs.artist_id %>>
+      <%= singer.name %>
+    </option>
+    <% end %>
+  </select>
+  <button>Update</button>
+</form>

@@ -1,0 +1,26 @@
+<h2><%= @watchmaker["name"] %></h2>
+<h3 class="country"><%= @watchmaker["country"]%></h3>
+
+<% unless @watchmaker.watches.empty? %>
+  <h3 class="watchmaker_name" ><%= "#{ @watchmaker["name"] }'s Creations" %></h3>
+    <ul>
+      <% @watchmaker.watches.each do |watch| %>
+        <li>
+          <a href="/watches/<%= watch.id %>">
+            <%= watch.name %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+<% end %>
+
+<% unless @watchmaker["photo"].nil? || @watchmaker["photo"].empty? %>
+  <img class="feature" src="<%= @watchmaker["photo"] %>" alt=" <% @watchmaker["name"] %>">
+<% end %>
+
+<a class=ahci_link href="https://www.ahci.ch/members/<%= @watchmaker["name"].downcase.gsub(" ", "-") %>/">Visit <%= "#{ @watchmaker["name"] }" %>'s AHCI Page</a>
+
+<div class="controls">
+  <a class="controls" href="/watchmakers/<%= @watchmaker["id"] %>/edit">Edit |</a>
+  <a class="controls" href="/watchmakers/<%= @watchmaker["id"] %>/delete"> Remove</a>
+</div>

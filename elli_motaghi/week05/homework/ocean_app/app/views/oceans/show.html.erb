@@ -1,0 +1,15 @@
+<h2>All about "<%= @ocean.name.capitalize %>" Ocean</h2>
+
+<ul>
+    <li>Name: <%= @ocean.name.capitalize %></li>
+    <li>Area: <%= number_to_percentage(@ocean.area, precision: 2) %></li>
+    <li>Volume: <%= number_to_percentage(@ocean.volume, precision: 2)  %></li>
+    <li>Average Depth: <%= number_to_human @ocean.ave_depth %></li>
+</ul>
+
+<%= image_tag @ocean.image, :class => "feature" if @ocean.image.present? %>
+
+<div class="controls">
+  <button class="edit"><%= link_to 'Edit Ocean', ocean_edit_path(@ocean.id) %></button>
+  <button class="delete"><%= link_to 'Delete Ocean', ocean_path(@ocean.id), :method => 'delete', :data => {:confirm => 'Are you sure?'} %></button>
+</div>

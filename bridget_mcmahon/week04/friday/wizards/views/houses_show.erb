@@ -1,0 +1,21 @@
+<h1><%= @house.house_name %></h1>
+
+<% unless @house.wizards.empty? %>
+  <h2>Wizards: </h2>
+  <ul>
+    <% @house.wizards.each do |wizard| %>
+      <li>
+        <a href="/wizards/<%= wizard.id %>"><%= wizard.name %></a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% unless @house.crest.nil? %>
+  <img class="feature" src="<%= @house.image %>" alt="<%= @house.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="/wizards/<%= @house.id %>/edit">Edit House</a>
+  <a href="/wizards/<%= @house.id %>/delete">Delete House</a>
+</div>

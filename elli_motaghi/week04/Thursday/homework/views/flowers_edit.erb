@@ -1,0 +1,11 @@
+<h2 class="animated infinite fadeOut delay-2s">Edit Flower</h2>
+
+<form action="/flowers/<%= @flower["id"] %>" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" value="<%= @flower["name"] %>" placeholder="Flower name" required autofocus>
+  <label>Family:</label>
+  <input type="text" name="family" value="<%= @flower["family"] %>" placeholder="Family name" required>
+  <label>Image:</label>
+  <input type="url" name="image" value="<%= @flower["image"] %>" placeholder="http://...">
+  <button>Update</button>
+</form>

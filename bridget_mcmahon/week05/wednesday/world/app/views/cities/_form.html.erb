@@ -1,0 +1,28 @@
+<%= form_for @city do |f| %>
+  <ul>
+    <li>
+      <%= f.label :name %>
+      <%= f.text_field :name, :autofocus => true %>
+    </li>
+    <li>
+      <%= f.label :population %>
+      <%= f.text_field :population %>
+    </li>
+    <li>
+      <%= f.label :image %>
+      <%= f.text_field :image %>
+    </li>
+    <li>
+      <%= f.label :time_zone %>
+      <%= f.text_field :time_zone %>
+    </li>
+    <li>
+      <%= f.label :country_id %>
+      <%= f.select :country_id, Country.pluck(:name, :id), :include_blank => true %>
+    </li>
+    <li>
+      <%= f.submit %>
+    </li>
+  </ul>
+
+<% end %>

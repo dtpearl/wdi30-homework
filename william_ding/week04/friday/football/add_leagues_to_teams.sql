@@ -1,0 +1,3 @@
+ALTER TABLE laliga RENAME TO teams;
+
+ALTER TABLE teams ADD COLUMN league_id INTEGER;

@@ -1,0 +1,6 @@
+<h2>All Bands</h2>
+
+<% @bands.each do |band| %>
+<h3> <%= band.name %> </h3>
+<%= link_to image_tag(band.image, :alt => 'Photo of band', :class => 'thumb'), band %>
+<% end %>

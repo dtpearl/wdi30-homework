@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+body {
+    background: #d3cdcd;
+    padding: 0px !important;
+}
+
+.column1 {
+    margin-top: 25px;
+    float: left;
+    width: 25%;
+    text-align: left;
+    background: #B1A0A0;
+}
+
+.column2 {
+    border: 5px solid black;
+    display: inline-block;
+    float: center;
+    width: 65%;
+    text-align: left;
+    margin: 30px;
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    background-color: #847f7f;
+}
+
+.headingStyle {
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+blockquote {
+    background: #847f7f;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+img {
+    border-radius: 8px;
+    display: inline-block;
+    border: 1px solid #ddd;
+}
+
+.news-list {
+    background: transparent
+}
+
+.news-list li {
+    background: transparent
+}
+
+.news-block {
+    background-color: transparent;
+}
+
+.map-wrapper {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    border: 2px black solid;
+    width: 100%;
+    margin: 0px 5px;
+}

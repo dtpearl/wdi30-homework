@@ -1,0 +1,11 @@
+<% if @computers_number == @users_guess %>
+  <h1>WIN</h1>
+  <% else %>
+  <h1>LOSE</h1>
+  <p>Your guess: <%= @users_guess %></p>
+  <p>Correct answer: <%= @computers_number %></p>
+<% end %>
+
+<button>
+  <a href="/secret_numbers/">TRY AGAIN!</a>
+</button>

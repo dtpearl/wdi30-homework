@@ -1,0 +1,27 @@
+
+<div class="container spacer"></div>
+
+<div class="container">
+  <div class="box" id="output-box">
+    <div class="box" id="title-box">
+      <h1 class="title"><%= @location["beach"] %></h1>
+      <a class="icon edit fas fa-cog" href=""></a>
+    </div>
+    <div class="box" id="overview-box">
+      <div class="box" id="thumbnail-box">
+        <% unless @location["url"].nil? %>
+          <img src="<%= @location["url"] %>" alt="<%= @location["beach"] %>">
+        <% end %>
+      </div>
+      <div class="box" id="info-box">
+        <div class="box" id="detail-box">
+          <span class="state"><%= @location["state"] %> - </span>
+          <span class="country"><%= @location["country"] %></span>
+        </div>
+        <div class="box" id="summary-box">
+          <p><%= @location["summary"] %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

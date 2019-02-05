@@ -1,0 +1,10 @@
+<h2><%= @car["model"]%>  <%=  @car["model_year"] %></h2>
+<h3><%= @car["manufacturer"] %></h3>
+<% unless @car["image"].nil? %>
+  <img src="<%= @car["image"]%>" alt="<%= @car["model"]%>">
+<% end %>
+
+<div class="controls">
+  <a href="/cars/<%= @car["id"] %>/edit">Edit car</a>
+  <a href="/cars/<%= @car["id"] %>/delete">Delete car</a>
+</div>

@@ -1,0 +1,23 @@
+<h2>Add Coffee</h2>
+
+<form action="/coffees" method="post">
+
+  <label>Name:</label>
+  <input type="text" name="name" placeholder="Coffee name" required="required" autofocus="autofocus">
+  <label>Family:</label>
+  <input type="text" name="taste" placeholder="Taste" required="required">
+  <label>Origin:</label>
+  <input type="text" name="origin" placeholder="Origin">
+  <label>Cost:</label>
+  <input type="number" name="cost" placeholder="cost">
+  <button>Create</button>
+
+  <select name="plant_id">
+    <% Coffee_shop.all.each do | shop | %>
+      <option></option>
+      <option><%= shop["id"]%>:
+        <%= shop["name"]%></option>
+    <% end %>
+  </select>
+
+</form>

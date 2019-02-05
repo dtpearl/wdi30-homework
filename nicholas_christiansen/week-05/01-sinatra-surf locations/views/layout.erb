@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Surfer Stack</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/master.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+
+    <script src="/js/locations.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div class="container" id="nav-header">
+        <div href="/" class="nav-box" id="logo">
+          <h1 href="/home">Surfer Stack</h1>
+        </div>
+        <div class="nav-box" id="nav">
+          <a href="/" class="icon nav fas fa-user"></a>
+          <a href="/locations" class="icon nav fas fa-map-marker-alt"></a>
+          <a href="/"class="icon nav fas fa-globe"></a>
+        </div>
+        <div class="nav-box"></div>
+        <div class="nav-box" id="social">
+          <a href="#" class="icon social fab fa-github"></a>
+          <a href="#" class="icon social fab fa-twitter"></a>
+        </div>
+      </div>
+    </header>
+
+
+
+    <!-- before yield -->
+    <%= yield %>
+    <!-- after yield -->
+
+  </body>
+</html>

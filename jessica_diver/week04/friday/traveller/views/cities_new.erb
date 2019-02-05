@@ -1,0 +1,32 @@
+<div class="mainArticle">
+
+<h2>Add a city</h2>
+
+<form class="form" action="/cities" method="post">
+
+
+  <label class="formbox">City: </label>
+  <input class="formbox" type="text" name="city" placeholder="Sydney..">
+
+  <label class="formbox">Year Visited: </label>
+  <input class="formbox" type="year" name="year" placeholder="2018..">
+
+  <label class="formbox">Country: </label>
+  <select class="formbox" name="country_id">
+    <option></option>
+    <% Country.all.each do |country| %>
+    <option value="<%=country["id"]%>">
+      <%= country["name"]%>
+    </option>
+    <% end %>
+  </select>
+
+  <label class="formbox">Image: </label>
+  <input class="formbox" type="text" name="image" placeholder="http://...">
+
+  <button class="formbox">Add City</button>
+
+
+</form>
+
+</div>

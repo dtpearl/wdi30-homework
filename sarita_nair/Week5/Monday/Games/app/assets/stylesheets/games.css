@@ -1,0 +1,90 @@
+body{
+  background-image: url('http://pembrokeshire-herald.com/wp-content/uploads/2017/08/rinrqK4rT.jpg');
+  background-size: cover;
+/* https://freedesignfile.com/upload/2016/04/Clowns-with-circus-vector.jpg */
+
+}
+.container{
+  max-width:960px;
+  margin: 0 auto;
+}
+.secretnumberview{
+  width : 30%;
+  margin :0 auto;
+  height:100px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  padding:10px;
+  -webkit-box-shadow: inset 10px 2px 65px 0px rgba(0,0,0,0.74);
+  -moz-box-shadow: inset 10px 2px 65px 0px rgba(0,0,0,0.74);
+  box-shadow: inset 10px 2px 65px 0px rgba(0,0,0,0.74);
+  border-radius:10px;
+  opacity:0.8;
+  vertical-align: middle;
+}
+.magic{
+  width : 50%;
+  margin :0 auto;
+  height:250px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  padding:10px;
+  -webkit-box-shadow: inset 10px 2px 65px 0px rgba(0,0,0,0.74);
+  -moz-box-shadow: inset 10px 2px 65px 0px rgba(0,0,0,0.74);
+  box-shadow: inset 10px 2px 65px 0px rgba(0,0,0,0.74);
+  border-radius:10px;
+  opacity:0.8;
+  vertical-align: middle;
+}
+.ball{
+  width:200px;
+  height:200px;
+  border-radius: 100%;
+  -webkit-box-shadow: inset 6px 2px 33px 9px rgba(215,185,250,1);
+-moz-box-shadow: inset 6px 2px 33px 9px rgba(215,185,250,1);
+box-shadow: inset 6px 2px 33px 9px rgba(215,185,250,1);
+  margin: 0 auto;
+  padding: 5px;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  opacity:1;
+  position:relative;
+}
+.error{
+  color:red;
+  font-weight: 700;
+}
+nav{
+  padding-top: 10px;
+}
+nav a{
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color:#000;
+  font-weight: 700;
+}
+.flash {
+   animation-name: flash;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: #EA0808;}
+    to {color: #EAFD02;}
+    /* from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #EAFD02, 0 0 40px #EAFD02, 0 0 50px #EAFD02, 0 0 60px #EAFD02, 0 0 70px #EAFD02;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #EA0808, 0 0 40px #EA0808, 0 0 50px #EA0808, 0 0 60px #EA0808, 0 0 70px #EA0808, 0 0 80px #EA0808;
+  } */
+}
+.predictions{
+  font-family: 'Lobster', cursive;
+  padding: 10px;
+  margin:30px 10px 10px 10px;
+  text-align: center;
+  font-size: 16px;
+}

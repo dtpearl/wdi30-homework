@@ -1,0 +1,32 @@
+body{
+  background-color: rgb(125, 181, 255);
+  font-family: Helvetica;
+  background-image: url("https://cdn3.whatculture.com/images/2012/10/Joker.jpg");
+  color: white;
+}
+
+img{
+  max-width: 960px;
+}
+
+h1, h2, {
+  color: white;
+}
+
+p, h3 {
+  color: white;
+}
+
+nav {
+  color: white;
+}
+
+nav a:visited {
+  color: limegreen;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: limegreen;
+}

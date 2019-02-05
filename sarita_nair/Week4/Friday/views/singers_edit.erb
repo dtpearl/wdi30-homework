@@ -1,0 +1,10 @@
+<h2>Edit Singers</h2>
+<form action="/singer/<%= @singer.id %>" method="post">
+  <input type="text" name="name" placeholder="Singer Name" value="<%= @singer.name %>">
+  <input type="text" name="image" placeholder="http://" value="<%= @singer.image %>">
+  <input type="date" name="birthdate" placeholder="Singer birth date" value="<%= @singer.birthdate %>">
+  <input type="text" name="city" placeholder="Singer City" value="<%= @singer.city %>">
+  <input type="text" name="state" placeholder="Singer State" value="<%= @singer.state %>">
+  <input type="text" name="country" placeholder="Singer Country" value="<%= @singer.country %>">
+  <button>Update</button>
+</form>

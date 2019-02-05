@@ -1,0 +1,3178 @@
+  [1m[35m (362.4ms)[0m  [1m[35mCREATE DATABASE "movie-directors_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (276.5ms)[0m  [1m[35mCREATE DATABASE "movie-directors_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (21.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1347699634808423505)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateDirectors (20190116103216)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1347699634808423505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1347699634808423505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateDirectors (20190116103216)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "directors" ("id" bigserial primary key, "name" text, "birth_place" text, "dob" date, "image" text, "film_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190116103216_create_directors.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190116103216"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-01-16 10:34:19.178533"], ["updated_at", "2019-01-16 10:34:19.178533"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1347699634808423505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2019-01-16 22:08:19 +1100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 26ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-16 22:08:25 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:08:30 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant DirectorsController::Directors):
+  
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:09:47 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:10:34 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:10:45 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1347699634808423505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateFilms (20190116111119)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "films" ("id" bigserial primary key, "title" text, "year" text, "rotten_tomatoes" text, "image" text)[0m
+  ↳ db/migrate/20190116111119_create_films.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190116111119"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1347699634808423505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:17:19 +1100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:30:35 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2019-01-16 22:30:46 +1100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/director" for 127.0.0.1 at 2019-01-16 22:30:54 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/director"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:31:09 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:32:18 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:32:20 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:38:24 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:47:18 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/films" for 127.0.0.1 at 2019-01-16 22:47:25 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.6ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 327ms (Views: 310.5ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:47:29 +1100
+Processing by DirectorsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ActiverRecord):
+  
+app/models/director.rb:1:in `<main>'
+app/controllers/directors_controller.rb:3:in `index'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:48:46 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (1.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 34ms (Views: 21.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:48:48 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 19.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-16 22:48:49 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (16.3ms)
+  Rendered directors/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 58ms (Views: 41.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-16 22:48:50 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 26ms (Views: 19.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/films/new" for 127.0.0.1 at 2019-01-16 22:48:51 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (13.2ms)
+  Rendered films/new.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `director_id' for #<Film:0x00007ff334462100>
+Did you mean?  director
+               director=):
+     8:   <%= f.label :image %>
+     9:   <%= f.url_field :image, :required => true %>
+    10:   <%= f.label :director_id %>
+    11:   <%= f.select :director_id, Director.pluck(:name, :id), :include_blank => true %>
+    12:   <%= f.submit %>
+    13: <% end %>
+  
+app/views/films/_form.html.erb:11:in `block in _app_views_films__form_html_erb___1120106109102688135_70341326372960'
+app/views/films/_form.html.erb:1:in `_app_views_films__form_html_erb___1120106109102688135_70341326372960'
+app/views/films/new.html.erb:3:in `_app_views_films_new_html_erb___2710492891478318321_70341326439820'
+Started GET "/films" for 127.0.0.1 at 2019-01-16 22:49:08 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:49:10 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-16 22:49:12 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.6ms)
+  Rendered directors/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/directors" for 127.0.0.1 at 2019-01-16 22:50:15 +1100
+Processing by DirectorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8teKa0cyCwQ98DMTcXjDL5YHiRyPPcJElaHvxozBYNCOEP2Cb21TFkqJ/8i+KziVOFh6hJClBHtM0wYCIthRNw==", "director"=>{"name"=>"Martin Scorsese", "birth_place"=>"Queens New York City", "dob"=>"1942-11-17", "image"=>"https://www.neh.gov/sites/default/files/styles/featured_image_page/public/2018-07/martin-scorsese_0.jpg?h=68b97a5f&itok=XQTBU5am", "film_id"=>""}, "commit"=>"Create Director"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/directors_controller.rb:15
+  [1m[36mDirector Create (1.3ms)[0m  [1m[32mINSERT INTO "directors" ("name", "birth_place", "dob", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Martin Scorsese"], ["birth_place", "Queens New York City"], ["dob", "1942-11-17"], ["image", "https://www.neh.gov/sites/default/files/styles/featured_image_page/public/2018-07/martin-scorsese_0.jpg?h=68b97a5f&itok=XQTBU5am"], ["created_at", "2019-01-16 11:50:15.747409"], ["updated_at", "2019-01-16 11:50:15.747409"]]
+  ↳ app/controllers/directors_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/directors_controller.rb:15
+Redirected to http://localhost:3000/directors/1
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 22:50:15 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `works' for #<Director:0x00007ff33aa0aea8>):
+     7: 
+     8: </ul>
+     9: 
+    10: <% @director.works.each do |work| %>
+    11:   <%= link_to image_tag(work.image, :class => 'thumb'), work %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341318689760'
+Started GET "/films/new" for 127.0.0.1 at 2019-01-16 22:50:34 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (12.0ms)
+  Rendered films/new.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `director_id' for #<Film:0x00007ff335d18938>
+Did you mean?  director
+               director=):
+     8:   <%= f.label :image %>
+     9:   <%= f.url_field :image, :required => true %>
+    10:   <%= f.label :director_id %>
+    11:   <%= f.select :director_id, Director.pluck(:name, :id), :include_blank => true %>
+    12:   <%= f.submit %>
+    13: <% end %>
+  
+app/views/films/_form.html.erb:11:in `block in _app_views_films__form_html_erb___1120106109102688135_70341264921680'
+app/views/films/_form.html.erb:1:in `_app_views_films__form_html_erb___1120106109102688135_70341264921680'
+app/views/films/new.html.erb:3:in `_app_views_films_new_html_erb___2710492891478318321_70341278274060'
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-16 22:50:52 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.6ms)
+  Rendered directors/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 30ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:50:53 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 22:50:58 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.7ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `works' for #<Director:0x00007ff33aac0488>):
+     7: 
+     8: </ul>
+     9: 
+    10: <% @director.works.each do |work| %>
+    11:   <%= link_to image_tag(work.image, :class => 'thumb'), work %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341319055220'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:51:09 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/new" for 127.0.0.1 at 2019-01-16 22:51:16 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (11.9ms)
+  Rendered films/new.html.erb within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `director_id' for #<Film:0x00007ff335bcbc88>
+Did you mean?  director
+               director=):
+     8:   <%= f.label :image %>
+     9:   <%= f.url_field :image, :required => true %>
+    10:   <%= f.label :director_id %>
+    11:   <%= f.select :director_id, Director.pluck(:name, :id), :include_blank => true %>
+    12:   <%= f.submit %>
+    13: <% end %>
+  
+app/views/films/_form.html.erb:11:in `block in _app_views_films__form_html_erb___1120106109102688135_70341274804300'
+app/views/films/_form.html.erb:1:in `_app_views_films__form_html_erb___1120106109102688135_70341274804300'
+app/views/films/new.html.erb:3:in `_app_views_films_new_html_erb___2710492891478318321_70341277664220'
+Started GET "/films/new" for 127.0.0.1 at 2019-01-16 22:53:00 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (16.0ms)
+  Rendered films/new.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `director_id' for #<Film:0x00007ff33538a7b8>
+Did you mean?  director
+               director=):
+     8:   <%= f.label :image %>
+     9:   <%= f.url_field :image, :required => true %>
+    10:   <%= f.label :director_id %>
+    11:   <%= f.select :director_id, Director.pluck(:name, :id), :include_blank => true %>
+    12:   <%= f.submit %>
+    13: <% end %>
+  
+app/views/films/_form.html.erb:11:in `block in _app_views_films__form_html_erb___1120106109102688135_70341273029020'
+app/views/films/_form.html.erb:1:in `_app_views_films__form_html_erb___1120106109102688135_70341273029020'
+app/views/films/new.html.erb:3:in `_app_views_films_new_html_erb___2710492891478318321_70341273294620'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:54:20 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:54:26 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 22:54:28 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `works' for #<Director:0x00007ff33698c430>):
+     7: 
+     8: </ul>
+     9: 
+    10: <% @director.works.each do |work| %>
+    11:   <%= link_to image_tag(work.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341279349000'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 22:55:18 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `works' for #<Director:0x00007ff335844420>):
+     7: 
+     8: </ul>
+     9: 
+    10: <% @director.works.each do |work| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341260587680'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 22:55:49 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `works' for #<Director:0x00007ff3344c4ad0>):
+     7: 
+     8: </ul>
+     9: 
+    10: <% @director.works.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341265583980'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 22:55:54 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `works' for #<Director:0x00007ff3369649a8>):
+     7: 
+     8: </ul>
+     9: 
+    10: <% @director.works.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341280348780'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 22:55:56 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `works' for #<Director:0x00007ff335f46570>):
+     7: 
+     8: </ul>
+     9: 
+    10: <% @director.works.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341279492440'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 22:56:16 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (38.3ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column films.director_id does not exist
+LINE 1: SELECT "films".* FROM "films" WHERE "films"."director_id" = ...
+                                            ^
+: SELECT "films".* FROM "films" WHERE "films"."director_id" = $1):
+     7: 
+     8: </ul>
+     9: 
+    10: <% @director.films.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341262911780'
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 22:58:26 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 22:58:27 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column films.director_id does not exist
+LINE 1: SELECT "films".* FROM "films" WHERE "films"."director_id" = ...
+                                            ^
+: SELECT "films".* FROM "films" WHERE "films"."director_id" = $1):
+     7: 
+     8: </ul>
+     9: 
+    10: <% @director.films.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341327847040'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:01:22 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column films.director_id does not exist
+LINE 1: SELECT "films".* FROM "films" WHERE "films"."director_id" = ...
+                                            ^
+: SELECT "films".* FROM "films" WHERE "films"."director_id" = $1):
+     7:   <li>Film ID: <%= @director.film_id %></li>
+     8: </ul>
+     9: 
+    10: <% @director.films.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341327747060'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:01:26 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column films.director_id does not exist
+LINE 1: SELECT "films".* FROM "films" WHERE "films"."director_id" = ...
+                                            ^
+: SELECT "films".* FROM "films" WHERE "films"."director_id" = $1):
+     7:   <li>Film ID: <%= @director.film_id %></li>
+     8: </ul>
+     9: 
+    10: <% @director.films.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341279462900'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:05:03 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column films.director_id does not exist
+LINE 1: SELECT "films".* FROM "films" WHERE "films"."director_id" = ...
+                                            ^
+: SELECT "films".* FROM "films" WHERE "films"."director_id" = $1):
+     7:   <li>Film ID: <%= @director.film_id %></li>
+     8: </ul>
+     9: 
+    10: <% @director.films.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341318317460'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:05:05 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column films.director_id does not exist
+LINE 1: SELECT "films".* FROM "films" WHERE "films"."director_id" = ...
+                                            ^
+: SELECT "films".* FROM "films" WHERE "films"."director_id" = $1):
+     7:   <li>Film ID: <%= @director.film_id %></li>
+     8: </ul>
+     9: 
+    10: <% @director.films.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341275147880'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:05:07 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column films.director_id does not exist
+LINE 1: SELECT "films".* FROM "films" WHERE "films"."director_id" = ...
+                                            ^
+: SELECT "films".* FROM "films" WHERE "films"."director_id" = $1):
+     7:   <li>Film ID: <%= @director.film_id %></li>
+     8: </ul>
+     9: 
+    10: <% @director.films.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341293599180'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:08:22 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column films.director_id does not exist
+LINE 1: SELECT "films".* FROM "films" WHERE "films"."director_id" = ...
+                                            ^
+: SELECT "films".* FROM "films" WHERE "films"."director_id" = $1):
+     7:   <li>Film ID: <%= @director.film_id %></li>
+     8: </ul>
+     9: 
+    10: <!-- <% @director.films.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %> -->
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341280147880'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:08:26 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column films.director_id does not exist
+LINE 1: SELECT "films".* FROM "films" WHERE "films"."director_id" = ...
+                                            ^
+: SELECT "films".* FROM "films" WHERE "films"."director_id" = $1):
+     7:   <li>Film ID: <%= @director.film_id %></li>
+     8: </ul>
+     9: 
+    10: <!-- <% @director.films.each do |film| %>
+    11:   <%= link_to image_tag(film.image, :class => 'thumb'), film %>
+    12: <% end %> -->
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___4503874967003570895_70341266209680'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:08:35 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directors/1/edit" for 127.0.0.1 at 2019-01-16 23:08:43 +1100
+Processing by DirectorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:20
+  Rendering directors/edit.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.6ms)
+  Rendered directors/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 37ms (Views: 30.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/directors/1" for 127.0.0.1 at 2019-01-16 23:08:58 +1100
+Processing by DirectorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"629f89iPNpcuEaBNAbd1WKp8/Hq7Ba6DaNLhNgmSWpXPuX5CaFo57yx120mrjtiufj6YdI0InB+4B3UXQaBOLg==", "director"=>{"name"=>"Martin Scorsese", "birth_place"=>"Queens New York City", "dob"=>"1943-11-17", "image"=>"https://www.neh.gov/sites/default/files/styles/featured_image_page/public/2018-07/martin-scorsese_0.jpg?h=68b97a5f&itok=XQTBU5am", "film_id"=>""}, "commit"=>"Update Director", "id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/directors_controller.rb:25
+  [1m[36mDirector Update (0.4ms)[0m  [1m[33mUPDATE "directors" SET "dob" = $1, "updated_at" = $2 WHERE "directors"."id" = $3[0m  [["dob", "1943-11-17"], ["updated_at", "2019-01-16 12:08:58.795140"], ["id", 1]]
+  ↳ app/controllers/directors_controller.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/directors_controller.rb:25
+Redirected to http://localhost:3000/directors/1
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:08:58 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directors/1/edit" for 127.0.0.1 at 2019-01-16 23:09:02 +1100
+Processing by DirectorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:20
+  Rendering directors/edit.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.8ms)
+  Rendered directors/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 31ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/directors/1" for 127.0.0.1 at 2019-01-16 23:09:09 +1100
+Processing by DirectorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ViVJhaLybeVynxduxmToMAygoCEvpMkFTfiYuHMycWly82g0EidinXD7bGpsXUXG2OLELxmp+5mdLQyZOwBl0g==", "director"=>{"name"=>"Martin Scorsese", "birth_place"=>"Queens New York City", "dob"=>"1942-11-17", "image"=>"https://www.neh.gov/sites/default/files/styles/featured_image_page/public/2018-07/martin-scorsese_0.jpg?h=68b97a5f&itok=XQTBU5am", "film_id"=>""}, "commit"=>"Update Director", "id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/directors_controller.rb:25
+  [1m[36mDirector Update (0.3ms)[0m  [1m[33mUPDATE "directors" SET "dob" = $1, "updated_at" = $2 WHERE "directors"."id" = $3[0m  [["dob", "1942-11-17"], ["updated_at", "2019-01-16 12:09:09.437669"], ["id", 1]]
+  ↳ app/controllers/directors_controller.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/directors_controller.rb:25
+Redirected to http://localhost:3000/directors/1
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:09:09 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 23:09:14 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-16 23:09:15 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.8ms)
+  Rendered directors/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-16 23:09:18 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/new" for 127.0.0.1 at 2019-01-16 23:09:22 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (11.0ms)
+  Rendered films/new.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `director_id' for #<Film:0x00007ff335d71128>
+Did you mean?  director
+               director=):
+     8:   <%= f.label :image %>
+     9:   <%= f.url_field :image, :required => true %>
+    10:   <%= f.label :director_id %>
+    11:   <%= f.select :director_id, Director.pluck(:name, :id), :include_blank => true %>
+    12:   <%= f.submit %>
+    13: <% end %>
+  
+app/views/films/_form.html.erb:11:in `block in _app_views_films__form_html_erb___1120106109102688135_70341265005940'
+app/views/films/_form.html.erb:1:in `_app_views_films__form_html_erb___1120106109102688135_70341265005940'
+app/views/films/new.html.erb:3:in `_app_views_films_new_html_erb___2710492891478318321_70341278439820'
+Started GET "/films/new" for 127.0.0.1 at 2019-01-16 23:10:04 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  Rendered films/_form.html.erb (2.1ms)
+  Rendered films/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/films" for 127.0.0.1 at 2019-01-16 23:10:34 +1100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tTO02W12KupYwzGDcINhtOaof89qQCJCdrGXIT47HjZ224MwVlaABMQoD8oGH9242JRKX+Na0BFeTu/J1LUEYw==", "film"=>{"title"=>"Taxi Driver", "year"=>"1976", "rotten_tomatoes"=>"98%", "image"=>"https://s.pacn.ws/640/ro/taxi-driver-40th-anniversary-edition-bluray-digital-hd-498397.1.jpg?og8zc3"}, "commit"=>"Create Film"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/films_controller.rb:15
+  [1m[36mFilm Create (1.9ms)[0m  [1m[32mINSERT INTO "films" ("title", "year", "rotten_tomatoes", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Taxi Driver"], ["year", "1976"], ["rotten_tomatoes", "98%"], ["image", "https://s.pacn.ws/640/ro/taxi-driver-40th-anniversary-edition-bluray-digital-hd-498397.1.jpg?og8zc3"]]
+  ↳ app/controllers/films_controller.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/films_controller.rb:15
+Redirected to http://localhost:3000/films/1
+Completed 302 Found in 6ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-16 23:10:34 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 37ms (Views: 32.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-16 23:10:41 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 23:10:46 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:10:49 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 20.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1/edit" for 127.0.0.1 at 2019-01-16 23:10:55 +1100
+Processing by DirectorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:20
+  Rendering directors/edit.html.erb within layouts/application
+  Rendered directors/_form.html.erb (3.2ms)
+  Rendered directors/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 35ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 23:11:11 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:11:13 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 21.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-16 23:11:20 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-16 23:11:22 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 20.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 23:11:35 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 21.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:11:54 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 24.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/directors/1/edit" for 127.0.0.1 at 2019-01-16 23:11:57 +1100
+Processing by DirectorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:20
+  Rendering directors/edit.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.7ms)
+  Rendered directors/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/directors/1" for 127.0.0.1 at 2019-01-16 23:12:05 +1100
+Processing by DirectorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jJdtk1THiH5nq0mbqc6c9LP9raR6TUGZl0D/lDMO2Q6oQUwi5BKHBmXPMp8D9zECZ7/JqkxAcwVHlWu1ezzNtQ==", "director"=>{"name"=>"Martin Scorsese", "birth_place"=>"Queens New York City", "dob"=>"1942-11-17", "image"=>"https://www.neh.gov/sites/default/files/styles/featured_image_page/public/2018-07/martin-scorsese_0.jpg?h=68b97a5f&itok=XQTBU5am", "film_id"=>""}, "commit"=>"Update Director", "id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/directors_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/directors_controller.rb:25
+Redirected to http://localhost:3000/directors/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:12:05 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1/edit" for 127.0.0.1 at 2019-01-16 23:12:07 +1100
+Processing by DirectorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:20
+  Rendering directors/edit.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.7ms)
+  Rendered directors/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/directors/1" for 127.0.0.1 at 2019-01-16 23:12:17 +1100
+Processing by DirectorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jR6+82FRxnLNNHSIneOYvDB6HIne7b/XO2Z/Y8vS7jOpyJ9C0YTJCs9QD4w32jVK5Dh4h+jgjUvrs+tCg+D6iA==", "director"=>{"name"=>"Martin Scorsese", "birth_place"=>"Queens New York City", "dob"=>"1942-11-17", "image"=>"https://www.neh.gov/sites/default/files/styles/featured_image_page/public/2018-07/martin-scorsese_0.jpg?h=68b97a5f&itok=XQTBU5am", "film_id"=>"1"}, "commit"=>"Update Director", "id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/directors_controller.rb:25
+  [1m[36mDirector Update (0.3ms)[0m  [1m[33mUPDATE "directors" SET "film_id" = $1, "updated_at" = $2 WHERE "directors"."id" = $3[0m  [["film_id", 1], ["updated_at", "2019-01-16 12:12:17.402420"], ["id", 1]]
+  ↳ app/controllers/directors_controller.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/directors_controller.rb:25
+Redirected to http://localhost:3000/directors/1
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-16 23:12:17 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-16 23:12:31 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-16 23:12:33 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 19.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-16 23:12:34 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films/1/edit" for 127.0.0.1 at 2019-01-16 23:12:37 +1100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:20
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/_form.html.erb (3.0ms)
+  Rendered films/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 30ms (Views: 23.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/films/1" for 127.0.0.1 at 2019-01-16 23:12:44 +1100
+Processing by FilmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pCkwokkU9le50evkIw5nkHX3SaI+hHofH8X4Yd/odyjwjkCDwv0wU02sMz2q2y3RQugqmDzQPi7hzWa46EkyAQ==", "film"=>{"title"=>"Taxi Driver", "year"=>"1976", "rotten_tomatoes"=>"98%", "image"=>"https://s.pacn.ws/640/ro/taxi-driver-40th-anniversary-edition-bluray-digital-hd-498397.1.jpg?og8zc3"}, "commit"=>"Update Film", "id"=>"1"}
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/films_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/films_controller.rb:25
+Redirected to http://localhost:3000/films/1
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-16 23:12:44 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 08:55:23 +1100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.8ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 229ms (Views: 207.1ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 08:55:27 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 17.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 08:55:32 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 36ms (Views: 23.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 08:55:34 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/1/edit" for 127.0.0.1 at 2019-01-17 08:55:37 +1100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:20
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/_form.html.erb (11.1ms)
+  Rendered films/edit.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 08:55:42 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 08:55:44 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.6ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 20.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/directors/1/edit" for 127.0.0.1 at 2019-01-17 08:55:46 +1100
+Processing by DirectorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:20
+  Rendering directors/edit.html.erb within layouts/application
+  Rendered directors/_form.html.erb (12.3ms)
+  Rendered directors/edit.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 46ms (Views: 40.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/1/edit" for 127.0.0.1 at 2019-01-17 09:02:09 +1100
+Processing by DirectorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.9ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:20
+  Rendering directors/edit.html.erb within layouts/application
+  Rendered directors/_form.html.erb (3.2ms)
+  Rendered directors/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 42ms (Views: 31.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:02:14 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.7ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 28.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:02:16 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 24.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:02:28 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:02:29 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.8ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 19.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 09:02:32 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 29ms (Views: 22.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 09:02:34 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.5ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 09:02:37 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.6ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 18.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/films/1/edit" for 127.0.0.1 at 2019-01-17 09:02:41 +1100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:20
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/_form.html.erb (3.2ms)
+  Rendered films/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:02:57 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 20.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:03:56 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.8ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 21.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 09:04:02 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 09:04:03 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.6ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 20.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:04:08 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 20.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:04:09 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.8ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 21.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 09:35:29 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 41ms (Views: 29.7ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 09:35:31 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 22.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:35:35 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.7ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 29ms (Views: 21.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:35:36 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 25.6ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1347699634808423505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to RemoveFilmIdFromDirectors (20190116223716)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "directors" DROP COLUMN "film_id"[0m
+  ↳ db/migrate/20190116223716_remove_film_id_from_directors.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190116223716"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1347699634808423505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1347699634808423505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddDirectorIdToFilms (20190116224003)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "films" ADD "director_id" integer[0m
+  ↳ db/migrate/20190116224003_add_director_id_to_films.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190116224003"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1347699634808423505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:41:01 +1100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (1.1ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 8.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `film_id' for #<Director:0x00007f8765567c48>
+Did you mean?  film_ids
+               film_ids=):
+    4:   <li>Name: <%= @director.name %></li>
+    5:   <li>Birthplace: <%= @director.birth_place %></li>
+    6:   <li>Date of birth: <%= @director.dob.strftime('%A, %B %e, %Y') if @director.dob.present? %></li>
+    7:   <li>Film ID: <%= @director.film_id %></li>
+    8: </ul>
+    9: 
+   10: 
+  
+app/views/directors/show.html.erb:7:in `_app_views_directors_show_html_erb___2730215979440313274_70109748737340'
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:42:50 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:42:54 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  Rendered directors/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `works' for #<Director:0x00007f8764715a78>):
+     7: 
+     8: </ul>
+     9: 
+    10: <%= @director.works.films.each do |film| %>
+    11: <%= film.title %>
+    12: <% end %>
+    13: 
+  
+app/views/directors/show.html.erb:10:in `_app_views_directors_show_html_erb___2730215979440313274_70109741219420'
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:43:10 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 44ms (Views: 38.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:43:50 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 09:43:52 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 24.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 09:43:53 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 19.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/films/1/edit" for 127.0.0.1 at 2019-01-17 09:43:59 +1100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:20
+  Rendering films/edit.html.erb within layouts/application
+  Rendered films/_form.html.erb (2.5ms)
+  Rendered films/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films/1/edit" for 127.0.0.1 at 2019-01-17 09:44:55 +1100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:20
+  Rendering films/edit.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (12.7ms)
+  Rendered films/edit.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/films/1" for 127.0.0.1 at 2019-01-17 09:45:01 +1100
+Processing by FilmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fq/KR6ybLfrGQNP47oRJcQdONT1n76wzMudK06nul+m9R/2ul7uHFFqr7bGYGPV9OXIAre71XmAaGDI7Q2CNvA==", "film"=>{"title"=>"Taxi Driver", "year"=>"1976", "rotten_tomatoes"=>"98%", "image"=>"https://s.pacn.ws/640/ro/taxi-driver-40th-anniversary-edition-bluray-digital-hd-498397.1.jpg?og8zc3", "director_id"=>"1"}, "commit"=>"Update Film", "id"=>"1"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/films_controller.rb:25
+  [1m[36mFilm Update (0.5ms)[0m  [1m[33mUPDATE "films" SET "director_id" = $1 WHERE "films"."id" = $2[0m  [["director_id", 1], ["id", 1]]
+  ↳ app/controllers/films_controller.rb:25
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/films_controller.rb:25
+Redirected to http://localhost:3000/films/1
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 09:45:01 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 26ms (Views: 21.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:45:04 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 20.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:45:05 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.6ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 19.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:45:26 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:46:07 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 09:46:11 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.6ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 20.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:46:15 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.6ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 22.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:46:33 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:46:35 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 28ms (Views: 21.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 09:46:38 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 30ms (Views: 23.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:46:41 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 22.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-17 09:50:00 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (10.2ms)
+  Rendered directors/new.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `film_id' for #<Director:0x00007f8764f7d670>
+Did you mean?  film_ids
+               film_ids=):
+    12:   <%= f.url_field :image %>
+    13: 
+    14:   <%= f.label :film_id %>
+    15:   <%= f.number_field :film_id %>
+    16: 
+    17:   <%= f.submit %>
+    18: <% end %>
+  
+app/views/directors/_form.html.erb:15:in `block in _app_views_directors__form_html_erb___4595098663297902437_70109745435840'
+app/views/directors/_form.html.erb:1:in `_app_views_directors__form_html_erb___4595098663297902437_70109745435840'
+app/views/directors/new.html.erb:3:in `_app_views_directors_new_html_erb___2999829208914493770_70109745604720'
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-17 09:51:19 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (8.3ms)
+  Rendered directors/new.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `film_id' for #<Director:0x00007f876c370208>
+Did you mean?  film_ids
+               film_ids=):
+    12:   <%= f.url_field :image %>
+    13: 
+    14:   <%= f.label :film_id %>
+    15:   <%= f.text_field :film_id %>
+    16: 
+    17:   <%= f.submit %>
+    18: <% end %>
+  
+app/views/directors/_form.html.erb:15:in `block in _app_views_directors__form_html_erb___4595098663297902437_70109806366440'
+app/views/directors/_form.html.erb:1:in `_app_views_directors__form_html_erb___4595098663297902437_70109806366440'
+app/views/directors/new.html.erb:3:in `_app_views_directors_new_html_erb___2999829208914493770_70109806416640'
+Started GET "/f" for 127.0.0.1 at 2019-01-17 09:52:23 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/f"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-17 09:52:26 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:52:28 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 09:52:29 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 32.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 09:52:32 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/new" for 127.0.0.1 at 2019-01-17 09:52:33 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (3.9ms)
+  Rendered films/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-17 09:52:55 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (8.7ms)
+  Rendered directors/new.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `film_id' for #<Director:0x00007f8765555250>
+Did you mean?  film_ids
+               film_ids=):
+    12:   <%= f.url_field :image %>
+    13: 
+    14:   <%= f.label :film_id %>
+    15:   <%= f.text_field :film_id %>
+    16: 
+    17:   <%= f.submit %>
+    18: <% end %>
+  
+app/views/directors/_form.html.erb:15:in `block in _app_views_directors__form_html_erb___4595098663297902437_70109794010620'
+app/views/directors/_form.html.erb:1:in `_app_views_directors__form_html_erb___4595098663297902437_70109794010620'
+app/views/directors/new.html.erb:3:in `_app_views_directors_new_html_erb___2999829208914493770_70109806026500'
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-17 09:53:29 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.2ms)
+  Rendered directors/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/directors" for 127.0.0.1 at 2019-01-17 09:55:41 +1100
+Processing by DirectorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hqFIwN6AdqVsmvaxMQOgFRJCQ+fPlcovHmRnhFX5ElNFSX8p5aDcS/BxyPhHnxwZLH52d0aPOHw2mx9sv3cIBg==", "director"=>{"name"=>"Toshiro Mifune", "birth_place"=>"Qingdao, China", "dob"=>"1920-04-01", "image"=>"https://cdn1us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/4/20/toshiro-mifune-star-wars.jpg?itok=25GK6zpL"}, "commit"=>"Create Director"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/directors_controller.rb:15
+  [1m[36mDirector Create (0.5ms)[0m  [1m[32mINSERT INTO "directors" ("name", "birth_place", "dob", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Toshiro Mifune"], ["birth_place", "Qingdao, China"], ["dob", "1920-04-01"], ["image", "https://cdn1us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/4/20/toshiro-mifune-star-wars.jpg?itok=25GK6zpL"], ["created_at", "2019-01-16 22:55:41.602339"], ["updated_at", "2019-01-16 22:55:41.602339"]]
+  ↳ app/controllers/directors_controller.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/directors_controller.rb:15
+Redirected to http://localhost:3000/directors/2
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/directors/2" for 127.0.0.1 at 2019-01-17 09:55:41 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 2]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 09:55:47 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/new" for 127.0.0.1 at 2019-01-17 09:55:48 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (3.8ms)
+  Rendered films/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/films" for 127.0.0.1 at 2019-01-17 09:57:09 +1100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cBF8eNNhPrU0of7f9KDSYg/LzT30B/cWpnPkdubT1y6Hncva3U/B+Eqc6InOEskop8UoxTpSQK0JilgI7hy+nA==", "film"=>{"title"=>"Seven Samurai", "year"=>"1954", "rotten_tomatoes"=>"100%", "image"=>"https://images-na.ssl-images-amazon.com/images/I/51175A95QSL._SY445_.jpg", "director_id"=>"2"}, "commit"=>"Create Film"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/films_controller.rb:15
+  [1m[36mFilm Create (0.4ms)[0m  [1m[32mINSERT INTO "films" ("title", "year", "rotten_tomatoes", "image", "director_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Seven Samurai"], ["year", "1954"], ["rotten_tomatoes", "100%"], ["image", "https://images-na.ssl-images-amazon.com/images/I/51175A95QSL._SY445_.jpg"], ["director_id", 2]]
+  ↳ app/controllers/films_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/films_controller.rb:15
+Redirected to http://localhost:3000/films/2
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/films/2" for 127.0.0.1 at 2019-01-17 09:57:09 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/2" for 127.0.0.1 at 2019-01-17 09:57:13 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 2]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 21.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:57:20 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-17 09:57:23 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.4ms)
+  Rendered directors/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/directors" for 127.0.0.1 at 2019-01-17 09:59:34 +1100
+Processing by DirectorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f6D1BLOj0LQdrVaUr7Pvb7p+V825ng5MbiRnFMnOAVsDZ4Ltm/yIpmrUmk9g4BTVFCGkVaYGyHO3Vo7QZ9cwvA==", "director"=>{"name"=>"Sergio Leone", "birth_place"=>"Rome, Italy", "dob"=>"1929-01-03", "image"=>"https://scrapsfromtheloft.com/wp-content/uploads/2016/08/Sergio-Leone-Once-Upon-A-Time-In-America-Set.jpg"}, "commit"=>"Create Director"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/directors_controller.rb:15
+  [1m[36mDirector Create (0.3ms)[0m  [1m[32mINSERT INTO "directors" ("name", "birth_place", "dob", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sergio Leone"], ["birth_place", "Rome, Italy"], ["dob", "1929-01-03"], ["image", "https://scrapsfromtheloft.com/wp-content/uploads/2016/08/Sergio-Leone-Once-Upon-A-Time-In-America-Set.jpg"], ["created_at", "2019-01-16 22:59:34.224516"], ["updated_at", "2019-01-16 22:59:34.224516"]]
+  ↳ app/controllers/directors_controller.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/directors_controller.rb:15
+Redirected to http://localhost:3000/directors/3
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/directors/3" for 127.0.0.1 at 2019-01-17 09:59:34 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 3]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 29ms (Views: 24.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 09:59:36 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/new" for 127.0.0.1 at 2019-01-17 09:59:42 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (3.5ms)
+  Rendered films/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/films" for 127.0.0.1 at 2019-01-17 10:01:48 +1100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r7DBlBSHqrCtsUcSM8V71ZX8IgvOlNaNq4rdSKz1GlRYPHY2GqlV/dOMUUQJd2CfPfLH8wDBYTYEc2E2pDpz5g==", "film"=>{"title"=>"Once Upon a Time In the West", "year"=>"1968", "rotten_tomatoes"=>"98%", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWa_z_WfI1nnpSHzof8szWW3k49Tpv1qii2g5d0_gzUkKTi4iJUw", "director_id"=>"1"}, "commit"=>"Create Film"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/films_controller.rb:15
+  [1m[36mFilm Create (0.3ms)[0m  [1m[32mINSERT INTO "films" ("title", "year", "rotten_tomatoes", "image", "director_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Once Upon a Time In the West"], ["year", "1968"], ["rotten_tomatoes", "98%"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWa_z_WfI1nnpSHzof8szWW3k49Tpv1qii2g5d0_gzUkKTi4iJUw"], ["director_id", 1]]
+  ↳ app/controllers/films_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/films_controller.rb:15
+Redirected to http://localhost:3000/films/3
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/films/3" for 127.0.0.1 at 2019-01-17 10:01:48 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 10:01:49 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/3" for 127.0.0.1 at 2019-01-17 10:01:52 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 3]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 30ms (Views: 24.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 10:01:59 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/3" for 127.0.0.1 at 2019-01-17 10:02:00 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.5ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/films/3/edit" for 127.0.0.1 at 2019-01-17 10:02:02 +1100
+Processing by FilmsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:20
+  Rendering films/edit.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (4.0ms)
+  Rendered films/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 31ms (Views: 24.4ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/films/3" for 127.0.0.1 at 2019-01-17 10:02:07 +1100
+Processing by FilmsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ghKGMuQhzBqYqsDEHevK4/mN6rj9Le/8Y2dQ1A+67rxvHvxI4ZNqwG8uNvpU5x+VWwYNbe+Z/fNjW4F3NwxVzQ==", "film"=>{"title"=>"Once Upon a Time In the West", "year"=>"1968", "rotten_tomatoes"=>"98%", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWa_z_WfI1nnpSHzof8szWW3k49Tpv1qii2g5d0_gzUkKTi4iJUw", "director_id"=>"3"}, "commit"=>"Update Film", "id"=>"3"}
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/films_controller.rb:25
+  [1m[36mFilm Update (0.4ms)[0m  [1m[33mUPDATE "films" SET "director_id" = $1 WHERE "films"."id" = $2[0m  [["director_id", 3], ["id", 3]]
+  ↳ app/controllers/films_controller.rb:25
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/films_controller.rb:25
+Redirected to http://localhost:3000/films/3
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/films/3" for 127.0.0.1 at 2019-01-17 10:02:07 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 10:02:08 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/3" for 127.0.0.1 at 2019-01-17 10:02:10 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 3]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 26ms (Views: 20.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/films/3" for 127.0.0.1 at 2019-01-17 10:02:15 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 28ms (Views: 21.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 10:02:19 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/3" for 127.0.0.1 at 2019-01-17 10:04:14 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 3]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 21.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/directors/3/edit" for 127.0.0.1 at 2019-01-17 10:04:18 +1100
+Processing by DirectorsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:20
+  Rendering directors/edit.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.2ms)
+  Rendered directors/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 30ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/directors/3" for 127.0.0.1 at 2019-01-17 10:04:22 +1100
+Processing by DirectorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w8CjeX6phv+AFgsDUKPKuVUbuXWTODK5PJ2iFq950kPUuruH9oXSBWUokQvinPICabjhBiQLlMfJR3ex9OC6kQ==", "director"=>{"name"=>"Sergio Leone", "birth_place"=>"Rome, Italy", "dob"=>"1929-01-03", "image"=>"https://nerdist.com/wp-content/uploads/2015/01/Leone.jpg"}, "commit"=>"Update Director", "id"=>"3"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/directors_controller.rb:25
+  [1m[36mDirector Update (0.4ms)[0m  [1m[33mUPDATE "directors" SET "image" = $1, "updated_at" = $2 WHERE "directors"."id" = $3[0m  [["image", "https://nerdist.com/wp-content/uploads/2015/01/Leone.jpg"], ["updated_at", "2019-01-16 23:04:22.980487"], ["id", 3]]
+  ↳ app/controllers/directors_controller.rb:25
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/directors_controller.rb:25
+Redirected to http://localhost:3000/directors/3
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/directors/3" for 127.0.0.1 at 2019-01-17 10:04:22 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 3]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 10:04:25 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 10:04:31 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 20.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/3" for 127.0.0.1 at 2019-01-17 10:04:33 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 22.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/films/2" for 127.0.0.1 at 2019-01-17 10:04:35 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFilm Load (0.5ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 19.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 10:04:37 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 20.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-17 23:08:23 +1100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.9ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 521ms (Views: 501.2ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 23:08:28 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.7ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 45ms (Views: 31.4ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 23:08:32 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 43ms (Views: 35.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 23:08:40 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 31ms (Views: 24.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 23:08:46 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 24.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/2" for 127.0.0.1 at 2019-01-17 23:08:48 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 2]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 24.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/films/2" for 127.0.0.1 at 2019-01-17 23:08:53 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 23:08:56 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/3" for 127.0.0.1 at 2019-01-17 23:08:58 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/directors/3" for 127.0.0.1 at 2019-01-17 23:09:06 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 3]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 24.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 23:09:14 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films/new" for 127.0.0.1 at 2019-01-17 23:09:41 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (21.9ms)
+  Rendered films/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 52ms (Views: 47.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/films" for 127.0.0.1 at 2019-01-17 23:10:55 +1100
+Processing by FilmsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pcnu2PNMmhOvCWkOfnfb8uLN8Lw8/bPfCyig/1rb2eFSRVl6/WJlXtE0f1hExcC4SsMVRPKoBGSk0RyBUhSwUw==", "film"=>{"title"=>"Goodfellas", "year"=>"1990", "rotten_tomatoes"=>"96%", "image"=>"https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg", "director_id"=>"1"}, "commit"=>"Create Film"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/films_controller.rb:15
+  [1m[36mFilm Create (2.4ms)[0m  [1m[32mINSERT INTO "films" ("title", "year", "rotten_tomatoes", "image", "director_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Goodfellas"], ["year", "1990"], ["rotten_tomatoes", "96%"], ["image", "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"], ["director_id", 1]]
+  ↳ app/controllers/films_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/films_controller.rb:15
+Redirected to http://localhost:3000/films/4
+Completed 302 Found in 7ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/films/4" for 127.0.0.1 at 2019-01-17 23:10:55 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 43ms (Views: 37.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 23:11:03 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 26.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-17 23:11:08 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.6ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 23.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 23:11:10 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 24.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-17 23:11:14 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.1ms)
+  Rendered directors/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 23:11:16 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 27.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-17 23:11:17 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/2" for 127.0.0.1 at 2019-01-17 23:11:24 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFilm Load (0.5ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 24.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-17 23:11:32 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 28.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-17 23:11:34 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 32.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-19 14:38:57 +1100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (1.6ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 249ms (Views: 229.4ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-19 14:39:01 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (2.1ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 44ms (Views: 29.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-19 14:39:06 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 28ms (Views: 23.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-19 14:39:13 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-19 14:39:16 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 53ms (Views: 36.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/films/4" for 127.0.0.1 at 2019-01-19 14:39:19 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (1.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 33ms (Views: 26.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-19 14:39:28 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.9ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 26.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-19 14:39:30 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-19 14:39:34 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 31ms (Views: 25.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/directors/2" for 127.0.0.1 at 2019-01-19 14:39:35 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDirector Load (0.6ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 2]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 24.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/films/2" for 127.0.0.1 at 2019-01-19 14:39:38 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFilm Load (0.5ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 21.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-19 14:39:40 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 24.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors/3" for 127.0.0.1 at 2019-01-19 14:39:43 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 3]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 22.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/films/3" for 127.0.0.1 at 2019-01-19 14:39:50 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.5ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 23.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-19 14:39:54 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 36ms (Views: 30.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-19 14:43:05 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-20 11:20:58 +1100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 238ms (Views: 217.8ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-20 11:21:03 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (11.1ms)
+  Rendered directors/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 55ms (Views: 38.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-20 11:21:12 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (1.8ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 29ms (Views: 23.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-20 11:21:15 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (2.4ms)
+  Rendered directors/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-21 12:20:42 +1100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (12.1ms)
+  Rendered directors/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 251ms (Views: 226.2ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-21 12:20:43 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (1.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-21 12:20:45 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.6ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 55ms (Views: 42.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-21 12:20:54 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.8ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 28.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-21 12:21:40 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/directors/1" for 127.0.0.1 at 2019-01-21 12:21:42 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDirector Load (0.7ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 1]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 24.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-23 11:04:06 +1100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (4.0ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 257ms (Views: 223.4ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-23 11:04:10 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (2.7ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 42ms (Views: 27.3ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/directors/new" for 127.0.0.1 at 2019-01-23 11:04:13 +1100
+Processing by DirectorsController#new as HTML
+  Rendering directors/new.html.erb within layouts/application
+  Rendered directors/_form.html.erb (14.8ms)
+  Rendered directors/new.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 44ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/directors" for 127.0.0.1 at 2019-01-23 11:04:35 +1100
+Processing by DirectorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UcV6yPPUC4gVba9Dfu3qKzGW6cSDWEVmc9DsTObLL0QtAg0h24tTmmIUY5ixvhGRn8kaXJzAg1mqogWISNIeow==", "director"=>{"name"=>"Sean", "birth_place"=>"Hood River, Oregon", "dob"=>"1971-08-13", "image"=>""}, "commit"=>"Create Director"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/directors_controller.rb:15
+  [1m[36mDirector Create (3.3ms)[0m  [1m[32mINSERT INTO "directors" ("name", "birth_place", "dob", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sean"], ["birth_place", "Hood River, Oregon"], ["dob", "1971-08-13"], ["image", ""], ["created_at", "2019-01-23 00:04:35.366171"], ["updated_at", "2019-01-23 00:04:35.366171"]]
+  ↳ app/controllers/directors_controller.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/directors_controller.rb:15
+Redirected to http://localhost:3000/directors/4
+Completed 302 Found in 8ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/directors/4" for 127.0.0.1 at 2019-01-23 11:04:35 +1100
+Processing by DirectorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDirector Load (1.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:7
+  Rendering directors/show.html.erb within layouts/application
+  [1m[36mFilm Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."director_id" = $1[0m  [["director_id", 4]]
+  ↳ app/views/directors/show.html.erb:10
+  Rendered directors/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 38ms (Views: 30.2ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/directors/4" for 127.0.0.1 at 2019-01-23 11:04:37 +1100
+Processing by DirectorsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"da6lkEm+0ueWmHzYFlXqVn+g0515qagQnVTJzB7iLI62RpJ5cp54CQpzQpFgyVZaQZzmDfCzWkO1q7Ek9Gw22w==", "id"=>"4"}
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/directors_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/directors_controller.rb:31
+  [1m[36mDirector Destroy (0.3ms)[0m  [1m[31mDELETE FROM "directors" WHERE "directors"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/directors_controller.rb:31
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/directors_controller.rb:31
+Redirected to http://localhost:3000/directors
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-23 11:04:37 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-23 11:36:45 +1100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/seanmccusker/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.6ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 242ms (Views: 222.2ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-23 11:36:51 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-23 11:38:46 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (1.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 63ms (Views: 40.7ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-23 11:38:51 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 24.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/2" for 127.0.0.1 at 2019-01-23 11:38:56 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 30ms (Views: 25.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-23 11:39:13 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 39ms (Views: 34.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films/3" for 127.0.0.1 at 2019-01-23 11:39:14 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 40ms (Views: 32.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-23 11:39:17 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 24.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films/4" for 127.0.0.1 at 2019-01-23 11:39:18 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 22.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-23 11:39:25 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/1" for 127.0.0.1 at 2019-01-23 11:39:26 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFilm Load (0.5ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.5ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 25.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-23 11:39:29 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/2" for 127.0.0.1 at 2019-01-23 11:39:31 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFilm Load (0.5ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 28.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-23 11:39:34 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films/3" for 127.0.0.1 at 2019-01-23 11:39:35 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 35ms (Views: 29.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-23 11:39:37 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 24.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films/new" for 127.0.0.1 at 2019-01-23 11:39:39 +1100
+Processing by FilmsController#new as HTML
+  Rendering films/new.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "directors"."name", "directors"."id" FROM "directors"[0m
+  ↳ app/views/films/_form.html.erb:11
+  Rendered films/_form.html.erb (21.4ms)
+  Rendered films/new.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 48ms (Views: 43.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-23 11:39:41 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 30ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/films/4" for 127.0.0.1 at 2019-01-23 11:39:42 +1100
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFilm Load (0.4ms)[0m  [1m[34mSELECT  "films".* FROM "films" WHERE "films"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/films_controller.rb:7
+  Rendering films/show.html.erb within layouts/application
+  [1m[36mDirector Load (0.3ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/films/show.html.erb:5
+  Rendered films/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 25.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/directors" for 127.0.0.1 at 2019-01-23 11:39:47 +1100
+Processing by DirectorsController#index as HTML
+  Rendering directors/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.4ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/directors/index.html.erb:2
+  Rendered directors/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/films" for 127.0.0.1 at 2019-01-23 11:39:49 +1100
+Processing by FilmsController#index as HTML
+  Rendering films/index.html.erb within layouts/application
+  [1m[36mFilm Load (0.5ms)[0m  [1m[34mSELECT "films".* FROM "films"[0m
+  ↳ app/views/films/index.html.erb:2
+  Rendered films/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 26.2ms | ActiveRecord: 0.5ms)
+
+

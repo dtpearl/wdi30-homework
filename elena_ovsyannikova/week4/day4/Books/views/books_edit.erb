@@ -1,0 +1,9 @@
+<form action="/books/<%=@book["id"]%>" method="post">
+  <label>Title</label>
+  <input type="text" name="title" value="<%= @book["title"]%>" placeholder="Title of book" require autofocus>
+  <label>Author</label>
+  <input type="text" name="author" value="<%= @book["author"]%>" placeholder="Author of book" require>
+  <label>Image</label>
+  <input type="text" name="image" value="<%= @book["image"]%>" placeholder="http://...">
+  <button>Edit</button>
+</form>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beers</title>
+  <link rel="stylesheet" href="/beers.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      |
+      <a href="/">Home</a>
+      <a href="/beers">All Beers</a>
+      <a href="/beers/new">New Beer</a>
+      |
+      <a href="/hops">All Hops</a>
+      <a href="/hops/new">New Hop</a>
+      |
+    </nav>
+    <h1>Beers</h1>
+    <%= yield %>
+
+    <a href="#top" id="jump2top">Top of Page</a>
+  </div>
+</body>
+</html>

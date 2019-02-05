@@ -1,0 +1,8 @@
+<h1 class="animated flip delay-2s">All Flowers</h1>
+
+<% @flowers.each do |flower| %>
+<p>
+    <a href="/flowers/<%= flower["id"] %>"><%= flower["name"] %></a>
+</p>
+
+<% end %>

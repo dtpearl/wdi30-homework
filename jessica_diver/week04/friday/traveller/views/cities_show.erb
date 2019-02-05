@@ -1,0 +1,15 @@
+<div class="mainArticle">
+
+<h2><%= @city[:city] %></h2>
+
+<h3><%= @city[:year] %></h3>
+
+<img src="<%= @city[:image] %>" alt="<%= @city[:city] %>">
+
+<div class="controls">
+<a href="/cities/<%= @city["id"]%>/edit">Edit City</a>
+<a href="/cities/<%= @city["id"]%>/delete">Delete City</a>
+
+</div>
+
+</div>

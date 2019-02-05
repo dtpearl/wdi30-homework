@@ -1,0 +1,66 @@
+*{
+ border: 1px solid green;
+}
+#wrapper {
+    background-color: #f5f5f5;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em; /*ems refers to the current size of the font*/
+}
+#Logo{
+  float: left;
+}
+#socialNav{
+  float: right;
+}
+
+ body {
+   background-color: #f5f5f5;
+   margin: 0;
+   padding: 0;
+ }
+
+#requestquote {
+  /* float: left; */
+  margin: 10;
+  padding: 10;
+  align-items: center;
+}
+#column1 {
+	float: left;
+	width: 290px;
+	margin-right: 30px;
+}
+
+#column2 {
+	float: left;
+	width: 280px;
+}
+
+#column3 {
+	float: right;
+	width: 240px;
+}
+
+#menu {
+   text-align: left;
+   background-color: #222;
+   
+   /* padding: 1em; */
+   text-decoration: underline;
+ }
+
+img {
+   margin: 0 auto;
+   align: left;
+ }
+
+.homebox {
+
+  padding: 1em;
+}
+
+.mainbanner{
+  display: block;
+  width: 10%;
+}

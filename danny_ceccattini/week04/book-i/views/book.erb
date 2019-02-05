@@ -1,0 +1,15 @@
+<h2><%= @book_title.upcase %></h2>
+
+<div class="book_cover">
+  <!-- <img src="http://fillmurray.com/g/300/600" alt="Bill Murray"> -->
+  <!-- <img src="http://books.google.com/books/content?id=UXy3vDumNxwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="Book Cover"> -->
+  <img src=<%= @book_cover %>alt="Book Cover">
+</div>
+
+<h3>Synopsis</h3>
+
+<p><%= @synopsis = @info["items"].first["volumeInfo"]["description"] %></p>
+
+<h3>Price</h3>
+
+<p class="price">Was $<%= @price %>. Now $<%= @price.to_i / 2 %></p>
