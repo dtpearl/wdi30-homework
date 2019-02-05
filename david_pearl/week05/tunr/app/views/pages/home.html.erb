@@ -1,0 +1,8 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+
+<%= if session[:user_id].present? then %>
+
+    <h1><%= User.find(session[:user_id]).email %></h1>
+
+  <% end %>
